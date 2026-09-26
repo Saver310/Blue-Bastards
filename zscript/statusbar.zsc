@@ -35,7 +35,7 @@ class BlueBastardsStatusBar : DoomStatusBar
 	
 	override void Draw (int state, double TicFrac)
 	{
-		Super.Draw (state, TicFrac);
+		//Super.Draw (state, TicFrac);
 		if (state == HUD_StatusBar)
 		{
 			BeginStatusBar();
@@ -113,13 +113,13 @@ class BlueBastardsStatusBar : DoomStatusBar
 		DrawImage("graphics/hud_healthnarmor.png", (44,-49), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
 		DrawString(mHUDFont, FormatNumber(mHealthInterpolator.GetValue(), 3, 3, FNF_FILLZEROS), (48, -41));
 		DrawString(mHUDFont, FormatNumber(mArmorInterpolator.GetValue(), 3, 3, FNF_FILLZEROS), (48, -20));
-		
+		DrawImage("graphics/hud_ammo.png", (-84,-35), DI_SCREEN_RIGHT_BOTTOM|DI_ITEM_OFFSETS);
 		Inventory ammotype1, ammotype2;
 		[ammotype1, ammotype2] = GetCurrentAmmo();
 		int invY = -20;
 		if (ammotype1 != null)
 		{
-			DrawImage("graphics/hud_ammo.png", (-84,-35), DI_SCREEN_RIGHT_BOTTOM|DI_ITEM_OFFSETS);
+			
 			DrawInventoryIcon(ammotype1, (-18, -4), 0, 1.0, (15,15));
 			DrawString(mHUDFont, FormatNumber(ammotype1.Amount, 3, 3, FNF_FILLZEROS), (-30, invY), DI_TEXT_ALIGN_RIGHT);
 			invY -= 14;
