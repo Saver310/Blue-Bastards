@@ -4,9 +4,4 @@
 #include "./spot/shells.zsc" //Includes all weapons that use shells.
 #include "./spot/rockets.zsc"//etc
 #include "./spot/cells.zsc"//etc
-
-
-
-
-
-
+#include "./spot/dragon.zsc" // Spot's Dragon Transformation Logic
