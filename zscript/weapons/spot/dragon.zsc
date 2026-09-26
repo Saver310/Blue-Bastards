@@ -19,7 +19,7 @@ class Dragon_Spot_Transform : CustomInventory {
             TNT1 A 1050;
             TNT1 A 0{
                 invoker.transformed = false;
-            };
+            }
             }
     }
 }
