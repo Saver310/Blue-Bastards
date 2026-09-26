@@ -1,0 +1,25 @@
+class Dragon_Spot_Transform : CustomInventory {
+    bool transformed;
+    override void PostBeginPlay()
+	{
+		Super.PostBeginPlay();
+		transformed = false;
+	}
+    States
+    {
+        Use:
+            
+            TNT1 A 0{
+                if (invoker.transformed == false)
+                {
+                    invoker.transformed = true;
+                    A_PlaySound("misc/berserk");
+                    A_Morph("Deathshead", 35 * 30);
+                }
+            TNT1 A 1050;
+            TNT1 A 0{
+                invoker.transformed = false;
+            };
+            }
+    }
+}
