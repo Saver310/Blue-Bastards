@@ -1,0 +1,16 @@
+#library "Transform"
+#include "zcommon.acs"
+
+Script "Transform" ENTER
+{
+	while (True){
+		Delay(1);
+		if (GetPlayerInput(-1,INPUT_OLDBUTTONS)&BT_RELOAD)
+		{
+			if (CheckInventory("Dragon_Spot_Transform"))
+			{
+				UseInventory("Dragon_Spot_Transform");
+			}
+		}
+	}
+}
