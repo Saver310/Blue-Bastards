@@ -1,0 +1,7 @@
+#library "Transform"
+#include "zcommon.acs"
+
+Script "Transform" ENTER
+{
+    print(s:"Comfirm it works");
+}

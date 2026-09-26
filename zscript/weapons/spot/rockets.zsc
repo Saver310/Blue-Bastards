@@ -102,7 +102,7 @@ class NapalmFlame : Actor
 		Speed 40;
 		Damage 75;
 		DeathSound "weapons/nuke/explode";
-		Obituary "$SPOT_KILL_NAPALM"
+		Obituary "$SPOT_KILL_NAPALM";
 		+RANDOMIZE
 		+ROCKETTRAIL
 		+ZDOOMTRANS

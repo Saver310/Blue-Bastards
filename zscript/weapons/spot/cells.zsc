@@ -180,7 +180,7 @@ class NukeFlame : Actor
 		Speed 40;
 		Damage 150;
 		DeathSound "weapons/nuke/explode";
-		Obituary "$SPOT_KILL_NUKEFIRE"
+		Obituary "$SPOT_KILL_NUKEFIRE";
 		+RANDOMIZE
 		+ROCKETTRAIL
 		+ZDOOMTRANS
