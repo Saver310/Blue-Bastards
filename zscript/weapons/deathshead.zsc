@@ -1,3 +1,4 @@
+#include "./deathshead/ammo.zsc" //Custom ammo types
 #include "./deathshead/intros.zsc"
 #include "./deathshead/melee.zsc"
 #include "./deathshead/bullet.zsc"
@@ -6,10 +7,13 @@
 #include "./deathshead/cells.zsc"
 #include "./deathshead/mothman.zsc"
 
-mixin class BBDeathsheadWeapon //the mixing classes are classes you add in to the class, which is great for more minor stuff.
+
+mixin class BBDeathsheadWeapon  //the mixing classes are classes you add in to the class, which is great for more minor stuff.
 {
-	default
+	default //Side note, DO NOT put this mixin in anything that is not weapon related or it will cause errors.
 	{
-		Inventory.RestrictedTo "Deathshead";
+		Weapon.BobRangeX 0.5;
+		Weapon.BobStyle "InverseSmooth";
+		Inventory.RestrictedTo "Deathshead"; //If you want to make sure the custom inventory is only for a certain character, just copy paste this.
 	}
 }

@@ -18,7 +18,7 @@ class Spot : DoomPlayer
 		Player.StartItem "SpotMallet";
 		Player.StartItem "SpotExpress600";
 		Player.StartItem "SpotKicky";
-		Player.StartItem "Clip", 50;
+		Player.StartItem "BBSpot600", 12;
 		
 		Player.WeaponSlot 1, "SpotMallet", "SpotChainsaw";
 		Player.WeaponSlot 2, "SpotExpress600";
@@ -245,7 +245,7 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		Player.StartItem "DeathsheadFist";
 		Player.StartItem "DeathsheadKicky";
 		Player.StartItem "DeathsheadPistol";
-		Player.StartItem "Clip", 50;
+		Player.StartItem "BBDeathshead9mm", 50;
 		
 		Player.WeaponSlot 1, "DeathsheadFist", "DeathsheadChainsaw";
 		Player.WeaponSlot 2, "DeathsheadPistol";

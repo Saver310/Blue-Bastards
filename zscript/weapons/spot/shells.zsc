@@ -6,10 +6,7 @@ class SpotShotgun : BlueBastardWeapon
 		Weapon.AmmoType "Shell";
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 8;
-		Weapon.BobStyle "InverseSmooth";
-		Weapon.BobSpeed 1.75;
-		Weapon.BobRangeX 1.2;
-		Weapon.BobRangeY 0.6;
+		
 		Tag "$SPOT_KS23";
 
 		Obituary "SPOT_KILL_KS23";
@@ -88,10 +85,7 @@ class SpotShotgunClassic : BlueBastardWeapon
 		Weapon.AmmoType "Shell";
 		Weapon.AmmoUse 2;
 		Weapon.AmmoGive 8;
-		Weapon.BobStyle "InverseSmooth";
-		Weapon.BobSpeed 1.75;
-		Weapon.BobRangeX 1.2;
-		Weapon.BobRangeY 0.6;
+		
 		Tag "$SPOT_SHTCLASSIC";
 
 		Obituary "$SPOT_KILL_SHTCLASSIC";
@@ -168,13 +162,10 @@ class SpotDevastator : BlueBastardWeapon
 {
 	mixin BBSpotWeapon;
 	Default{
-		Weapon.AmmoType "Shell";
+		Weapon.AmmoType "BBSpotDevastatorShell";
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 8;
-		Weapon.BobStyle "InverseSmooth";
-		Weapon.BobSpeed 1.75;
-		Weapon.BobRangeX 1.2;
-		Weapon.BobRangeY 0.6;
+		
 		Tag "$SPOT_DEV";
 		Obituary "SPOT_KILL_DEV";
 

@@ -1,9 +1,10 @@
 class Mothman_Transform : CustomInventory {
-    mixin BBDeathsheadWeapon;
+    
     Default
 	{
 		Tag " ";
 		+INVENTORY.UNDROPPABLE
+		Inventory.RestrictedTo "Deathshead";
 	}
 
     action void TryTransform()
@@ -30,7 +31,10 @@ class Mothman_Transform : CustomInventory {
 
 // planning to add transformation wearing off messages with this
 class Mothman_Transform_End : Dragon_Spot_Transform_End {
-    mixin BBDeathsheadWeapon;
+    default
+	{
+		Inventory.RestrictedTo "Deathshead";
+	}
 }
 
 class MothmanWhiskeyBottle : BlueBastardWeapon

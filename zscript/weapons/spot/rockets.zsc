@@ -6,10 +6,8 @@ class SpotRocketLauncher : BlueBastardWeapon
 		Weapon.AmmoType "RocketAmmo";
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 4;
-		Weapon.BobStyle "InverseSmooth";
-		Weapon.BobSpeed 1.75;
-		Weapon.BobRangeX 1.2;
-		Weapon.BobRangeY 0.6;
+	
+	
 		+WEAPON.NOAUTOFIRE
 		+INVENTORY.UNDROPPABLE
 

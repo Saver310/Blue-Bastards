@@ -1,0 +1,84 @@
+//Nitro
+class BBSpot600 : Ammo
+{
+	Default
+	{
+		//Inventory.PickupMessage "$GOTCLIP";
+		Inventory.Amount 2;
+		Inventory.MaxAmount 40;
+		Ammo.BackpackAmount 4;
+		Ammo.BackpackMaxAmount 80;
+		Inventory.Icon "CLIPA0";
+		//Tag "$AMMO_CLIP";
+		Inventory.RestrictedTo "Spot";
+	}
+	States
+	{
+	Spawn:
+		TNT1 A -1;
+		Stop;
+	}
+}
+//"Portable" Chaingun
+class BBSpotNavalBullets : Ammo
+{
+	Default
+	{
+		//Inventory.PickupMessage "$GOTCLIP";
+		Inventory.Amount 5;
+		Inventory.MaxAmount 100;
+		Ammo.BackpackAmount 10;
+		Ammo.BackpackMaxAmount 200;
+		Inventory.Icon "CLIPA0";
+		//Tag "$AMMO_CLIP";
+		Inventory.RestrictedTo "Spot";
+	}
+	States
+	{
+	Spawn:
+		TNT1 A -1;
+		Stop;
+	}
+}
+//devastator
+class BBSpotDevastatorShell : Ammo
+{
+	Default
+	{
+		//Inventory.PickupMessage "$GOTCLIP";
+		Inventory.Amount 1;
+		Inventory.MaxAmount 25;
+		Ammo.BackpackAmount 2;
+		Ammo.BackpackMaxAmount 50;
+		Inventory.Icon "SHELA0";
+		//Tag "$AMMO_CLIP";
+		Inventory.RestrictedTo "Spot";
+	}
+	States
+	{
+	Spawn:
+		TNT1 A -1;
+		Stop;
+	}
+}
+//BFG
+class BBSpotAtomicBomb : Ammo
+{
+	Default
+	{
+		//Inventory.PickupMessage "$GOTCLIP";
+		Inventory.Amount 1;
+		Inventory.MaxAmount 7;
+		Ammo.BackpackAmount 1;
+		Ammo.BackpackMaxAmount 15;
+		Inventory.Icon "CELLA0";
+		//Tag "$AMMO_CLIP";
+		Inventory.RestrictedTo "Spot";
+	}
+	States
+	{
+	Spawn:
+		TNT1 A -1;
+		Stop;
+	}
+}

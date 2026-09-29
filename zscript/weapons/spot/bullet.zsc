@@ -3,12 +3,9 @@ class SpotExpress600 : BlueBastardWeapon
 	mixin BBSpotWeapon;
     Default
     {
-        Weapon.AmmoUse 5;
-        Weapon.AmmoType "Clip";
-		Weapon.BobStyle "InverseSmooth";
-		Weapon.BobSpeed 1.75;
-		Weapon.BobRangeX 1.2;
-		Weapon.BobRangeY 0.6;
+        Weapon.AmmoUse 1;
+		Weapon.AmmoGive 5;
+        Weapon.AmmoType "BBSpot600";
 		Tag "$SPOT_REV";
 		Obituary "$SPOT_KILL_REV";
 		
@@ -64,16 +61,11 @@ class SpotChaingun : BlueBastardWeapon
 	Default
 	{
 		Weapon.SelectionOrder 700;
-		Weapon.AmmoUse 2;
-		Weapon.AmmoGive 20;
-		Weapon.AmmoType "Clip";
+		Weapon.AmmoUse 1;
+		Weapon.AmmoGive 10;
+		Weapon.AmmoType "BBSpotNavalBullets";
 		Inventory.PickupMessage "$GOTCHAINGUN";
 		Obituary "$SPOT_KILL_NAVAL";
-
-		Weapon.BobStyle "InverseSmooth";
-		Weapon.BobSpeed 1.75;
-		Weapon.BobRangeX 1.2;
-		Weapon.BobRangeY 0.6;
 
 		Tag "$SPOT_NAVAL";
 
@@ -127,11 +119,6 @@ class SpotM249: BlueBastardWeapon
 		Weapon.AmmoType "Clip";
 		Inventory.PickupMessage "$GOTCHAINGUN";
 		Obituary "$SPOT_KILL_M249";
-
-		Weapon.BobStyle "InverseSmooth";
-		Weapon.BobSpeed 1.75;
-		Weapon.BobRangeX 1.2;
-		Weapon.BobRangeY 0.6;
 
 		Tag "$SPOT_M249";
 

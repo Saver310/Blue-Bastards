@@ -7,7 +7,7 @@ class DeathsheadShotgun : BlueBastardWeapon
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 8;
 		Weapon.BobRangeY 0.5;
-		Weapon.BobStyle "InverseSmooth";
+		Weapon.BobRangeX 1;
 		Tag "$ACE_AUTOSHOTGUN";
 		Obituary "$OB_ACE_AUTOSHOTGUN";
 		+INVENTORY.UNDROPPABLE
@@ -53,8 +53,10 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 		Weapon.AmmoType "Shell";
 		Weapon.AmmoUse 4;
 		Weapon.AmmoGive 16;
+		
 		Weapon.BobSpeed 1.75;
-		Weapon.BobStyle "InverseSmooth";
+		Weapon.BobRangeX 1;
+		
 		Tag "$ACE_SAWNOFFS";
 		Obituary "$OB_ACE_SAWNOFFS";
 		+INVENTORY.UNDROPPABLE;

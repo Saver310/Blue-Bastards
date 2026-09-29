@@ -8,7 +8,7 @@ class DeathsheadRocketLauncher : BlueBastardWeapon
 		Weapon.AmmoGive 2;
 		Weapon.BobRangeX 1.5;
 		Weapon.BobRangeY 0.5;
-		Weapon.BobStyle "InverseSmooth";
+		
 		Tag "$ACE_ROCKET";
 		Obituary "$OB_ACE_ROCKET";
 		+INVENTORY.UNDROPPABLE

@@ -1,3 +1,4 @@
+#include "./spot/ammo.zsc" //ammo types for all weapons
 #include "./spot/intros.zsc"
 #include "./spot/melee.zsc" //Includes fists, chainsaw and the kick.
 #include "./spot/bullet.zsc" //Includes all weapons that use bullets.
@@ -8,8 +9,12 @@
 
 mixin class BBSpotWeapon //the mixing classes are classes you add in to the class, which is great for more minor stuff.
 {
-	default
+	default //Side note, DO NOT put this mixin in anything that is not weapon related or it will cause errors.
 	{
-		Inventory.RestrictedTo "Spot";
+		Weapon.BobStyle "InverseSmooth";
+		Weapon.BobSpeed 1.75;
+		Weapon.BobRangeX 1.2;
+		Weapon.BobRangeY 0.6;
+		Inventory.RestrictedTo "Spot"; //If you want to make sure the custom inventory is only for a certain character, just copy paste this.
 	}
 }

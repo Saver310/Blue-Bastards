@@ -47,21 +47,103 @@ class BlueBastardsStatusBar : BaseStatusBar
 	protected virtual void DrawBarAmmo()
 	{
 		int amt1, maxamt;
-		[amt1, maxamt] = GetAmount("Clip");
-		DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 173), DI_TEXT_ALIGN_RIGHT);
-		DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 173), DI_TEXT_ALIGN_RIGHT);
-
-		[amt1, maxamt] = GetAmount("Shell");
-		DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 179), DI_TEXT_ALIGN_RIGHT);
-		DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 179), DI_TEXT_ALIGN_RIGHT);
-
-		[amt1, maxamt] = GetAmount("RocketAmmo");
-		DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 185), DI_TEXT_ALIGN_RIGHT);
-		DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 185), DI_TEXT_ALIGN_RIGHT);
-
-		[amt1, maxamt] = GetAmount("Cell");
-		DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 191), DI_TEXT_ALIGN_RIGHT);
-		DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 191), DI_TEXT_ALIGN_RIGHT);
+		let pPawn = doomplayer(CPlayer.mo);
+		
+		if(pPawn) 
+		{
+			if(pPawn is 'Spot')
+			{
+				if(pPawn.Player.ReadyWeapon.GetClassName() == "SpotChaingun")
+				{
+					[amt1, maxamt] = GetAmount("BBSpotNavalBullets");
+					DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 173), DI_TEXT_ALIGN_RIGHT);
+					DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 173), DI_TEXT_ALIGN_RIGHT);
+				}else
+				if(pPawn.Player.ReadyWeapon.GetClassName() ==  "SpotExpress600")
+				{
+					[amt1, maxamt] = GetAmount("BBSpot600");
+					DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 173), DI_TEXT_ALIGN_RIGHT);
+					DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 173), DI_TEXT_ALIGN_RIGHT);
+				}
+				else
+				{
+					[amt1, maxamt] = GetAmount("Clip");
+					DrawString(mIndexFont, FormatNumber(amt1, 2), (288, 173), DI_TEXT_ALIGN_RIGHT);
+					DrawString(mIndexFont, FormatNumber(maxamt, 2), (314, 173), DI_TEXT_ALIGN_RIGHT);
+				}
+				if(pPawn.Player.ReadyWeapon.GetClassName() !=  "SpotDevastator")
+				{
+					[amt1, maxamt] = GetAmount("BBSpotDevastatorShell");
+					DrawString(mIndexFont, FormatNumber(amt1, 2), (288, 179), DI_TEXT_ALIGN_RIGHT);
+					DrawString(mIndexFont, FormatNumber(maxamt, 2), (314, 179), DI_TEXT_ALIGN_RIGHT);
+				}
+				else
+				{
+					[amt1, maxamt] = GetAmount("Shell");
+					DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 179), DI_TEXT_ALIGN_RIGHT);
+					DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 179), DI_TEXT_ALIGN_RIGHT);
+				}
+				[amt1, maxamt] = GetAmount("RocketAmmo");
+				DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 185), DI_TEXT_ALIGN_RIGHT);
+				DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 185), DI_TEXT_ALIGN_RIGHT);
+				if(pPawn.Player.ReadyWeapon.GetClassName() !=  "SpotPlasmaRifle")
+				{
+					[amt1, maxamt] = GetAmount("BBDeathsheadBFGCell");
+					DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 191), DI_TEXT_ALIGN_RIGHT);
+					DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 191), DI_TEXT_ALIGN_RIGHT);
+				}
+				else
+				{
+					[amt1, maxamt] = GetAmount("Cell");
+					DrawString(mIndexFont, FormatNumber(amt1, 2), (288, 191), DI_TEXT_ALIGN_RIGHT);
+					DrawString(mIndexFont, FormatNumber(maxamt, 2), (314, 191), DI_TEXT_ALIGN_RIGHT);
+				}
+			}
+			if(pPawn is 'Deathshead')
+			{
+				if(pPawn.Player.ReadyWeapon.GetClassName() == "DeathsheadMAC10" || pPawn.Player.ReadyWeapon.GetClassName() ==  "DeathsheadPistol")
+				{
+					[amt1, maxamt] = GetAmount("BBDeathshead9mm");
+					DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 173), DI_TEXT_ALIGN_RIGHT);
+					DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 173), DI_TEXT_ALIGN_RIGHT);
+					DrawImage("graphics/stbar_9mm.png", (249, 168), DI_ITEM_OFFSETS);
+				}
+				else
+				{
+					[amt1, maxamt] = GetAmount("BBDeathshead556");
+					DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 173), DI_TEXT_ALIGN_RIGHT);
+					DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 173), DI_TEXT_ALIGN_RIGHT);
+				}
+				[amt1, maxamt] = GetAmount("Shell");
+				DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 179), DI_TEXT_ALIGN_RIGHT);
+				DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 179), DI_TEXT_ALIGN_RIGHT);
+				if(pPawn.Player.ReadyWeapon.GetClassName() != "DeathsheadM4")
+				{
+					[amt1, maxamt] = GetAmount("RocketAmmo");
+					DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 185), DI_TEXT_ALIGN_RIGHT);
+					DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 185), DI_TEXT_ALIGN_RIGHT);
+				}
+				else
+				{
+					[amt1, maxamt] = GetAmount("BBDeathsheadGrenade");
+					DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 185), DI_TEXT_ALIGN_RIGHT);
+					DrawString(mIndexFont, FormatNumber(maxamt, 2), (314, 185), DI_TEXT_ALIGN_RIGHT);
+					DrawImage("graphics/stbar_gren.png", (249, 168), DI_ITEM_OFFSETS);
+				}
+				if(pPawn.Player.ReadyWeapon.GetClassName() != "DeathsheadBFG")
+				{
+					[amt1, maxamt] = GetAmount("Cell");
+					DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 191), DI_TEXT_ALIGN_RIGHT);
+					DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 191), DI_TEXT_ALIGN_RIGHT);
+				}
+				else
+				{
+					[amt1, maxamt] = GetAmount("BBDeathsheadBFGCell");
+					DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 191), DI_TEXT_ALIGN_RIGHT);
+					DrawString(mIndexFont, FormatNumber(maxamt, 2), (314, 191), DI_TEXT_ALIGN_RIGHT);
+				}
+			}
+		}
 	}
 	
 	

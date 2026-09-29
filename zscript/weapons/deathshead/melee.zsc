@@ -5,6 +5,7 @@ class DeathsheadFist : BlueBastardWeapon
 	{
 		Weapon.BobStyle "Smooth";
 		Weapon.BobRangeX 1.5;
+		
 		+WEAPON.NOALERT
 		+INVENTORY.UNDROPPABLE
 		Tag "$ACE_FISTS";
@@ -107,9 +108,6 @@ class DeathsheadChainsaw : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
-		Weapon.UpSound "";
-		Weapon.BobStyle "InverseSmooth";
-		Weapon.BobRangeX 0.5;
 		Tag "$ACE_CHAINSAW";
 		Obituary "$OB_ACE_CHAINSAW";
 		+INVENTORY.UNDROPPABLE

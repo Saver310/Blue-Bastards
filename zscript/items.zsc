@@ -253,3 +253,30 @@ class Medkit_Mslug : Medikit
 		Loop;
 	}
 }
+//Ammo distribution base
+class BBAmmoDistributor : Custominventory
+{
+
+	Action int A_ammomultiplier(int amount)
+	{
+		if(bdropped) return amount/2;
+		return amount;
+	}
+	Action bool A_AllowedToGrab(class<Ammo> ammotype)
+	{
+		if(self.player.mo && self.player.mo.health>0)
+		{
+			
+			if((self.player.mo.CountInv(ammotype)) == (GetAmmoCapacity(ammotype))) { return false; }
+			else return true;
+		}
+		else return false;
+	}
+	
+	states
+	{
+	Cantpickup:
+		TNT1 A 1;
+		fail;
+	}
+}

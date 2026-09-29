@@ -5,9 +5,9 @@ class DeathsheadPlasmaRifle : BlueBastardWeapon
 	{
 		Weapon.BobRangeX 1.25;
 		Weapon.BobRangeY 0.75;
-		Weapon.BobStyle "InverseSmooth";
 		Weapon.WeaponScaleX 0.9;
 		Weapon.WeaponScaleY 1.08;
+		
 		Weapon.AmmoType1 "Cell";
 		Weapon.AmmoUse1 5;
 		Weapon.AmmoType2 "Cell";
@@ -91,12 +91,13 @@ class DeathsheadBFG : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
-		Weapon.AmmoType "Cell";
-		Weapon.AmmoUse 40;
-		Weapon.AmmoGive 40;
+		Weapon.AmmoType "BBDeathsheadBFGCell";
+		Weapon.AmmoUse 1;
+		Weapon.AmmoGive 1;
+		
 		Weapon.BobRangeX 1.5;
 		Weapon.BobRangeY 0.5;
-		Weapon.BobStyle "InverseSmooth";
+		
 		Tag "$ACE_BFG";
 		Obituary "$OB_ACE_BFG";
 		+INVENTORY.UNDROPPABLE
@@ -124,7 +125,8 @@ class DeathsheadBFG : BlueBastardWeapon
 		NBFG E 2 Bright
 		{
 			A_WeaponOffset(16.0, 48.0, WOF_INTERPOLATE);
-			if (player == null)
+			//I don't get why you would need this when a_fireprojectile is there, i kept it just in case if it's needed later on.
+			/*if (player == null)
 			{
 				return;
 			}
@@ -134,7 +136,8 @@ class DeathsheadBFG : BlueBastardWeapon
 				if (!weap.DepleteAmmo (weap.bAltFire, true, deh.BFGCells))
 					return;
 			}
-			SpawnPlayerMissile("DeathsheadBFGBall", angle, nofreeaim:sv_nobfgaim);
+			SpawnPlayerMissile("DeathsheadBFGBall", angle, nofreeaim:sv_nobfgaim);*/
+			A_FireProjectile("DeathsheadBFGBall");
 		}
 		NBFG F 2 Bright A_WeaponOffset(8.0, 8.0, WOF_ADD|WOF_INTERPOLATE);
 		NBFG G 2 Bright A_WeaponOffset(4.0, 4.0, WOF_ADD|WOF_INTERPOLATE);

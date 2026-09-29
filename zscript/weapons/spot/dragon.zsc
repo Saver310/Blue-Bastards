@@ -1,9 +1,10 @@
 class Dragon_Spot_Transform : CustomInventory {
-    mixin BBSpotWeapon;
+   
     Default
 	{
 		Tag " ";
 		+INVENTORY.UNDROPPABLE
+		Inventory.RestrictedTo "Spot";
 	}
 
     action void TryTransform()
@@ -30,11 +31,11 @@ class Dragon_Spot_Transform : CustomInventory {
 
 // this is atrocious lol
 class Dragon_Spot_Transform_End : CustomInventory {
-    mixin BBSpotWeapon;
     Default
 	{
 		Tag " ";
 		+INVENTORY.UNDROPPABLE
+		Inventory.RestrictedTo "Spot";
 	}
 
     States {
@@ -56,7 +57,7 @@ class BBSpot_Dragon_Claws : BlueBastardWeapon
 		+WEAPON.MELEEWEAPON
         Tag " ";
 
-        Weapon.BobStyle "InverseSmooth";
+
 		Weapon.BobSpeed 2.5;
 		Weapon.BobRangeX 0;
 		Weapon.BobRangeY 1;

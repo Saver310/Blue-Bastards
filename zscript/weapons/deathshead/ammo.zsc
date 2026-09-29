@@ -1,0 +1,84 @@
+//Pistol and MAC10
+class BBDeathshead9mm : Ammo
+{
+	Default
+	{
+		//Inventory.PickupMessage "$GOTCLIP";
+		Inventory.Amount 10;
+		Inventory.MaxAmount 200;
+		Ammo.BackpackAmount 10;
+		Ammo.BackpackMaxAmount 400;
+		Inventory.Icon "CLIPA0";
+		//Tag "$AMMO_CLIP";
+		Inventory.RestrictedTo "Deathshead";
+	}
+	States
+	{
+	Spawn:
+		TNT1 A -1;
+		Stop;
+	}
+}
+//Chainguns
+class BBDeathshead556 : Ammo
+{
+	Default
+	{
+		//Inventory.PickupMessage "$GOTCLIP";
+		Inventory.Amount 5;
+		Inventory.MaxAmount 100;
+		Ammo.BackpackAmount 5;
+		Ammo.BackpackMaxAmount 200;
+		Inventory.Icon "CLIPA0";
+		//Tag "$AMMO_CLIP";
+		Inventory.RestrictedTo "Deathshead";
+	}
+	States
+	{
+	Spawn:
+		TNT1 A -1;
+		Stop;
+	}
+}
+//m16's GL
+class BBDeathsheadGrenade : Ammo
+{
+	Default
+	{
+		//Inventory.PickupMessage "$GOTCLIP";
+		Inventory.Amount 1;
+		Inventory.MaxAmount 25;
+		Ammo.BackpackAmount 2;
+		Ammo.BackpackMaxAmount 50;
+		Inventory.Icon "ROCKA0";
+		//Tag "$AMMO_CLIP";
+		Inventory.RestrictedTo "Deathshead";
+	}
+	States
+	{
+	Spawn:
+		TNT1 A -1;
+		Stop;
+	}
+}
+//BFG
+class BBDeathsheadBFGCell : Ammo
+{
+	Default
+	{
+		//Inventory.PickupMessage "$GOTCLIP";
+		Inventory.Amount 1;
+		Inventory.MaxAmount 7;
+		Ammo.BackpackAmount 1;
+		Ammo.BackpackMaxAmount 15;
+		Inventory.Icon "CELLA0";
+		//Tag "$AMMO_CLIP";
+		Inventory.RestrictedTo "Deathshead";
+	}
+	States
+	{
+	Spawn:
+		TNT1 A -1;
+		Stop;
+	}
+}

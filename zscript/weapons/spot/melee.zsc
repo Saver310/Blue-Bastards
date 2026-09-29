@@ -5,10 +5,7 @@ class SpotMallet : BlueBastardWeapon
 	{
 		+WEAPON.NOALERT
 		+INVENTORY.UNDROPPABLE
-		Weapon.BobStyle "InverseSmooth";
-		Weapon.BobSpeed 1.75;
-		Weapon.BobRangeX 1.2;
-		Weapon.BobRangeY 0.6;
+		
 		Tag "$SPOT_MALLET";
 		//Weapon.WeaponScaleX 0.75;
 		//Weapon.WeaponScaleY 0.8;
@@ -74,11 +71,7 @@ class SpotChainsaw : BlueBastardWeapon
 {
 	Default
 	{
-		Weapon.BobStyle "InverseSmooth";
-		Weapon.BobSpeed 1.75;
-		Weapon.BobRangeX 1.2;
-		Weapon.BobRangeY 0.6;
-		Weapon.UpSound "";
+		
 		+WEAPON.MELEEWEAPON
 		Tag "$SPOT_CHAINSAW";
 
