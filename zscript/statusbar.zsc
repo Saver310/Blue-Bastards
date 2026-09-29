@@ -86,11 +86,12 @@ class BlueBastardsStatusBar : BaseStatusBar
 				[amt1, maxamt] = GetAmount("RocketAmmo");
 				DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 185), DI_TEXT_ALIGN_RIGHT);
 				DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 185), DI_TEXT_ALIGN_RIGHT);
-				if(pPawn.Player.ReadyWeapon.GetClassName() !=  "SpotPlasmaRifle")
+				if(pPawn.Player.ReadyWeapon.GetClassName() ==  "SpotBFG")
 				{
-					[amt1, maxamt] = GetAmount("BBDeathsheadBFGCell");
+					[amt1, maxamt] = GetAmount("BBSpotAtomicBomb");
 					DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 191), DI_TEXT_ALIGN_RIGHT);
 					DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 191), DI_TEXT_ALIGN_RIGHT);
+					DrawImage("graphics/stbar_nuke.png", (249, 168), DI_ITEM_OFFSETS);
 				}
 				else
 				{
