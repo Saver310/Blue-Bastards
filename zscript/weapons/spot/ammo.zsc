@@ -8,7 +8,7 @@ class BBSpot600 : Ammo
 		Inventory.MaxAmount 40;
 		Ammo.BackpackAmount 4;
 		Ammo.BackpackMaxAmount 80;
-		Inventory.Icon "CLIPA0";
+		Inventory.Icon "SAMOE0";
 		//Tag "$AMMO_CLIP";
 		Inventory.RestrictedTo "Spot";
 	}
@@ -29,7 +29,7 @@ class BBSpotNavalBullets : Ammo
 		Inventory.MaxAmount 100;
 		Ammo.BackpackAmount 10;
 		Ammo.BackpackMaxAmount 200;
-		Inventory.Icon "CLIPA0";
+		Inventory.Icon "SAMOD0";
 		//Tag "$AMMO_CLIP";
 		Inventory.RestrictedTo "Spot";
 	}
@@ -50,7 +50,7 @@ class BBSpotDevastatorShell : Ammo
 		Inventory.MaxAmount 25;
 		Ammo.BackpackAmount 2;
 		Ammo.BackpackMaxAmount 50;
-		Inventory.Icon "SHELA0";
+		Inventory.Icon "SAMOB0";
 		//Tag "$AMMO_CLIP";
 		Inventory.RestrictedTo "Spot";
 	}
@@ -71,7 +71,7 @@ class BBSpotAtomicBomb : Ammo
 		Inventory.MaxAmount 7;
 		Ammo.BackpackAmount 1;
 		Ammo.BackpackMaxAmount 15;
-		Inventory.Icon "CELLA0";
+		Inventory.Icon "SAMOA0";
 		//Tag "$AMMO_CLIP";
 		Inventory.RestrictedTo "Spot";
 	}
