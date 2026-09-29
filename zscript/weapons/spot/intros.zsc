@@ -9,15 +9,6 @@ class SpotLevelEnter : BlueBastardWeapon
 	States
 	{
 	Select:
-		TNT1 A 0 {
-			if (GetCVar("use_spot_alt_voice")) {
-				let pp = PlayerPawn(self);
-				if (pp)
-				{
-					pp.SoundClass = "spotalt";
-				}
-			}
-		}
 		TNT1 A 0 A_JumpIf(skip_intros == true, "Fire");
 		TNT1 A 1 A_Raise(24);
 		Wait;

@@ -31,6 +31,18 @@ class Spot : DoomPlayer
 		Player.MaxHealth 125;
 		Speed 0.9;
 	}
+	override void PostBeginPlay(){
+		Super.PostBeginPlay();
+		{
+			if (GetCVar("use_spot_alt_voice")) {
+				let pp = PlayerPawn(self);
+				if (pp)
+				{
+					pp.SoundClass = "spotalt";
+				}
+			}
+		}
+	}
 	States
 	{
 	Spawn:
