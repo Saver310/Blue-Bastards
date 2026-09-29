@@ -248,9 +248,9 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		Player.StartItem "BBDeathshead9mm", 50;
 		
 		Player.WeaponSlot 1, "DeathsheadFist", "DeathsheadChainsaw";
-		Player.WeaponSlot 2, "DeathsheadPistol";
+		Player.WeaponSlot 2, "DeathsheadPistol", "DeathsheadMAC10";
 		Player.WeaponSlot 3, "DeathsheadShotgun", "DeathsheadSuperShotgun";
-		Player.WeaponSlot 4, "DeathsheadSG550", "DeathsheadMAC10", "DeathsheadM4";
+		Player.WeaponSlot 4, "DeathsheadSG550", "DeathsheadM4";
 		Player.WeaponSlot 5, "DeathsheadRocketLauncher";
 		Player.WeaponSlot 6, "DeathsheadPlasmaRifle";
 		Player.WeaponSlot 7, "DeathsheadBFG";

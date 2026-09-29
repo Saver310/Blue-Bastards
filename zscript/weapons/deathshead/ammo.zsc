@@ -8,7 +8,7 @@ class BBDeathshead9mm : Ammo
 		Inventory.MaxAmount 200;
 		Ammo.BackpackAmount 10;
 		Ammo.BackpackMaxAmount 400;
-		Inventory.Icon "CLIPA0";
+		Inventory.Icon "CLIPB0";
 		//Tag "$AMMO_CLIP";
 		Inventory.RestrictedTo "Deathshead";
 	}
