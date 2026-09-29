@@ -251,6 +251,10 @@ class BlueBastardsStatusBar : BaseStatusBar
 	{
 		Vector2 iconbox = (40, 20);
 		DrawImage("graphics/hud_mugshot.png", (4,-36), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+		if (multiplayer)
+		{
+			DrawImage("graphics/hud_mugshot_fill.png", (4,-36), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
+		}
 		bool drawthatshit = false;
 		// it's a fuckin' mess
 		if (CPlayer.mo.FindInventory("PowerStrength")||CPlayer.mo.FindInventory("PowerInvulnerable")||
