@@ -6,7 +6,7 @@ class BagOfHoldingReplacement : RandomSpawner replaces BagOfHolding
 	}
 }
 
-class BlasterAmmoReplacement : Clip replaces BlasterAmmo
+class BlasterAmmoReplacement : BBClip replaces BlasterAmmo
 {
 	States
 	{
@@ -16,7 +16,7 @@ class BlasterAmmoReplacement : Clip replaces BlasterAmmo
 	}
 }
 
-class BlasterHeftyReplacement : ClipBox replaces BlasterHefty
+class BlasterHeftyReplacement : BBClipBox replaces BlasterHefty
 {
 	States
 	{
@@ -26,7 +26,7 @@ class BlasterHeftyReplacement : ClipBox replaces BlasterHefty
 	}
 }
 
-class CrossbowAmmoReplacement : Shell replaces CrossbowAmmo
+class CrossbowAmmoReplacement : BBShell replaces CrossbowAmmo
 {
 	States
 	{
@@ -36,7 +36,7 @@ class CrossbowAmmoReplacement : Shell replaces CrossbowAmmo
 	}
 }
 
-class CrossbowHeftyReplacement : ShellBox replaces CrossbowHefty
+class CrossbowHeftyReplacement : BBShellBox replaces CrossbowHefty
 {
 	States
 	{
@@ -46,7 +46,7 @@ class CrossbowHeftyReplacement : ShellBox replaces CrossbowHefty
 	}
 }
 
-class GoldWandAmmoReplacement : Clip replaces GoldWandAmmo
+class GoldWandAmmoReplacement : BBClip replaces GoldWandAmmo
 {
 	States
 	{
@@ -56,7 +56,7 @@ class GoldWandAmmoReplacement : Clip replaces GoldWandAmmo
 	}
 }
 
-class GoldWandHeftyReplacement : ClipBox replaces GoldWandHefty
+class GoldWandHeftyReplacement : BBClipBox replaces GoldWandHefty
 {
 	States
 	{
@@ -66,7 +66,7 @@ class GoldWandHeftyReplacement : ClipBox replaces GoldWandHefty
 	}
 }
 
-class MaceAmmoReplacement : Cell replaces MaceAmmo
+class MaceAmmoReplacement : BBCell replaces MaceAmmo
 {
 	States
 	{
@@ -76,7 +76,7 @@ class MaceAmmoReplacement : Cell replaces MaceAmmo
 	}
 }
 
-class MaceHeftyReplacement : CellPack replaces MaceHefty
+class MaceHeftyReplacement : BBCellPack replaces MaceHefty
 {
 	States
 	{
@@ -86,7 +86,7 @@ class MaceHeftyReplacement : CellPack replaces MaceHefty
 	}
 }
 
-class PhoenixRodAmmoReplacement : RocketAmmo replaces PhoenixRodAmmo
+class PhoenixRodAmmoReplacement : BBRocketAmmo replaces PhoenixRodAmmo
 {
 	States
 	{
@@ -96,7 +96,7 @@ class PhoenixRodAmmoReplacement : RocketAmmo replaces PhoenixRodAmmo
 	}
 }
 
-class PhoenixRodHeftyReplacement : RocketBox replaces PhoenixRodHefty
+class PhoenixRodHeftyReplacement : BBRocketBox replaces PhoenixRodHefty
 {
 	States
 	{
@@ -106,7 +106,7 @@ class PhoenixRodHeftyReplacement : RocketBox replaces PhoenixRodHefty
 	}
 }
 
-class SkullRodAmmoReplacement : Cell replaces SkullRodAmmo
+class SkullRodAmmoReplacement : BBCell replaces SkullRodAmmo
 {
 	States
 	{
@@ -116,7 +116,7 @@ class SkullRodAmmoReplacement : Cell replaces SkullRodAmmo
 	}
 }
 
-class SkullRodHeftyReplacement : CellPack replaces SkullRodHefty
+class SkullRodHeftyReplacement : BBCellPack replaces SkullRodHefty
 {
 	States
 	{
