@@ -31,10 +31,11 @@ class MedikitSpawner : RandomSpawner replaces Medikit
     }
 }
 
-class BlueBastardBackpack : Backpack replaces Backpack
+class BlueBastardBackpack : BackpackItem replaces Backpack
 {
 	Default
 	{
+		Height 26;
 		Inventory.PickupMessage "$GOTBACKPACK";
 		Inventory.PickupSound "misc/metalslug";
 	}
