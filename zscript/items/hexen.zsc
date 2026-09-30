@@ -1,0 +1,144 @@
+class BBMana1 : BBAmmoDistributor replaces Mana1
+{
+	Default
+	{
+		+FLOATBOB;
+		Inventory.PickupMessage "$TXT_MANA_1";
+	}
+	States
+	{
+	Spawn:
+		MAN1 ABCDEFGHI 4 Bright;
+		Loop;
+	Pickup:
+		TNT1 A 0
+		{
+			if (CheckInventory("SpotMallet", 1)) 
+			{
+	
+				if(A_AllowedToGrab("BBSpot600") || A_AllowedToGrab("BBSpotNavalBullets") || A_AllowedToGrab("Clip") || A_AllowedToGrab("BBSpotDevastatorShell") || A_AllowedToGrab("Shell"))
+				{
+					
+					A_GiveInventory("BBSpot600", A_ammomultiplier(2), false);
+					A_GiveInventory("BBSpotNavalBullets", A_ammomultiplier(10), false);
+					A_GiveInventory("Clip", A_ammomultiplier(10), false);
+					A_GiveInventory("BBSpotDevastatorShell", A_ammomultiplier(4), false);
+					A_GiveInventory("Shell", A_ammomultiplier(4), false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
+			}
+			if (CheckInventory("DeathsheadFist", 1))
+			{ 
+				if (A_AllowedToGrab("BBDeathshead9mm") || A_AllowedToGrab("BBDeathshead556") || A_AllowedToGrab("Shell"))
+				{
+					A_GiveInventory("BBDeathshead9mm", A_ammomultiplier(10), false);
+					A_GiveInventory("BBDeathshead556", A_ammomultiplier(10), false);
+					A_GiveInventory("Shell", A_ammomultiplier(4), false);
+					return resolvestate(Null);
+				} else return resolvestate("cantpickup");
+			}
+			return resolvestate(null);
+		}
+		TNT1 A 1 A_Railwait(); //This function does nothing, but the entire anonymous function system would always fail if there was no function afterwards...
+		stop;	
+		
+	}
+}
+
+class BBMana2 : BBAmmoDistributor replaces Mana2
+{
+	Default
+	{
+		+FLOATBOB;
+		Inventory.PickupMessage "$TXT_MANA_2";
+	}
+	States
+	{
+	Spawn:
+		MAN2 ABCDEFGHIJKLMNOP 4 Bright;
+		Loop;
+	Pickup:
+		TNT1 A 0
+		{
+			if (CheckInventory("SpotMallet", 1)) 
+			{
+				if(A_AllowedToGrab("RocketAmmo") || A_AllowedToGrab("Cell") || A_AllowedToGrab("BBSpotAtomicBomb")) 
+				{ 
+					A_GiveInventory("RocketAmmo", A_ammomultiplier(5), false);
+					A_GiveInventory("BBSpotAtomicBomb", 1, false);
+					A_GiveInventory("Cell", A_ammomultiplier(20), false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
+			}
+			if (CheckInventory("DeathsheadFist", 1))
+			{ 
+				if(A_AllowedToGrab("BBDeathsheadGrenade") || A_AllowedToGrab("RocketAmmo") || A_AllowedToGrab("Cell") || A_AllowedToGrab("BBDeathsheadBFGCell")) 
+				{ 
+					A_GiveInventory("BBDeathsheadGrenade", A_ammomultiplier(5), false);
+					A_GiveInventory("RocketAmmo", A_ammomultiplier(5), false);
+					A_GiveInventory("BBDeathsheadBFGCell", 1, false);
+					A_GiveInventory("Cell", A_ammomultiplier(20), false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
+			}
+			return resolvestate(null);
+		}
+		TNT1 A 1 A_Railwait(); //This function does nothing, but the entire anonymous function system would always fail if there was no function afterwards...
+		stop;	
+		
+	}
+}
+
+class BBMana3 : BBAmmoDistributor replaces Mana3
+{
+	Default
+	{
+		+FLOATBOB;
+		Inventory.PickupMessage "TXT_MANA_BOTH";
+	}
+	States
+	{
+	Spawn:
+		MAN2 ABCDEFGHIJKLMNOP 4 Bright;
+		Loop;
+	Pickup:
+		TNT1 A 0
+		{
+			if (CheckInventory("SpotMallet", 1)) 
+			{
+	
+				if(A_AllowedToGrab("BBSpot600") || A_AllowedToGrab("BBSpotNavalBullets") || A_AllowedToGrab("Clip") || A_AllowedToGrab("BBSpotDevastatorShell") || A_AllowedToGrab("Shell") || A_AllowedToGrab("RocketAmmo") || A_AllowedToGrab("Cell") || A_AllowedToGrab("BBSpotAtomicBomb"))
+				{
+					
+					A_GiveInventory("BBSpot600", A_ammomultiplier(2), false);
+					A_GiveInventory("BBSpotNavalBullets", A_ammomultiplier(10), false);
+					A_GiveInventory("Clip", A_ammomultiplier(10), false);
+					A_GiveInventory("BBSpotDevastatorShell", A_ammomultiplier(4), false);
+					A_GiveInventory("Shell", A_ammomultiplier(4), false);
+					A_GiveInventory("RocketAmmo", A_ammomultiplier(5), false);
+					A_GiveInventory("BBSpotAtomicBomb", 1, false);
+					A_GiveInventory("Cell", A_ammomultiplier(20), false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
+			}
+			if (CheckInventory("DeathsheadFist", 1))
+			{ 
+				if (A_AllowedToGrab("BBDeathshead9mm") || A_AllowedToGrab("BBDeathshead556") || A_AllowedToGrab("Shell") || A_AllowedToGrab("BBDeathsheadGrenade") || A_AllowedToGrab("RocketAmmo") || A_AllowedToGrab("Cell") || A_AllowedToGrab("BBDeathsheadBFGCell"))
+				{
+					A_GiveInventory("BBDeathshead9mm", A_ammomultiplier(10), false);
+					A_GiveInventory("BBDeathshead556", A_ammomultiplier(10), false);
+					A_GiveInventory("Shell", A_ammomultiplier(4), false);
+					A_GiveInventory("BBDeathsheadGrenade", A_ammomultiplier(5), false);
+					A_GiveInventory("RocketAmmo", A_ammomultiplier(5), false);
+					A_GiveInventory("BBDeathsheadBFGCell", 1, false);
+					A_GiveInventory("Cell", A_ammomultiplier(20), false);
+					return resolvestate(Null);
+				} else return resolvestate("cantpickup");
+			}
+			return resolvestate(null);
+		}
+		TNT1 A 1 A_Railwait(); //This function does nothing, but the entire anonymous function system would always fail if there was no function afterwards...
+		stop;	
+		
+	}
+}
