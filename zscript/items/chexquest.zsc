@@ -1,0 +1,12 @@
+// "Conventional Firearms don't work on them" my ass. - Tofi_Dev 2026
+class BowlofFruitReplacement : StimPackSpawner replaces BowlofFruit
+{
+}
+
+class BowlofVegReplacement : MedikitSpawner replaces BowlofVegetables
+{
+}
+
+class GlassofWaterReplacement : HealthBonusSpawner replaces GlassofWater
+{
+}
