@@ -10,3 +10,40 @@ class BowlofVegReplacement : MedikitSpawner replaces BowlofVegetables
 class GlassofWaterReplacement : HealthBonusSpawner replaces GlassofWater
 {
 }
+
+class MiniZorchReplacement : BBClip replaces MiniZorchRecharge
+{
+}
+
+class MiniZorchPackReplacement : BBClipbox replaces MiniZorchPack
+{
+}
+
+class LargeZorchPackReplacement : BBShellBox replaces LargeZorchPack
+{
+}
+
+class LargeZorchReplacement : BBShell replaces LargeZorchRecharge
+{
+}
+
+class PropulsorZorchReplacement : BBRocketAmmo replaces PropulsorZorch
+{
+}
+
+class PropulsorZorchPackReplacement : BBRocketBox replaces PropulsorZorchPack
+{
+}
+
+class PhasingZorchPackReplacement : BBCellPack replaces PhasingZorchPack
+{
+}
+
+class PhasingZorchReplacement : BBCell replaces PhasingZorch
+{
+}
+
+class ZorchBagReplacement : BlueBastardBackpack replaces ZorchBag
+{
+}
+
