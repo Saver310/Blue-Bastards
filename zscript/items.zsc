@@ -79,6 +79,29 @@ class BlueBastardsBerserk : CustomInventory Replaces Berserk {
 	}
 }
 
+class BlueBastardsTransformationFog : Actor
+{
+	default
+	{
+		+NOBLOCKMAP
+		+NOTELEPORT
+		+NOGRAVITY
+		+ZDOOMTRANS
+		RenderStyle "Add";
+	}
+	States
+	{
+	Spawn:
+		TFOG ABABCDEFGHIJ 2 Bright;
+		Stop;
+	}
+	override void PostBeginPlay ()
+	{
+		Super.PostBeginPlay ();
+		A_StartSound ("misc/transformation", CHAN_BODY);
+	}
+}
+
 class HalfPigInABlanket : BlueBastardHealthBonus
 {
 	Default

@@ -177,6 +177,13 @@ $random misc/drop {misc/drop1 misc/drop2 misc/drop3}
 misc/protect "sounds/weapons/protect.wav"
 misc/protect/end "sounds/weapons/protect2.wav"
 
+misc/transformation1 "sounds/misc/r_tele1.wav"
+misc/transformation2 "sounds/misc/r_tele2.wav"
+misc/transformation3 "sounds/misc/r_tele3.wav"
+misc/transformation4 "sounds/misc/r_tele4.wav"
+misc/transformation5 "sounds/misc/r_tele5.wav"
+$random misc/transformation {misc/transformation1 misc/transformation2 misc/transformation3 misc/transformation4 misc/transformation5}
+
 misc/metalslug/generic  "sounds/weapons/metalslug_wpn.wav"
 misc/metalslug/okay  "sounds/weapons/metalslug_wpnok.wav"
 misc/metalslug/hmg  "sounds/weapons/metalslug_wpnhmg.wav"

@@ -18,7 +18,7 @@ class Dragon_Spot_Transform : CustomInventory {
 
         if (ppawn.Alternative == null){
             A_PlaySound("misc/protect", CHAN_AUTO);
-            A_Morph("SpotDragon", 35 * 30, MRF_FULLHEALTH);
+            A_Morph("SpotDragon", 35 * 30, MRF_FULLHEALTH, "BlueBastardsTransformationFog", "BlueBastardsTransformationFog");
         }
     }
 
