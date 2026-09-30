@@ -1,0 +1,43 @@
+class AmmoSatchelReplacement : BlueBastardBackpack replaces AmmoSatchel
+{
+}
+
+class BoxOfBulletsReplacement : BBClipbox replaces BoxOfBullets
+{
+}
+
+class ClipOfBulletsReplacement : BBClip replaces ClipOfBullets
+{
+}
+
+class ElectricBoltsReplacement : BBShell replaces ElectricBolts
+{
+}
+
+class EnergyPackReplacement : BBCellPack replaces EnergyPack
+{
+}
+
+class EnergyPodReplacement : BBCell replaces EnergyPod
+{
+}
+
+class PoisonBoltsReplacement : BBShell replaces PoisonBolts
+{
+}
+
+class HEGrenadeRoundsReplacement : BBRocketAmmo replaces HEGrenadeRounds
+{
+}
+
+class CrateOfMissilesReplacement : BBRocketBox replaces CrateOfMissiles
+{
+}
+
+class MiniMissilesReplacement : BBRocketAmmo replaces MiniMissiles
+{
+}
+
+class PhosphorusGrenadeRoundsReplacement : BBRocketAmmo replaces PhosphorusGrenadeRounds
+{
+}
