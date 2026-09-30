@@ -135,6 +135,8 @@ weapons/punch/hitwall2 "sounds/weapons/BodyHit-2.wav"
 weapons/punch/hitwall3 "sounds/weapons/BodyHit-3.wav"
 $random weapons/punch/hitwall {weapons/punch/hitwall1 weapons/punch/hitwall2 weapons/punch/hitwall3}
 
+weapons/flame "sounds/weapons/FlamethrowerSelect.wav"
+
 misc/drink "sounds/misc/drink.ogg"
 misc/gulp "sounds/misc/gulp.wav"
 misc/drink_alt "sounds/misc/drink_hardtime.wav"

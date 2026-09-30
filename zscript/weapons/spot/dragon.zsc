@@ -116,7 +116,8 @@ class BBSpot_Dragon_Claws : BlueBastardWeapon
         DCWR FDB 1 A_Refire("Fire");
         Goto RealReady;
     AltFire:
-        DGFR ABC 2;
+        DGFR AB 2;
+		DGFR C 2 A_PlaySound("weapons/flame", CHAN_AUTO);
     HoldAlt:
         DGFR C 2{
             A_WeaponOffset(Random(-2,2),Random(-2,2)+36);

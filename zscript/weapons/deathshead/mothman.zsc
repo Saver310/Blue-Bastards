@@ -77,7 +77,8 @@ class MothmanWhiskeyBottle : BlueBastardWeapon
 		MFMW VWAA 1 A_ReFire;
 		Goto Ready;
 	AltFire:
-		MFMM ABC 1;
+		MFMM AB 1;
+		MFMM C 1 A_PlaySound("weapons/flame", CHAN_AUTO);
 		MFMM DEF 1 A_FireProjectile("MothmanFire");
 	AltHold:
 		MFMM F 1 A_FireProjectile("MothmanFire");
