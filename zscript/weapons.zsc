@@ -1,6 +1,7 @@
 #include "./weapons/deathshead.zsc" //writing "./" means the directory this file is at right now, so this translates to "zscript/"
 #include "./weapons/spot.zsc"
 #include "./weapons/doom.zsc"
+#include "./weapons/chexquest.zsc"
 #include "./weapons/heretic.zsc"
 
 Class BlueBastardWeapon : Weapon //This will affect everyone's weapon if the weapon themselves don't have any value specific to them.

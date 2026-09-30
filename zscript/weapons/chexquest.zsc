@@ -1,0 +1,31 @@
+class SuperBootsporkReplacement : ChainsawReplacement replaces SuperBootspork
+{
+}
+
+class MiniZorcherReplacement : PistolReplacement replaces Pistol
+{
+}
+
+class LargeZorcherReplacment : ShotgunReplacement replaces LargeZorcher
+{
+}
+
+class SuperLargeZorcherReplacment : SuperShotgunReplacement replaces SuperLargeZorcher
+{
+}
+
+class RapidZorcherReplacment : ChaingunReplacement replaces RapidZorcher
+{
+}
+
+class PhasingZorcherReplacement : RocketLauncherReplacement replaces PhasingZorcher
+{
+}
+
+class ZorchPropulsorReplacement : PlasmaRifleReplacement replaces ZorchPropulsor
+{
+}
+
+class LAZDeviceReplacement : BFG9000Replacement replaces LAZDevice
+{
+}
