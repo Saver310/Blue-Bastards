@@ -1,0 +1,27 @@
+class AssaultGunReplacement : ChaingunReplacement replaces AssaultGun
+{
+}
+
+class AssaultGunStandingReplacement : ChaingunReplacement replaces AssaultGunStanding
+{
+}
+
+class FlameThrowerReplacement : SuperShotgunReplacement replaces FlameThrower
+{
+}
+
+class MaulerReplacement : PlasmaRifleReplacement replaces Mauler
+{
+}
+
+class MiniMissileLauncherReplacement : RocketLauncherReplacement replaces MiniMissileLauncher
+{
+}
+
+class StrifeGrenadeLauncherReplacement : RocketLauncherReplacement replaces StrifeGrenadeLauncher
+{
+}
+
+class StrifeCrossbowReplacement : ShotgunReplacement replaces StrifeCrossbow
+{
+}

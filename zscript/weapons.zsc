@@ -3,6 +3,7 @@
 #include "./weapons/doom.zsc"
 #include "./weapons/chexquest.zsc"
 #include "./weapons/heretic.zsc"
+#include "./weapons/strife.zsc"
 
 Class BlueBastardWeapon : Weapon //This will affect everyone's weapon if the weapon themselves don't have any value specific to them.
 {
