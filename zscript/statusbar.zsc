@@ -229,7 +229,7 @@ class BlueBastardsStatusBar : BaseStatusBar
 		}
 		else
 		{
-			DrawTexture(GetMugShot(5), (143, 168), DI_ITEM_OFFSETS);
+			DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (143, 168), DI_ITEM_OFFSETS);
 		}
 		if (isInventoryBarVisible())
 		{
