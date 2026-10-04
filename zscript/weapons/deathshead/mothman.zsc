@@ -29,12 +29,22 @@ class Mothman_Transform : CustomInventory {
     }
 }
 
-// planning to add transformation wearing off messages with this
-class Mothman_Transform_End : Dragon_Spot_Transform_End {
-    default
+class Mothman_Transform_End : CustomInventory {
+    Default
 	{
+		Tag " ";
+		+INVENTORY.UNDROPPABLE
 		Inventory.RestrictedTo "Deathshead";
 	}
+
+    States {
+        Use:
+            TNT1 A 0 {
+				A_PlaySound("misc/protect/end", CHAN_AUTO);
+				A_Print("$ACE_TRANSFORM_WORN", 3);
+			}
+            Stop;
+    }
 }
 
 class MothmanWhiskeyBottle : BlueBastardWeapon
