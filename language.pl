@@ -172,4 +172,4 @@ STSTR_FAADDED = "\c[Sapphire]Amunicja (bez kluczy) dodana\n\c[Red](Nawet nie pe�
 STSTR_DQDON = "\c[Sapphire]Tryb oblanej magisterki: WŁ\n\c[Red](Tak, wiem że nie potrafisz grać w slaugthermapy.)";
 STSTR_DQDOFF = "\c[Sapphire]Tryb oblanej magisterki: WYŁ\n\c[Red](To teraz chcesz się zachowywać??!!)";
 STSTR_DQD2ON = "\c[Sapphire]Tryb oblanego licencjatu: WŁ\n\c[Red](Aż Spot płaczę ;-;)";
-STSTR_DQD2OFF = "\c[Sapphire]TTryb oblanego licencjatui: WYŁ\n\c[Red](I tak dinozaur ci nie wybaczy)";
+STSTR_DQD2OFF = "\c[Sapphire]Tryb oblanego licencjatu: WYŁ\n\c[Red](I tak dinozaur ci nie wybaczy)";
