@@ -164,3 +164,12 @@ OB_ACE_AUTOSHOTGUN = "%o został@[ao_pl] rozerwan@[adj_pl] przez autostrzelbę A
 OB_ACE_SAWNOFFS = "%o został@[ao_pl] rozerwan@[adj_pl] przez dubeltówki %k.";
 OB_ACE_MOTHMAN = "%o został@[ao_pl] spalon@[adj_pl] żywcem przez moce Mothmana %k.";
 OB_ACE_MOTHMAN_MELEE = "%o został@[ao_pl] rozciachan@[adj_pl] przez moce Mothmana %k.";
+
+//Czitujesz!!!!
+
+STSTR_KFAADDED = "\c[Sapphire]Bardzo szczęśliwa amunicja dodana!\n\c[Red](Przyznaj się, wiem że chcesz po prostu popełnić rozpierdoł.)";
+STSTR_FAADDED = "\c[Sapphire]Amunicja (bez kluczy) dodana\n\c[Red](Nawet nie pełny pakiet?, IDKFA istnieje, wiesz?)";
+STSTR_DQDON = "\c[Sapphire]Tryb oblanej magisterki: WŁ\n\c[Red](Tak, wiem że nie potrafisz grać w slaugthermapy.)";
+STSTR_DQDOFF = "\c[Sapphire]Tryb oblanej magisterki: WYŁ\n\c[Red](To teraz chcesz się zachowywać??!!)";
+STSTR_DQD2ON = "\c[Sapphire]Tryb oblanego licencjatu: WŁ\n\c[Red](Aż Spot płaczę ;-;)";
+STSTR_DQD2OFF = "\c[Sapphire]TTryb oblanego licencjatui: WYŁ\n\c[Red](I tak dinozaur ci nie wybaczy)";
