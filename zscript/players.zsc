@@ -10,7 +10,8 @@ class Spot : DoomPlayer
 		Player.Face "SPT";
 		Player.ColorRange 192, 207;
 		Player.CrouchSprite "SPCR";
-		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
+		Player.Colorset 0, "$TXT_COLOR_LIGHTBLUE",	0xC0, 0xCF,  0xC2;
+		Player.Colorset 7, "$TXT_COLOR_GREEN",		0x70, 0x7F,  0x72;
 		Player.Portrait "PRT_SPOT";
 
 		//Player.StartItem "Dragon_Spot_Transform";
