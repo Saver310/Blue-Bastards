@@ -186,6 +186,9 @@ misc/transformation4 "sounds/misc/r_tele4.wav"
 misc/transformation5 "sounds/misc/r_tele5.wav"
 $random misc/transformation {misc/transformation1 misc/transformation2 misc/transformation3 misc/transformation4 misc/transformation5}
 
+misc/k_pkup	"sounds/misc/basekey.wav"
+misc/keytry "sounds/misc/basetry.wav"
+
 misc/metalslug/generic  "sounds/weapons/metalslug_wpn.wav"
 misc/metalslug/okay  "sounds/weapons/metalslug_wpnok.wav"
 misc/metalslug/hmg  "sounds/weapons/metalslug_wpnhmg.wav"
