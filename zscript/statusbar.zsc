@@ -229,7 +229,7 @@ class BlueBastardsStatusBar : BaseStatusBar
 		}
 		else
 		{
-			DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (143, 168), DI_ITEM_OFFSETS);
+			DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (143, 168), DI_ITEM_OFFSETS|DI_TRANSLATABLE);
 		}
 		if (isInventoryBarVisible())
 		{
@@ -273,7 +273,7 @@ class BlueBastardsStatusBar : BaseStatusBar
 		if (CPlayer.mo.FindInventory("PowerProtection")||CPlayer.mo.FindInventory("PowerIronFeet")) {
 			DrawImage("graphics/hud_powerup_protection.png", (4,-44), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
 		}
-		DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (5, -35), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+		DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (5, -35), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
 		DrawImage("graphics/hud_healthnarmor.png", (44,-49), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
 		
 		DrawString(mHUDFont, FormatNumber(mHealthInterpolator.GetValue(), 3, 3, FNF_FILLZEROS), (48, -41));
