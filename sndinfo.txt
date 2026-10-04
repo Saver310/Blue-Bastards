@@ -218,7 +218,7 @@ $playersounddup	spot	male	*land		*grunt
 $playersound    spot    male    *jump   "sounds/spot/foley_dbljump-03.ogg"
 
 $playersound	spotalt	male	*death			   "sounds/spot/Alt/DSSPTDTH.ogg"
-$playeralias	spotalt	male	*gibbed		spot/gib
+$playersound	spotalt	male	*gibbed		"sounds/spot/Gibbing.ogg"
 $playersound	spotalt	male	*xdeath			   "sounds/spot/Alt/DSSPDIEH.ogg"
 $playersound	spotalt	male	*pain100		   "sounds/spot/Alt/DSSPTPAI.ogg"
 $playersound	spotalt	male	*pain75			   "sounds/spot/Alt/DSSPTPAI.ogg"
