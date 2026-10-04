@@ -42,7 +42,7 @@ OptionMenu "ModOptionsMenu"
 	StaticText "$MNU_SPOTALT_VOICE_DESC"
 	Option "$MNU_ALLOW_TRANSFORM", "allow_spot_dragon", "OnOff"
 	StaticText "$MNU_ALLOW_TRANSFORM_DESC"
-	Slider "$MNU_SSGS_D1", "ssgs_in_doom_1_chance", 0, 100, 1
+	Slider "$MNU_SSGS_D1", "ssgs_in_doom_1_chance", 0.0, 1.0, 0.01, 2
 	StaticText "$MNU_SSGS_D1_DESC"
 	StaticText "$MNU_SSGS_D1_DESC2"
 }

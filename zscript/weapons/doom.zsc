@@ -75,7 +75,7 @@ class ShotgunReplacement : CustomInventory replaces Shotgun
 	Pickup:
 		TNT1 A 0
 		{
-			int roll_ssg = Random(0, 100);
+			int roll_ssg = frandom(0,1);
 			if (roll_ssg < ssgs_in_doom_1_chance)
 			{
 				if (CheckInventory("SpotMallet", 1))
