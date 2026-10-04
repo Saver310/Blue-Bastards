@@ -251,16 +251,12 @@ class BlueBastardsStatusBar : BaseStatusBar
 	protected void DrawFullScreenBullshit ()
 	{
 		Vector2 iconbox = (40, 20);
-		DrawImage("graphics/hud_mugshot.png", (4,-36), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
-		if (multiplayer)
-		{
-			DrawImage("graphics/hud_mugshot_fill.png", (4,-36), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
-		}
+		DrawImage("graphics/hud_mugshot.png", (4,-36), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
 		bool drawthatshit = false;
 		// it's a fuckin' mess
 		if (CPlayer.mo.FindInventory("PowerStrength")||CPlayer.mo.FindInventory("PowerInvulnerable")||
 		CPlayer.mo.FindInventory("PowerBuddha")||CPlayer.mo.FindInventory("PowerInvisibility")||
-		CPlayer.mo.FindInventory("PowerProtection")||CPlayer.mo.FindInventory("PowerIronFeet")) DrawImage("graphics/hud_powerup.png", (4,-44), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+		CPlayer.mo.FindInventory("PowerProtection")||CPlayer.mo.FindInventory("PowerIronFeet")) DrawImage("graphics/hud_powerup.png", (4,-44), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
 		if (CPlayer.mo.FindInventory("PowerStrength")) {
 			DrawImage("graphics/hud_powerup_berserk.png", (4,-44), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
 		}
@@ -274,19 +270,19 @@ class BlueBastardsStatusBar : BaseStatusBar
 			DrawImage("graphics/hud_powerup_protection.png", (4,-44), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
 		}
 		DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (5, -35), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
-		DrawImage("graphics/hud_healthnarmor.png", (44,-49), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+		DrawImage("graphics/hud_healthnarmor.png", (44,-49), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
 		
-		DrawString(mHUDFont, FormatNumber(mHealthInterpolator.GetValue(), 3, 3, FNF_FILLZEROS), (48, -41));
-		DrawString(mHUDFont, FormatNumber(mArmorInterpolator.GetValue(), 3, 3, FNF_FILLZEROS), (48, -20));
+		DrawString(mHUDFont, FormatNumber(mHealthInterpolator.GetValue(), 3, 3, FNF_FILLZEROS), (48, -41), DI_TRANSLATABLE);
+		DrawString(mHUDFont, FormatNumber(mArmorInterpolator.GetValue(), 3, 3, FNF_FILLZEROS), (48, -20), DI_TRANSLATABLE);
 		
 		Inventory ammotype1, ammotype2;
 		[ammotype1, ammotype2] = GetCurrentAmmo();
 
 		// It should not draw the box if player is using a weapon that doesn't have ammo.
 		if (ammotype2 != null && ammotype2 != ammotype1){
-			DrawImage("graphics/hud_ammo.png", (-84,-35), DI_SCREEN_RIGHT_BOTTOM|DI_ITEM_OFFSETS);
+			DrawImage("graphics/hud_ammo.png", (-84,-35), DI_SCREEN_RIGHT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
 		} else if (ammotype1 != null) {
-			DrawImage("graphics/hud_ammo_half.png", (-84,-35), DI_SCREEN_RIGHT_BOTTOM|DI_ITEM_OFFSETS);
+			DrawImage("graphics/hud_ammo_half.png", (-84,-35), DI_SCREEN_RIGHT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
 		}
 
 		int invY = -20;
@@ -311,7 +307,7 @@ class BlueBastardsStatusBar : BaseStatusBar
 		}
 		if (deathmatch)
 		{
-			DrawImage("graphics/hud_score.png", (-50, 2), DI_SCREEN_RIGHT_TOP|DI_ITEM_OFFSETS);
+			DrawImage("graphics/hud_score.png", (-50, 2), DI_SCREEN_RIGHT_TOP|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
 			DrawString(mHUDFont, FormatNumber(CPlayer.FragCount, 3, 3, FNF_FILLZEROS), (-4, 3), DI_TEXT_ALIGN_RIGHT);
 		}
     BBDrawFullscreenKeys();
@@ -335,7 +331,7 @@ class BlueBastardsStatusBar : BaseStatusBar
 			if (CPlayer.mo.CheckKeys(i + 1, false, true) && !drawn) 
 			{
 				drawn = true;
-				DrawImage("graphics/hud_key.png", (90,-30), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+				DrawImage("graphics/hud_key.png", (90,-30), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
 			}
 		}
 		// key 1
