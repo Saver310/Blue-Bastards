@@ -75,6 +75,28 @@ class ShotgunReplacement : CustomInventory replaces Shotgun
 	Pickup:
 		TNT1 A 0
 		{
+			int roll_ssg = Random(0, 100);
+			if (roll_ssg < ssgs_in_doom_1_chance)
+			{
+				if (CheckInventory("SpotMallet", 1))
+				{
+					// welcome back int dice
+					int roll_the_dice = random(0,1);
+					switch (roll_the_dice) 
+					{
+					case 0:
+					  A_GiveInventory("SpotDevastator", 1, false);
+					  A_GiveInventory("BBSpotDevastatorShell", 4, false);
+					  break;
+					case 1:
+					  A_GiveInventory("SpotShotgunClassic", 1, false);
+					  break;
+					}
+				}
+				if (CheckInventory("DeathsheadFist", 1)) A_GiveInventory("DeathsheadSuperShotgun", 1, false);
+				return;
+			}
+
 			if (CheckInventory("SpotMallet", 1)) A_GiveInventory("SpotShotgun", 1, false);
 			if (CheckInventory("DeathsheadFist", 1)) A_GiveInventory("DeathsheadShotgun", 1, false);
 		}

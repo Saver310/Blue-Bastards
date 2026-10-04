@@ -14,6 +14,9 @@ MNU_SPOTALT_VOICE = "Use Spot's Alternative Voice";
 MNU_SPOTALT_VOICE_DESC = "Use a slightly tougher voice instead of the default one, if you think it's too cute.";
 MNU_ALLOW_TRANSFORM = "Allow Transformations";
 MNU_ALLOW_TRANSFORM_DESC = "Allow the player to morph into a stronger version of themselves temporarly after picking up the berserk pack.";
+MNU_SSGS_D1 = "SSGs in Regular Shotguns";
+MNU_SSGS_D1_DESC = "Enables a chance of picking up a SSG when picking up the normal shotgun."; 
+MNU_SSGS_D1_DESC2 = "Slide option this above 0 if you're playing this mod with Doom 1.";
 
 PLAYER_SPOT = "Spot";
 PLAYER_DEATHSHEAD = "Deathshead";

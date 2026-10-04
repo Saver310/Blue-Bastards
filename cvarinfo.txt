@@ -1,3 +1,4 @@
 server bool skip_intros = false;
 server bool allow_spot_dragon = true;
+server int ssgs_in_doom_1_chance = 0;
 user bool use_spot_alt_voice = false;
