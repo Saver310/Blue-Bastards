@@ -167,9 +167,9 @@ OB_ACE_MOTHMAN_MELEE = "%o was slashed apart by %k's Mothman powers.";
 
 // Cheaty Cheaties
 
-STSTR_KFAADDED = "\c[Sapphire]Very Happy Ammo Added!\n\c[Red](Admit it pal, i know you just wanna go on a powertrip)";
-STSTR_FAADDED = "\c[Sapphire]Ammo (no keys) Added\n\c[Red](Not even the full package?, IDKFA exists, y'know?)";
-STSTR_DQDON = "\c[Sapphire]Degreelessness Mode: ON\n\c[Red](Yeah, I know you're struggling on that slaugthermap.)";
-STSTR_DQDOFF = "\c[Sapphire]Degreelessness Mode: ON\n\c[Red](Now you have principals??!!)";
-STSTR_DQD2ON = "\c[Sapphire]Ultimate Degreelessness Mode: ON\n\c[Red](Even Spot's Crying ;-;)";
-STSTR_DQD2OFF = "\c[Sapphire]Ultimate Degreelessness Mode: OFF\n\c[Red](Dinosaur will still not forgive you.)";
+STSTR_KFAADDED = "\c[Sapphire]Very Happy Ammo Added!\n\c[Red](Admit it pal, I know you just wanna go on a powertrip)";
+STSTR_FAADDED = "\c[Sapphire]Ammo (no keys) Added\n\c[Red](Not even the full package?)";
+STSTR_DQDON = "\c[Sapphire]Degreelessness Mode: ON\n\c[Red](Yeah, I know you're struggling on that slaughtermap)";
+STSTR_DQDOFF = "\c[Sapphire]Degreelessness Mode: ON\n\c[Red](Double standards...)";
+STSTR_DQD2ON = "\c[Sapphire]Ultimate Degreelessness Mode: ON\n\c[Red](Even Spot's crying ;-;)";
+STSTR_DQD2OFF = "\c[Sapphire]Ultimate Degreelessness Mode: OFF\n\c[Red](Dinosaur will still not forgive you)";
