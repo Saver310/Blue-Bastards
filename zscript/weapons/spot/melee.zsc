@@ -69,6 +69,7 @@ class SpotMallet : BlueBastardWeapon
 
 class SpotChainsaw : BlueBastardWeapon
 {
+	mixin BBSpotWeapon;
 	Default
 	{
 		
