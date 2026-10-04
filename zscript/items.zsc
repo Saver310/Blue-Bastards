@@ -88,14 +88,13 @@ class BlueBastardsTransformationFog : Actor
 		+NOTELEPORT
 		+NOGRAVITY
 		+ZDOOMTRANS
-		RenderStyle "Add";
 	}
 	States
 	{
-	Spawn:
-		TFOG ABABCDEFGHIJ 2 Bright;
-		Stop;
-	}
+		Spawn:
+        	TSMK ABCDEFGHIJKLMNOPQRSTU 2;
+        	stop;
+    }
 	override void PostBeginPlay ()
 	{
 		Super.PostBeginPlay ();
