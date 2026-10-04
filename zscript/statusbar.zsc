@@ -214,11 +214,6 @@ class BlueBastardsStatusBar : BaseStatusBar
 			BBDrawBarWeapons();
 		}
 
-		if (multiplayer)
-		{
-			DrawImage("STFBANY", (143, 169), DI_ITEM_OFFSETS|DI_TRANSLATABLE);
-		}
-
 		if (CPlayer.mo.InvSel != null && !Level.NoInventoryBar)
 		{
 			DrawInventoryIcon(CPlayer.mo.InvSel, (160, 198), DI_DIMDEPLETED);
