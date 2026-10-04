@@ -112,7 +112,7 @@ ACE_BFG = "BFG-Nine-Kay Plus-Plus";
 
 ACE_TRANSFORM_TIP = "Press %s to transform into the Mothman.";
 ACE_TRANSFORM_INIT = "You start feeling the inner rage of your ancestors...";
-SPOT_TRANSFORM_WORN = "Your Mothman powers are wearing off";
+ACE_TRANSFORM_WORN = "Your Mothman powers are wearing off";
 
 SPOT_CHAINSAW = "Chainsaw";
 SPOT_MALLET = "Comically Sized Mallet";
