@@ -1,6 +1,8 @@
 #include "zscript/items/doom.zsc"
 #include "zscript/items/chexquest.zsc"
 #include "zscript/items/heretic.zsc"
+#include "zscript/items/hexen.zsc"
+#include "zscript/items/strife.zsc"
 
 class BlueBastardHealthBonus : HealthBonus
 {
