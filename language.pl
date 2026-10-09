@@ -86,7 +86,7 @@ GOTLASTMREBISCUIT = "Zjedzono ostatninego suchara.";
 GOTLASTBLANKET = "Zjedzono ostatnią połowę parówki w cieście.";
 GOTHALFBURGER = "Zjedzono ostatnią połowę burgera.";
 
-GOTCHICKEN_LOW = "Wepchano kuraczka w gradło jak by jutra nie było.";
+GOTCHICKEN_LOW = "Wepchano kuraczka w gardło jak by jutra nie było.";
 
 GOTSLOT1 = "Piła Łańcuchowa! (Slot 1)";
 GOTSLOT2 = "Pistolet! (Slot 2)";
