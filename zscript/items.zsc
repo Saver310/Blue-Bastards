@@ -260,6 +260,7 @@ class ChickenHeal : Medikit
 	{
 		Inventory.PickupSound "misc/gulp";
 		Inventory.PickupMessage "$GOTCHICKEN";
+		Health.LowMessage 25, "$GOTCHICKEN_LOW";
 	}
 	States
 	{

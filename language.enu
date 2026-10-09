@@ -88,6 +88,8 @@ GOTLASTMREBISCUIT = "Ate the last hardtack.";
 GOTLASTBLANKET = "Ate the last half of pig in a blanket.";
 GOTHALFBURGER = "Ate the last half of a burger.";
 
+GOTCHICKEN_LOW = "Shoved a wholeass chicken down your throat like there's no tomorrow.";
+
 GOTSLOT1 = "Chainsaw! (Slot 1)";
 GOTSLOT2 = "Pistol! (Slot 2)";
 GOTSLOT3 = "Shotgun! (Slot 3)";
