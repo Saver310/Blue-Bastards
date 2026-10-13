@@ -9,7 +9,7 @@ class SpotShotgun : BlueBastardWeapon
 		
 		Tag "$SPOT_KS23";
 
-		Obituary "SPOT_KILL_KS23";
+		Obituary "$SPOT_KILL_KS23";
 
 		+INVENTORY.UNDROPPABLE
 	}
@@ -167,7 +167,7 @@ class SpotDevastator : BlueBastardWeapon
 		Weapon.AmmoGive 8;
 		
 		Tag "$SPOT_DEV";
-		Obituary "SPOT_KILL_DEV";
+		Obituary "$SPOT_KILL_DEV";
 
 		+INVENTORY.UNDROPPABLE
 	}
