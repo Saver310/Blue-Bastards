@@ -6,497 +6,497 @@ Graphic M_DOOM, 640, 384
 }
 
 // todo: find a better way to do this
-Sprite WPN1A0, 24, 24
+Sprite WPN1A0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppa0.png", 0, 0
 	Sprite "sprites/items/wppsa0.png", 0, 0
 }
-Sprite WPN1B0, 24, 24
+Sprite WPN1B0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppa0.png", 0, 0
 	Sprite "sprites/items/wppsb0.png", 0, 0
 }
-Sprite WPN1C0, 24, 24
+Sprite WPN1C0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppa0.png", 0, 0
 	Sprite "sprites/items/wppsc0.png", 0, 0
 }
-Sprite WPN1D0, 24, 24
+Sprite WPN1D0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppa0.png", 0, 0
 	Sprite "sprites/items/wppsd0.png", 0, 0
 }
-Sprite WPN1E0, 24, 24
+Sprite WPN1E0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppa0.png", 0, 0
 	Sprite "sprites/items/wppse0.png", 0, 0
 }
-Sprite WPN1F0, 24, 24
+Sprite WPN1F0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppa0.png", 0, 0
 	Sprite "sprites/items/wppsf0.png", 0, 0
 }
-Sprite WPN1G0, 24, 24
+Sprite WPN1G0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppa0.png", 0, 0
 	Sprite "sprites/items/wppsg0.png", 0, 0
 }
-Sprite WPN1H0, 24, 24
+Sprite WPN1H0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppa0.png", 0, 0
 	Sprite "sprites/items/wppsh0.png", 0, 0
 }
-Sprite WPN1I0, 24, 24
+Sprite WPN1I0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppa0.png", 0, 0
 	Sprite "sprites/items/wppsi0.png", 0, 0
 }
-Sprite WPN1J0, 24, 24
+Sprite WPN1J0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppa0.png", 0, 0
 	Sprite "sprites/items/wppsj0.png", 0, 0
 }
 
 
-Sprite WPN2A0, 24, 24
+Sprite WPN2A0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppb0.png", 0, 0
 	Sprite "sprites/items/wppsa0.png", 0, 0
 }
-Sprite WPN2B0, 24, 24
+Sprite WPN2B0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppb0.png", 0, 0
 	Sprite "sprites/items/wppsb0.png", 0, 0
 }
-Sprite WPN2C0, 24, 24
+Sprite WPN2C0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppb0.png", 0, 0
 	Sprite "sprites/items/wppsc0.png", 0, 0
 }
-Sprite WPN2D0, 24, 24
+Sprite WPN2D0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppb0.png", 0, 0
 	Sprite "sprites/items/wppsd0.png", 0, 0
 }
-Sprite WPN2E0, 24, 24
+Sprite WPN2E0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppb0.png", 0, 0
 	Sprite "sprites/items/wppse0.png", 0, 0
 }
-Sprite WPN2F0, 24, 24
+Sprite WPN2F0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppb0.png", 0, 0
 	Sprite "sprites/items/wppsf0.png", 0, 0
 }
-Sprite WPN2G0, 24, 24
+Sprite WPN2G0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppb0.png", 0, 0
 	Sprite "sprites/items/wppsg0.png", 0, 0
 }
-Sprite WPN2H0, 24, 24
+Sprite WPN2H0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppb0.png", 0, 0
 	Sprite "sprites/items/wppsh0.png", 0, 0
 }
-Sprite WPN2I0, 24, 24
+Sprite WPN2I0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppb0.png", 0, 0
 	Sprite "sprites/items/wppsi0.png", 0, 0
 }
-Sprite WPN2J0, 24, 24
+Sprite WPN2J0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppb0.png", 0, 0
 	Sprite "sprites/items/wppsj0.png", 0, 0
 }
 
 
-Sprite WPN3A0, 24, 24
+Sprite WPN3A0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppc0.png", 0, 0
 	Sprite "sprites/items/wppsa0.png", 0, 0
 }
-Sprite WPN3B0, 24, 24
+Sprite WPN3B0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppc0.png", 0, 0
 	Sprite "sprites/items/wppsb0.png", 0, 0
 }
-Sprite WPN3C0, 24, 24
+Sprite WPN3C0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppc0.png", 0, 0
 	Sprite "sprites/items/wppsc0.png", 0, 0
 }
-Sprite WPN3D0, 24, 24
+Sprite WPN3D0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppc0.png", 0, 0
 	Sprite "sprites/items/wppsd0.png", 0, 0
 }
-Sprite WPN3E0, 24, 24
+Sprite WPN3E0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppc0.png", 0, 0
 	Sprite "sprites/items/wppse0.png", 0, 0
 }
-Sprite WPN3F0, 24, 24
+Sprite WPN3F0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppc0.png", 0, 0
 	Sprite "sprites/items/wppsf0.png", 0, 0
 }
-Sprite WPN3G0, 24, 24
+Sprite WPN3G0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppc0.png", 0, 0
 	Sprite "sprites/items/wppsg0.png", 0, 0
 }
-Sprite WPN3H0, 24, 24
+Sprite WPN3H0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppc0.png", 0, 0
 	Sprite "sprites/items/wppsh0.png", 0, 0
 }
-Sprite WPN3I0, 24, 24
+Sprite WPN3I0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppc0.png", 0, 0
 	Sprite "sprites/items/wppsi0.png", 0, 0
 }
-Sprite WPN3J0, 24, 24
+Sprite WPN3J0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppc0.png", 0, 0
 	Sprite "sprites/items/wppsj0.png", 0, 0
 }
 
 
-Sprite WPNSA0, 24, 24
+Sprite WPNSA0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppd0.png", 0, 0
 	Sprite "sprites/items/wppsa0.png", 0, 0
 }
-Sprite WPNSB0, 24, 24
+Sprite WPNSB0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppd0.png", 0, 0
 	Sprite "sprites/items/wppsb0.png", 0, 0
 }
-Sprite WPNSC0, 24, 24
+Sprite WPNSC0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppd0.png", 0, 0
 	Sprite "sprites/items/wppsc0.png", 0, 0
 }
-Sprite WPNSD0, 24, 24
+Sprite WPNSD0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppd0.png", 0, 0
 	Sprite "sprites/items/wppsd0.png", 0, 0
 }
-Sprite WPNSE0, 24, 24
+Sprite WPNSE0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppd0.png", 0, 0
 	Sprite "sprites/items/wppse0.png", 0, 0
 }
-Sprite WPNSF0, 24, 24
+Sprite WPNSF0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppd0.png", 0, 0
 	Sprite "sprites/items/wppsf0.png", 0, 0
 }
-Sprite WPNSG0, 24, 24
+Sprite WPNSG0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppd0.png", 0, 0
 	Sprite "sprites/items/wppsg0.png", 0, 0
 }
-Sprite WPNSH0, 24, 24
+Sprite WPNSH0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppd0.png", 0, 0
 	Sprite "sprites/items/wppsh0.png", 0, 0
 }
-Sprite WPNSI0, 24, 24
+Sprite WPNSI0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppd0.png", 0, 0
 	Sprite "sprites/items/wppsi0.png", 0, 0
 }
-Sprite WPNSJ0, 24, 24
+Sprite WPNSJ0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppd0.png", 0, 0
 	Sprite "sprites/items/wppsj0.png", 0, 0
 }
 
 
-Sprite WPN4A0, 24, 24
+Sprite WPN4A0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppe0.png", 0, 0
 	Sprite "sprites/items/wppsa0.png", 0, 0
 }
-Sprite WPN4B0, 24, 24
+Sprite WPN4B0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppe0.png", 0, 0
 	Sprite "sprites/items/wppsb0.png", 0, 0
 }
-Sprite WPN4C0, 24, 24
+Sprite WPN4C0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppe0.png", 0, 0
 	Sprite "sprites/items/wppsc0.png", 0, 0
 }
-Sprite WPN4D0, 24, 24
+Sprite WPN4D0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppe0.png", 0, 0
 	Sprite "sprites/items/wppsd0.png", 0, 0
 }
-Sprite WPN4E0, 24, 24
+Sprite WPN4E0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppe0.png", 0, 0
 	Sprite "sprites/items/wppse0.png", 0, 0
 }
-Sprite WPN4F0, 24, 24
+Sprite WPN4F0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppe0.png", 0, 0
 	Sprite "sprites/items/wppsf0.png", 0, 0
 }
-Sprite WPN4G0, 24, 24
+Sprite WPN4G0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppe0.png", 0, 0
 	Sprite "sprites/items/wppsg0.png", 0, 0
 }
-Sprite WPN4H0, 24, 24
+Sprite WPN4H0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppe0.png", 0, 0
 	Sprite "sprites/items/wppsh0.png", 0, 0
 }
-Sprite WPN4I0, 24, 24
+Sprite WPN4I0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppe0.png", 0, 0
 	Sprite "sprites/items/wppsi0.png", 0, 0
 }
-Sprite WPN4J0, 24, 24
+Sprite WPN4J0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppe0.png", 0, 0
 	Sprite "sprites/items/wppsj0.png", 0, 0
 }
 
 
-Sprite WPN5A0, 24, 24
+Sprite WPN5A0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppf0.png", 0, 0
 	Sprite "sprites/items/wppsa0.png", 0, 0
 }
-Sprite WPN5B0, 24, 24
+Sprite WPN5B0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppf0.png", 0, 0
 	Sprite "sprites/items/wppsb0.png", 0, 0
 }
-Sprite WPN5C0, 24, 24
+Sprite WPN5C0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppf0.png", 0, 0
 	Sprite "sprites/items/wppsc0.png", 0, 0
 }
-Sprite WPN5D0, 24, 24
+Sprite WPN5D0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppf0.png", 0, 0
 	Sprite "sprites/items/wppsd0.png", 0, 0
 }
-Sprite WPN5E0, 24, 24
+Sprite WPN5E0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppf0.png", 0, 0
 	Sprite "sprites/items/wppse0.png", 0, 0
 }
-Sprite WPN5F0, 24, 24
+Sprite WPN5F0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppf0.png", 0, 0
 	Sprite "sprites/items/wppsf0.png", 0, 0
 }
-Sprite WPN5G0, 24, 24
+Sprite WPN5G0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppf0.png", 0, 0
 	Sprite "sprites/items/wppsg0.png", 0, 0
 }
-Sprite WPN5H0, 24, 24
+Sprite WPN5H0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppf0.png", 0, 0
 	Sprite "sprites/items/wppsh0.png", 0, 0
 }
-Sprite WPN5I0, 24, 24
+Sprite WPN5I0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppf0.png", 0, 0
 	Sprite "sprites/items/wppsi0.png", 0, 0
 }
-Sprite WPN5J0, 24, 24
+Sprite WPN5J0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppf0.png", 0, 0
 	Sprite "sprites/items/wppsj0.png", 0, 0
 }
 
 
-Sprite WPN6A0, 24, 24
+Sprite WPN6A0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppg0.png", 0, 0
 	Sprite "sprites/items/wppsa0.png", 0, 0
 }
-Sprite WPN6B0, 24, 24
+Sprite WPN6B0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppg0.png", 0, 0
 	Sprite "sprites/items/wppsb0.png", 0, 0
 }
-Sprite WPN6C0, 24, 24
+Sprite WPN6C0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppg0.png", 0, 0
 	Sprite "sprites/items/wppsc0.png", 0, 0
 }
-Sprite WPN6D0, 24, 24
+Sprite WPN6D0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppg0.png", 0, 0
 	Sprite "sprites/items/wppsd0.png", 0, 0
 }
-Sprite WPN6E0, 24, 24
+Sprite WPN6E0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppg0.png", 0, 0
 	Sprite "sprites/items/wppse0.png", 0, 0
 }
-Sprite WPN6F0, 24, 24
+Sprite WPN6F0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppg0.png", 0, 0
 	Sprite "sprites/items/wppsf0.png", 0, 0
 }
-Sprite WPN6G0, 24, 24
+Sprite WPN6G0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppg0.png", 0, 0
 	Sprite "sprites/items/wppsg0.png", 0, 0
 }
-Sprite WPN6H0, 24, 24
+Sprite WPN6H0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppg0.png", 0, 0
 	Sprite "sprites/items/wppsh0.png", 0, 0
 }
-Sprite WPN6I0, 24, 24
+Sprite WPN6I0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppg0.png", 0, 0
 	Sprite "sprites/items/wppsi0.png", 0, 0
 }
-Sprite WPN6J0, 24, 24
+Sprite WPN6J0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/weppg0.png", 0, 0
 	Sprite "sprites/items/wppsj0.png", 0, 0
 }
 
 
-Sprite WPN7A0, 24, 24
+Sprite WPN7A0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/wepph0.png", 0, 0
 	Sprite "sprites/items/wppsa0.png", 0, 0
 }
-Sprite WPN7B0, 24, 24
+Sprite WPN7B0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/wepph0.png", 0, 0
 	Sprite "sprites/items/wppsb0.png", 0, 0
 }
-Sprite WPN7C0, 24, 24
+Sprite WPN7C0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/wepph0.png", 0, 0
 	Sprite "sprites/items/wppsc0.png", 0, 0
 }
-Sprite WPN7D0, 24, 24
+Sprite WPN7D0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/wepph0.png", 0, 0
 	Sprite "sprites/items/wppsd0.png", 0, 0
 }
-Sprite WPN7E0, 24, 24
+Sprite WPN7E0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/wepph0.png", 0, 0
 	Sprite "sprites/items/wppse0.png", 0, 0
 }
-Sprite WPN7F0, 24, 24
+Sprite WPN7F0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/wepph0.png", 0, 0
 	Sprite "sprites/items/wppsf0.png", 0, 0
 }
-Sprite WPN7G0, 24, 24
+Sprite WPN7G0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/wepph0.png", 0, 0
 	Sprite "sprites/items/wppsg0.png", 0, 0
 }
-Sprite WPN7H0, 24, 24
+Sprite WPN7H0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/wepph0.png", 0, 0
 	Sprite "sprites/items/wppsh0.png", 0, 0
 }
-Sprite WPN7I0, 24, 24
+Sprite WPN7I0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/wepph0.png", 0, 0
 	Sprite "sprites/items/wppsi0.png", 0, 0
 }
-Sprite WPN7J0, 24, 24
+Sprite WPN7J0, 48, 48
 {
-	Offset 12, 20
+	Offset 24, 41
 	Sprite "sprites/items/wepph0.png", 0, 0
 	Sprite "sprites/items/wppsj0.png", 0, 0
 }

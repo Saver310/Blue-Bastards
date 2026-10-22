@@ -108,7 +108,7 @@ class SuperShotgunReplacement : CustomInventory replaces SuperShotgun
 	Default
 	{
 		Inventory.PickupMessage "$GOTSLOT3PLUS";
-		Inventory.PickupSound "misc/shotgun_pkup";
+		Inventory.PickupSound "misc/supershotgun_pkup";
 		Tag "$TAG_SUPERSHOTGUN";
 	}
 	States
@@ -257,7 +257,7 @@ class BFG9000Replacement : CustomInventory replaces BFG9000
 	Default
 	{
 		Inventory.PickupMessage "$GOTSLOT7";
-		Inventory.PickupSound "misc/laser_pkup";
+		Inventory.PickupSound "misc/bfg_pkup";
 		Tag "$TAG_BFG9000";
 	}
 	States

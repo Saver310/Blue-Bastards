@@ -195,6 +195,8 @@ misc/metalslug/hmg  "sounds/weapons/metalslug_wpnhmg.wav"
 misc/metalslug/rl  "sounds/weapons/metalslug_wpnrl.wav"
 misc/metalslug/shotgun  "sounds/weapons/metalslug_wpnshotgun.wav"
 misc/metalslug/laser  "sounds/weapons/metalslug_wpnlaser.wav"
+misc/metalslug/supershotgun  "sounds/weapons/metalslug_supershotgun.ogg"
+misc/metalslug/bfg  "sounds/weapons/metalslug_bfg.ogg"
 $random misc/metalslug {misc/metalslug/generic misc/metalslug/generic misc/metalslug/okay}
 $volume misc/metalslug 0.5
 $alias misc/w_pkup misc/metalslug
@@ -204,8 +206,12 @@ $random misc/rl_pkup {misc/metalslug misc/metalslug misc/metalslug/rl}
 $volume misc/rl_pkup 0.5
 $random misc/shotgun_pkup {misc/metalslug misc/metalslug misc/metalslug/shotgun}
 $volume misc/shotgun_pkup 0.5
+$random misc/supershotgun_pkup {misc/metalslug misc/metalslug misc/metalslug/supershotgun}
+$volume misc/supershotgun_pkup  0.5
 $random misc/laser_pkup {misc/metalslug misc/metalslug misc/metalslug/laser}
 $volume misc/laser_pkup 0.5
+$random misc/bfg_pkup {misc/metalslug misc/metalslug misc/metalslug/bfg}
+$volume misc/bfg_pkup 0.5
 
 // Spot
 $playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
