@@ -1,5 +1,6 @@
 server bool bb_skip_intros = false;
 server bool bb_transformations = true;
+server bool bb_kicking = true;
 server float bb_sg_ssgs_chance = 0.0;
 server float bb_kick_thrust = 1.0;
 user bool bb_spot_alt_voice = false;
