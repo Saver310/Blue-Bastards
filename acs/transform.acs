@@ -5,7 +5,7 @@ Script "Transform" ENTER
 {
 	while (True){
 		Delay(1);
-		if (GetCvar("allow_spot_dragon")){
+		if (GetCvar("bb_transformations")){
 			if (GetPlayerInput(-1,INPUT_OLDBUTTONS)&BT_RELOAD){
 				if (CheckInventory("Dragon_Spot_Transform")){
 					UseInventory("Dragon_Spot_Transform");

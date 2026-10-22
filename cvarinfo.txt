@@ -1,4 +1,4 @@
-server bool skip_intros = false;
-server bool allow_spot_dragon = true;
-server float ssgs_in_doom_1_chance = 0.0;
-user bool use_spot_alt_voice = false;
+server bool bb_skip_intros = false;
+server bool bb_transformations = true;
+server float bb_sg_ssgs_chance = 0.0;
+user bool bb_spot_alt_voice = false;

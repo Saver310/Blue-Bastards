@@ -34,7 +34,7 @@ class Spot : DoomPlayer
 	override void PostBeginPlay(){
 		Super.PostBeginPlay();
 		{
-			if (GetCVar("use_spot_alt_voice")) {
+			if (GetCVar("bb_spot_alt_voice")) {
 				let pp = PlayerPawn(self);
 				if (pp)
 				{

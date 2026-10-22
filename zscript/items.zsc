@@ -45,7 +45,7 @@ class BlueBastardsBerserk : CustomInventory Replaces Berserk {
 		}
 
 		if (useok) {
-			if (allow_spot_dragon) {
+			if (bb_transformations) {
 				if (toucher.FindInventory("SpotMallet"))
 				{
 					toucher.A_GiveInventory("Dragon_Spot_Transform");

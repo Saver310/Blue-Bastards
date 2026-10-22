@@ -9,7 +9,7 @@ class DeathsheadLevelEnter : BlueBastardWeapon
 	States
 	{
 	Select:
-		TNT1 A 0 A_JumpIf(skip_intros == true, "Fire");
+		TNT1 A 0 A_JumpIf(bb_skip_intros == true, "Fire");
 		TNT1 A 1 A_Raise(24);
 		Wait;
 	Deselect:
