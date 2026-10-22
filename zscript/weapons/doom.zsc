@@ -1,4 +1,11 @@
-class ChainsawReplacement : CustomInventory replaces Chainsaw
+class BB_RescaleWeaponsBecauseImLazy : CustomInventory {
+	Default
+	{
+		Scale 0.66;
+	}
+}
+
+class ChainsawReplacement : BB_RescaleWeaponsBecauseImLazy replaces Chainsaw
 {
 	Default
 	{
@@ -26,7 +33,7 @@ class ChainsawReplacement : CustomInventory replaces Chainsaw
 	}
 }
 
-class PistolReplacement : CustomInventory replaces Pistol
+class PistolReplacement : BB_RescaleWeaponsBecauseImLazy replaces Pistol
 {
 	Default
 	{
@@ -54,7 +61,7 @@ class PistolReplacement : CustomInventory replaces Pistol
 	}
 }
 
-class ShotgunReplacement : CustomInventory replaces Shotgun
+class ShotgunReplacement : BB_RescaleWeaponsBecauseImLazy replaces Shotgun
 {
 	Default
 	{
@@ -103,7 +110,7 @@ class ShotgunReplacement : CustomInventory replaces Shotgun
 	}
 }
 
-class SuperShotgunReplacement : CustomInventory replaces SuperShotgun
+class SuperShotgunReplacement : BB_RescaleWeaponsBecauseImLazy replaces SuperShotgun
 {
 	Default
 	{
@@ -143,7 +150,7 @@ class SuperShotgunReplacement : CustomInventory replaces SuperShotgun
 	}
 }
 
-class ChaingunReplacement : CustomInventory replaces Chaingun
+class ChaingunReplacement : BB_RescaleWeaponsBecauseImLazy replaces Chaingun
 {
 	Default
 	{
@@ -196,7 +203,7 @@ class ChaingunReplacement : CustomInventory replaces Chaingun
 	}
 }
 
-class RocketLauncherReplacement : CustomInventory replaces RocketLauncher
+class RocketLauncherReplacement : BB_RescaleWeaponsBecauseImLazy replaces RocketLauncher
 {
 	Default
 	{
@@ -224,7 +231,7 @@ class RocketLauncherReplacement : CustomInventory replaces RocketLauncher
 	}
 }
 
-class PlasmaRifleReplacement : CustomInventory replaces PlasmaRifle
+class PlasmaRifleReplacement : BB_RescaleWeaponsBecauseImLazy replaces PlasmaRifle
 {
 	Default
 	{
@@ -252,7 +259,7 @@ class PlasmaRifleReplacement : CustomInventory replaces PlasmaRifle
   }
 }
 
-class BFG9000Replacement : CustomInventory replaces BFG9000
+class BFG9000Replacement : BB_RescaleWeaponsBecauseImLazy replaces BFG9000
 {
 	Default
 	{
