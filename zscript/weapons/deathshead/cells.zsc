@@ -51,7 +51,8 @@ class DeathsheadPlasmaRifle : BlueBastardWeapon
 		ADPC B 2 Bright
 		{
 			A_StartSound("weapons/railgun", CHAN_WEAPON);
-			A_RailAttack(random(45,60), color1:"00c8ff", color2:"c1d6db", pufftype:null);
+			A_FireBullets(0,0,0,random(55,65),"BlueBastardBulletPuff",0);
+			A_RailAttack(random(35,45), color1:"00c8ff", color2:"c1d6db", pufftype:null);
 			A_GunFlash();
 		}
 		ADPC C 2 Bright;
