@@ -71,7 +71,7 @@ class BlueBastardsStatusBar : BaseStatusBar
 					DrawString(mIndexFont, FormatNumber(amt1, 2), (288, 173), DI_TEXT_ALIGN_RIGHT);
 					DrawString(mIndexFont, FormatNumber(maxamt, 2), (314, 173), DI_TEXT_ALIGN_RIGHT);
 				}
-				if(pPawn.Player.ReadyWeapon.GetClassName() !=  "SpotDevastator")
+				if(pPawn.Player.ReadyWeapon.GetClassName() ==  "SpotDevastator")
 				{
 					[amt1, maxamt] = GetAmount("BBSpotDevastatorShell");
 					DrawString(mIndexFont, FormatNumber(amt1, 2), (288, 179), DI_TEXT_ALIGN_RIGHT);
