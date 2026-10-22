@@ -300,7 +300,11 @@ class DeathsheadM4 : BlueBastardWeapon
 	AltFire:
 		TNT1 A 0 A_JumpIfInventory("BBDeathsheadGrenade",1,1);
 		Goto DryFire;
-		ADM4 B 2 A_FireProjectile("DeathsheadM4Grenade",0,true,0,0,0,-6);
+		ADM4 B 2 
+		{
+			A_FireProjectile("DeathsheadM4Grenade",0,true,0,0,0,-6);
+			A_StartSound("weapons/m4/grenade", CHAN_AUTO);
+		}
 		ADM4 CDEA 2;
 		ADM4 A 14 A_WeaponReady(WRF_NOSECONDARY);
 		Goto RealReady;
@@ -319,7 +323,7 @@ class DeathsheadM4Grenade : Grenade
 	Default
 	{
 		BounceType "None";
-		SeeSound "weapons/m4/grenade";
+		SeeSound "";
 		DeathSound "weapons/rocklx";
 		Obituary "$OB_ACE_M4_GRENADE";
 	}
