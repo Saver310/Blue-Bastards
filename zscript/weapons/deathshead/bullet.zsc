@@ -330,7 +330,7 @@ class DeathsheadM4Grenade : Grenade
 	States
 	{
 	Spawn:
-		M4GR A 1 Bright;
+		M4GR A 1;
 		Loop;
 	}
 }
