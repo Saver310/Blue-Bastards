@@ -132,12 +132,13 @@ class SpotKicky : CustomInventory
 			else{
 				A_Overlay(-2,"RoadHouse",1);
 			}
+			A_OverlayOffset(-2,0,16);
 		}
-        TNT1 A 0 A_OverlayOffset(-2,0,16);
         Fail;
     Kicky:
         SKCK A 1 A_StartSound("weapons/kick/miss",CHAN_AUTO);
-		SKCK BC 1;
+		SKCK B 1;
+		SKCK C 1 {if (momZ < 0) {A_Recoil(-6);} else {A_Recoil(-2);}}
         SKCK D 2 {
 			int dmg = random(10,20);
 			if (FindInventory("PowerStrength"))
@@ -152,6 +153,7 @@ class SpotKicky : CustomInventory
 		SRDH A 1 A_StartSound("weapons/kick/miss",CHAN_AUTO);
 		SRDH B 1;
         SRDH C 2 {
+			if (momZ < 0) {A_Recoil(-6);} else {A_Recoil(-2);}
 			int dmg = random(10,20);
 			if (FindInventory("PowerStrength"))
 			{
