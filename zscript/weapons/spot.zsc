@@ -1,11 +1,11 @@
-#include "./spot/ammo.zsc" //ammo types for all weapons
+#include "./spot/ammo.zsc"
 #include "./spot/intros.zsc"
-#include "./spot/melee.zsc" //Includes fists, chainsaw and the kick.
-#include "./spot/bullet.zsc" //Includes all weapons that use bullets.
-#include "./spot/shells.zsc" //Includes all weapons that use shells.
-#include "./spot/rockets.zsc"//etc
-#include "./spot/cells.zsc"//etc
-#include "./spot/dragon.zsc"//etc
+#include "./spot/melee.zsc"
+#include "./spot/bullet.zsc"
+#include "./spot/shells.zsc"
+#include "./spot/rockets.zsc"
+#include "./spot/cells.zsc"
+#include "./spot/dragon.zsc"
 
 mixin class BBSpotWeapon //the mixing classes are classes you add in to the class, which is great for more minor stuff.
 {

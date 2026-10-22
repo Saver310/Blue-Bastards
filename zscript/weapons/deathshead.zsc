@@ -1,4 +1,4 @@
-#include "./deathshead/ammo.zsc" //Custom ammo types
+#include "./deathshead/ammo.zsc"
 #include "./deathshead/intros.zsc"
 #include "./deathshead/melee.zsc"
 #include "./deathshead/bullet.zsc"

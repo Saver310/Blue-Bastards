@@ -261,7 +261,6 @@ class BlueBastardsStatusBar : BaseStatusBar
 		Inventory ammotype1, ammotype2;
 		[ammotype1, ammotype2] = GetCurrentAmmo();
 
-		// It should not draw the box if player is using a weapon that doesn't have ammo.
 		if (ammotype2 != null && ammotype2 != ammotype1){
 			DrawImage("graphics/hud_ammo.png", (-84,-35), DI_SCREEN_RIGHT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
 		} else if (ammotype1 != null) {

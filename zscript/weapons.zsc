@@ -11,7 +11,7 @@ Class BlueBastardWeapon : Weapon //This will affect everyone's weapon if the wea
 	{
 	
 	}
-	Action void A_BBLefthand(int OverlayId) //This function is used on Ace's SSG.
+	Action void A_BBLefthand(int OverlayId) //This function is used in Ace's SSG.
 	{
 		A_OverlayFlags(OverlayId,PSPF_MIRROR|PSPF_FLIP,1);
 		A_OverlayFlags(OverlayId,PSPF_ADDWEAPON,0);
