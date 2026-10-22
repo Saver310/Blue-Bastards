@@ -42,6 +42,8 @@ OptionMenu "ModOptionsMenu"
 	StaticText "$MNU_SPOTALT_VOICE_DESC"
 	Option "$MNU_ALLOW_TRANSFORM", "bb_transformations", "OnOff"
 	StaticText "$MNU_ALLOW_TRANSFORM_DESC"
+	Slider "$MNU_THRUST", "bb_kick_thrust", 0.0, 2.5, 0.01, 2
+	StaticText "$MNU_THRUST_DESC"
 	Slider "$MNU_SSGS_D1", "bb_sg_ssgs_chance", 0.0, 1.0, 0.01, 2
 	StaticText "$MNU_SSGS_D1_DESC"
 	StaticText "$MNU_SSGS_D1_DESC2"

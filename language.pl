@@ -15,6 +15,11 @@ MNU_SPOTALT_VOICE = "Użyj alternatywnego głosu Spota";
 MNU_SPOTALT_VOICE_DESC = "Użyj nieco bardziej surowego głosu zamiast domyślnego, jeśli uważasz ten drugi za zbyt uroczy.";
 MNU_ALLOW_TRANSFORM = "Zezwalaj na transformacje";
 MNU_ALLOW_TRANSFORM_DESC = "Pozwala graczowi tymczasowo przemienić się w silniejszą wersję siebie po podniesieniu paczki szału.";
+MNU_SSGS_D1 = "Super Strzelby w Strzelbach";
+MNU_SSGS_D1_DESC = "Zwiększa szansę zdobycia Super Strzelby w zwykłej Strzelbie."; 
+MNU_SSGS_D1_DESC2 = "Daj powyżej zera jeśli grasz tego moda z Doom 1.";
+MNU_THRUST = "Moc Podrzutu Kopnięcia";
+MNU_THRUST_DESC = "Tym wyższa liczba, tym dalej będziesz leciał podczas kopania."; 
 
 // PLAYER_SPOT = "Spot"; może jesli znajde coś bo brzmi pobodnie uroczo po polsku
 PLAYER_DEATHSHEAD = "Trupiogłowy";
