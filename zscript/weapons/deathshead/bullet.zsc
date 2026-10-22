@@ -131,7 +131,7 @@ class DeathsheadSG550 : BlueBastardWeapon
 	{
 		Weapon.AmmoType "BBDeathshead556";
 		Weapon.AmmoGive 10;
-		Weapon.AmmoUse 1;
+		Weapon.AmmoUse 2;
 		
 		Weapon.BobRangeX 1.25;
 		
@@ -173,7 +173,7 @@ class DeathsheadSG550 : BlueBastardWeapon
 		ADAS B 2 Bright
 		{
 			A_AlertMonsters();
-			A_FireBullets (2, 3.5, -1, random(20,40), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			A_FireBullets (2, 3.5, -1, random(55,60), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			A_StartSound("weapons/sg550", CHAN_AUTO);
 			A_GunFlash();
 			A_WeaponOffset(random(4.0,16.0), random(48.0,56.0),WOF_INTERPOLATE);
@@ -188,7 +188,7 @@ class DeathsheadSG550 : BlueBastardWeapon
 		TNT1 A 0 Bright
 		{
 			A_AlertMonsters();
-			A_FireBullets (0.5, 1, -1, random(20,40), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			A_FireBullets (0.5, 1, -1, random(65,70), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			A_StartSound("weapons/sg550", CHAN_AUTO);
 			A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
 		}
