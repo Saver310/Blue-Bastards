@@ -140,7 +140,7 @@ class SpotKicky : CustomInventory
 		SKCK B 1;
 		SKCK C 1 {if (momZ > 0) {A_Recoil(-6*bb_kick_thrust);} else {A_Recoil(-2*bb_kick_thrust);}}
         SKCK D 2 {
-			int dmg = random(10,20);
+			int dmg = random(10,20)*bb_kick_damage;
 			if (FindInventory("PowerStrength"))
 			{
 				dmg *= 6;
@@ -154,7 +154,7 @@ class SpotKicky : CustomInventory
 		SRDH B 1;
         SRDH C 2 {
 			if (momZ > 0) {A_Recoil(-6*bb_kick_thrust);} else {A_Recoil(-2*bb_kick_thrust);}
-			int dmg = random(10,20);
+			int dmg = random(10,20)*bb_kick_damage;
 			if (FindInventory("PowerStrength"))
 			{
 				dmg *= 6;

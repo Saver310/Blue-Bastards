@@ -181,7 +181,7 @@ class DeathsheadKicky : CustomInventory
         ADKK A 2 A_StartSound("weapons/kick/miss",CHAN_AUTO);
 		ADKK B 2 {if (momZ > 0) {A_Recoil(-6*bb_kick_thrust);} else {A_Recoil(-2*bb_kick_thrust);}}
         ADKK C 2 {
-			int dmg = random(10,20);
+			int dmg = random(10,20)*bb_kick_damage;
 			if (FindInventory("PowerStrength"))
 			{
 				dmg *= 6;
@@ -195,7 +195,7 @@ class DeathsheadKicky : CustomInventory
         ADKK G 2 A_StartSound("weapons/kick/miss",CHAN_AUTO);
 		ADKK H 2 {if (momZ > 0) {A_Recoil(-6*bb_kick_thrust);} else {A_Recoil(-2*bb_kick_thrust);}}
         ADKK I 2 {
-			int dmg = random(10,20);
+			int dmg = random(10,20)*bb_kick_damage;
 			if (FindInventory("PowerStrength"))
 			{
 				dmg *= 6;
