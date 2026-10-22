@@ -323,5 +323,11 @@ class DeathsheadM4Grenade : Grenade
 		DeathSound "weapons/rocklx";
 		Obituary "$OB_ACE_M4_GRENADE";
 	}
+	States
+	{
+	Spawn:
+		M4GR A 1 Bright;
+		Loop;
+	}
 }
 
