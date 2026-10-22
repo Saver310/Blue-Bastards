@@ -33,6 +33,7 @@ class DeathsheadRocketLauncher : BlueBastardWeapon
 		{
 			A_StartSound("weapons/rocket", CHAN_AUTO);
 			A_FireMissile();
+			A_Recoil(2);
 		}
 		ADRK BC 2 Bright A_WeaponOffset(8.0, 8.0, WOF_ADD|WOF_INTERPOLATE);
 		ADRK DE 2 Bright A_WeaponOffset(2.0, 2.0, WOF_ADD|WOF_INTERPOLATE);
