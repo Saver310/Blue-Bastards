@@ -90,7 +90,7 @@ class SpotChaingun : BlueBastardWeapon
 	Fire:
 		SCHG AAA 2{
 			A_FireBullets(8.5,4.5,3,10,"BlueBastardBulletPuff");
-			A_PlayWeaponSound("weapons/chaingun/fire");
+			A_PlayWeaponSound("weapons/chaingun");
 			A_WeaponOffset(Random(-3,3),Random(-3,3) + 36);
 			A_SetPitch(self.pitch - 3, SPF_INTERPOLATE);
 			A_Recoil(2);

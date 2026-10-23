@@ -84,7 +84,9 @@ weapons/bfgq2/deploy "sounds/weapons/bfg_deploy.wav"
 
 weapons/generic/draw "sounds/weapons/draw_generic.wav"
 
-weapons/chaingun/fire "sounds/weapons/CHGNSHOT.ogg"
+weapons/chaingun1 "sounds/weapons/CHGNSHOT.ogg"
+weapons/chaingun2 "sounds/weapons/CHGNSHOT2.ogg"
+$random weapons/chaingun {weapons/chaingun1 weapons/chaingun2}
 weapons/chaingun/spin "sounds/weapons/CHAINSPI.ogg"
 weapons/chaingun/spin_start "sounds/weapons/CHAINSTA.ogg"
 weapons/chaingun/spin_stop "sounds/weapons/CHAINSTO.ogg"
