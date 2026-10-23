@@ -52,13 +52,13 @@ class SpotMallet : BlueBastardWeapon
 		MALL G 0 A_Recoil(-4);
 		MALL G 0;
 		MALL G 1{
-			int dmg = random(15,50);
+			int dmg = random(30,50);
 			A_SetAngle(self.angle - 4, SPF_INTERPOLATE);
 			if (FindInventory("PowerStrength"))
 			{
 				dmg *= 10;
 			}
-			A_CustomPunch(dmg, norandom:true, pufftype:"BlueBastardPunchPuff", range: meleeRange + 20, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
+			A_CustomPunch(dmg, norandom:true, pufftype:"BlueBastardPunchPuff", range: meleeRange + 24, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
 		}
 		MALL HIJ 1 A_SetAngle(self.angle - 4, SPF_INTERPOLATE);
 		TNT1 A 10;
@@ -145,7 +145,7 @@ class SpotKicky : CustomInventory
 			{
 				dmg *= 6;
 			}
-			A_CustomPunch(dmg, norandom:true, flags: 0, pufftype: "BlueBastardKickPuff", range: meleeRange + 20, meleesound: "weapons/kick", misssound: "");
+			A_CustomPunch(dmg, norandom:true, flags: 0, pufftype: "BlueBastardKickPuff", range: meleeRange + 32, meleesound: "weapons/kick", misssound: "");
 		}
         SKCK EFGHA 2;
         Stop;
@@ -159,7 +159,7 @@ class SpotKicky : CustomInventory
 			{
 				dmg *= 6;
 			}
-			A_CustomPunch(dmg, norandom:true, flags: 0, pufftype: "BlueBastardKickPuff", range: meleeRange + 20, meleesound: "weapons/kick", misssound: "");
+			A_CustomPunch(dmg, norandom:true, flags: 0, pufftype: "BlueBastardKickPuff", range: meleeRange + 32, meleesound: "weapons/kick", misssound: "");
 		}
         SRDH DEFGH 2;
         Stop;

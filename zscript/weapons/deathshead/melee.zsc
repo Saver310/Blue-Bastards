@@ -186,7 +186,7 @@ class DeathsheadKicky : CustomInventory
 			{
 				dmg *= 6;
 			}
-			A_CustomPunch(dmg, norandom:true, flags: 0, pufftype: "BlueBastardKickPuff", range: meleeRange + 20, meleesound: "weapons/kick", misssound: "");
+			A_CustomPunch(dmg, norandom:true, flags: 0, pufftype: "BlueBastardKickPuff", range: meleeRange + 32, meleesound: "weapons/kick", misssound: "");
 		}
         ADKK DEFA 2;
 		TNT1 A 2;
@@ -200,7 +200,7 @@ class DeathsheadKicky : CustomInventory
 			{
 				dmg *= 6;
 			}
-			A_CustomPunch(dmg, norandom:true, flags: 0, pufftype: "BlueBastardKickPuff", range: meleeRange + 20, meleesound: "weapons/kick", misssound: "");
+			A_CustomPunch(dmg, norandom:true, flags: 0, pufftype: "BlueBastardKickPuff", range: meleeRange + 32, meleesound: "weapons/kick", misssound: "");
 		}
         ADKK JKLG 2;
 		TNT1 A 2;
