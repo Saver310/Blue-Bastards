@@ -72,7 +72,7 @@ class DeathsheadFist : BlueBastardWeapon
 			int dmg = random(10,20);
 			if (FindInventory("PowerStrength"))
 			{
-				dmg *= 2;
+				dmg *= 10;
 			}
 			A_CustomPunch(dmg, norandom:true, pufftype:"BlueBastardBulletPuffStab", range: meleeRange + 20, meleesound: "weapons/claw/impact", misssound: "weapons/swing");
 		}
@@ -90,7 +90,7 @@ class DeathsheadFist : BlueBastardWeapon
 			int dmg = random(10,20);
 			if (FindInventory("PowerStrength"))
 			{
-				dmg *= 2;
+				dmg *= 10;
 			}
 			A_CustomPunch(dmg, norandom:true, pufftype:"BlueBastardBulletPuffStab", range: meleeRange + 20, meleesound: "weapons/claw/impact", misssound: "weapons/swing");
 		}
