@@ -37,16 +37,22 @@ OptionMenu "ModOptionsMenu"
 {
 	Title "$MNU_MODOPTIONS"
 	Option "$MNU_SKIPINTROS", "bb_skip_intros", "OnOff"
-	StaticText "$MNU_SKIPINTROS_DESC"
+	StaticText "$MNU_SKIPINTROS_DESC","LightBlue"
 	Option "$MNU_SPOTALT_VOICE", "bb_spot_alt_voice", "OnOff"
-	StaticText "$MNU_SPOTALT_VOICE_DESC"
+	StaticText "$MNU_SPOTALT_VOICE_DESC","LightBlue"
 	Option "$MNU_ALLOW_TRANSFORM", "bb_transformations", "OnOff"
-	StaticText "$MNU_ALLOW_TRANSFORM_DESC"
-	Slider "$MNU_THRUST", "bb_kick_thrust", 0.0, 2.5, 0.01, 2
-	StaticText "$MNU_THRUST_DESC"
+	StaticText "$MNU_ALLOW_TRANSFORM_DESC","LightBlue"
+	StaticText ""
+	Option "$MNU_KICKING", "bb_kicking", "OnOff"
+	StaticText "$MNU_KICKING_DESC","LightBlue"
+	Slider "$MNU_THRUST", "bb_kick_thrust", 0.0, 2.0, 0.01, 2
+	StaticText "$MNU_THRUST_DESC","LightBlue"
+	Slider "$MNU_KICK_DAMAGE", "bb_kick_damage", 0.5, 2.0, 0.01, 2
+	StaticText "$MNU_KICK_DAMAGE_DESC","LightBlue"
+	StaticText ""
 	Slider "$MNU_SSGS_D1", "bb_sg_ssgs_chance", 0.0, 1.0, 0.01, 2
-	StaticText "$MNU_SSGS_D1_DESC"
-	StaticText "$MNU_SSGS_D1_DESC2"
+	StaticText "$MNU_SSGS_D1_DESC","LightBlue"
+	StaticText "$MNU_SSGS_D1_DESC2","LightBlue"
 }
 
 ListMenu "Extras"
