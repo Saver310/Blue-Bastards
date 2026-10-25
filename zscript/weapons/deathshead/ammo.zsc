@@ -71,7 +71,7 @@ class BBDeathsheadBFGCell : Ammo
 		Inventory.MaxAmount 7;
 		Ammo.BackpackAmount 1;
 		Ammo.BackpackMaxAmount 15;
-		Inventory.Icon "CELLA0";
+		Inventory.Icon "CELPA0";
 		//Tag "$AMMO_CLIP";
 		Inventory.RestrictedTo "Deathshead";
 	}
