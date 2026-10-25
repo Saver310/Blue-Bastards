@@ -182,9 +182,10 @@ class DeathsheadSG550 : BlueBastardWeapon
 			A_StartSound("weapons/sg550", CHAN_AUTO);
 			A_GunFlash();
 			A_WeaponOffset(random(4.0,16.0), random(48.0,56.0),WOF_INTERPOLATE);
+			A_SetPitch(self.pitch - 4, SPF_INTERPOLATE);
 		}
-		ADAS C 2 Bright;
-		ADAS D 2;
+		ADAS CC 1 Bright A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
+		ADAS DD 1 A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
 		ADAS E 2 A_WeaponOffset(0.0, 32.0,WOF_INTERPOLATE);
 		ADAS A 1;
 		ADAS A 1 A_ReFire;
