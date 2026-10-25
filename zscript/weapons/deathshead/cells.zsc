@@ -158,8 +158,8 @@ class DeathsheadBFG : BlueBastardWeapon
 			A_WeaponOffset(-16.0, -16.0, WOF_ADD|WOF_INTERPOLATE);
 			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
 		}
-		NBFG AAAA 2 A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
-		NBFG A 10;
+		NBFG AAA 2 A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		NBFG A 12;
 		NBFG A 0 A_ReFire;
 		NBFG A 1
 		{
