@@ -284,8 +284,10 @@ class DeathsheadM4 : BlueBastardWeapon
 			A_StartSound("weapons/m4", CHAN_AUTO);
 			A_WeaponOffset(random(-4.0,8.0), random(32.0,48.0),WOF_INTERPOLATE);
 			A_GunFlash();
+			A_SetPitch(self.pitch - 1.5, SPF_INTERPOLATE);
 		}
-		ADM4 C 2 Bright A_WeaponOffset(0.0, 32.0,WOF_INTERPOLATE);
+		ADM4 C 0 Bright A_WeaponOffset(0.0, 32.0,WOF_INTERPOLATE);
+		ADM4 CC 1 Bright A_SetPitch(self.pitch + 0.75, SPF_INTERPOLATE);
 		ADM4 DE 2 A_ReFire;
 		Goto RealReady;
 	DryFire:
@@ -304,8 +306,10 @@ class DeathsheadM4 : BlueBastardWeapon
 		{
 			A_FireProjectile("DeathsheadM4Grenade",0,true,0,0,0,-6);
 			A_StartSound("weapons/m4/grenade", CHAN_AUTO);
+			A_SetPitch(self.pitch - 1, SPF_INTERPOLATE);
 		}
-		ADM4 CDEA 2;
+		ADM4 CC 1 A_SetPitch(self.pitch + 0.5, SPF_INTERPOLATE);
+		ADM4 DEA 2;
 		ADM4 A 14 A_WeaponReady(WRF_NOSECONDARY);
 		Goto RealReady;
 	Flash:
