@@ -1,5 +1,4 @@
-class BagOfHoldingReplacement : RandomSpawner replaces BagOfHolding
-{
+class BagOfHoldingReplacement : BlueBastardBackpack replaces BagOfHolding {
 	Default
 	{
 		DropItem "BlueBastardBackpack";
