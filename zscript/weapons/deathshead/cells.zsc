@@ -130,27 +130,49 @@ class DeathsheadBFG : BlueBastardWeapon
 		NBFG E 2 Bright
 		{
 			A_WeaponOffset(16.0, 48.0, WOF_INTERPOLATE);
-			//I don't get why you would need this when a_fireprojectile is there, i kept it just in case if it's needed later on.
-			/*if (player == null)
-			{
-				return;
-			}
-			Weapon weap = player.ReadyWeapon;
-			if (weap != null && invoker == weap && stateinfo != null && stateinfo.mStateType == STATE_Psprite)
-			{
-				if (!weap.DepleteAmmo (weap.bAltFire, true, deh.BFGCells))
-					return;
-			}
-			SpawnPlayerMissile("DeathsheadBFGBall", angle, nofreeaim:sv_nobfgaim);*/
 			A_FireProjectile("DeathsheadBFGBall");
+			A_SetPitch(self.pitch - 16, SPF_INTERPOLATE);
 		}
-		NBFG F 2 Bright A_WeaponOffset(8.0, 8.0, WOF_ADD|WOF_INTERPOLATE);
-		NBFG G 2 Bright A_WeaponOffset(4.0, 4.0, WOF_ADD|WOF_INTERPOLATE);
-		NBFG H 2 Bright A_WeaponOffset(-4.0, -4.0, WOF_ADD|WOF_INTERPOLATE);
-		NBFG I 2 Bright A_WeaponOffset(-8.0, -8.0, WOF_ADD|WOF_INTERPOLATE);
-		NBFG A 2 Bright A_WeaponOffset(-16.0, -16.0, WOF_ADD|WOF_INTERPOLATE);
-		NBFG A 18;
+		NBFG F 2 Bright 
+		{
+			A_WeaponOffset(8.0, 8.0, WOF_ADD|WOF_INTERPOLATE);
+			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		}
+		NBFG G 2 Bright
+		{
+			A_WeaponOffset(4.0, 4.0, WOF_ADD|WOF_INTERPOLATE);
+			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		}
+		NBFG H 2 Bright
+		{
+			A_WeaponOffset(-4.0, -4.0, WOF_ADD|WOF_INTERPOLATE);
+			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		}
+		NBFG I 2 Bright 
+		{
+			A_WeaponOffset(-8.0, -8.0, WOF_ADD|WOF_INTERPOLATE);
+			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		}
+		NBFG A 2 Bright 
+		{
+			A_WeaponOffset(-16.0, -16.0, WOF_ADD|WOF_INTERPOLATE);
+			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		}
+		NBFG AAAA 2 A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		NBFG A 10;
 		NBFG A 0 A_ReFire;
+		NBFG A 1
+		{
+			A_WeaponOffset(2.0, 4.0, WOF_ADD|WOF_INTERPOLATE);
+			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		}
+		NBFG A 1 A_WeaponOffset(6.0, 12.0, WOF_ADD|WOF_INTERPOLATE);
+		NBFG A 1 A_WeaponOffset(2.0, 4.0, WOF_ADD|WOF_INTERPOLATE);
+		NBFG AAAA 1 
+		{
+			A_WeaponOffset(-2.0, -4.0, WOF_ADD|WOF_INTERPOLATE);
+			A_SetPitch(self.pitch - 0.5, SPF_INTERPOLATE);
+		}
 		Goto RealReady;
 	}
 }
