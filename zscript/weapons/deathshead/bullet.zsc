@@ -53,6 +53,14 @@ class DeathsheadPistol : BlueBastardWeapon
 class DeathsheadMAC10 : BlueBastardWeapon
 {
 	mixin BBDeathsheadWeapon;
+	action void MAC10PewPew() 
+	{
+		A_FireBullets (12, 5, 2, random(3,5), "BlueBastardBulletPuff", FBF_NORANDOM);
+		A_FireBullets (12, 5, -1, random(3,5), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+		A_StartSound("weapons/mac10", CHAN_AUTO);
+		A_WeaponOffset(random(-4.0,8.0), random(32.0,48.0),WOF_INTERPOLATE);
+		A_SetPitch(self.pitch - 1, SPF_INTERPOLATE);
+	}
 	Default
 	{
 		Weapon.AmmoType "BBDeathshead9mm";
@@ -96,13 +104,10 @@ class DeathsheadMAC10 : BlueBastardWeapon
 		Loop;
 	Fire:
 		ADMC A 0 A_GunFlash;
-		ADMC BC 2 Bright
-		{
-			A_FireBullets (12, 5, 2, random(3,5), "BlueBastardBulletPuff", FBF_NORANDOM);
-			A_FireBullets (12, 5, -1, random(3,5), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
-			A_StartSound("weapons/mac10", CHAN_AUTO);
-			A_WeaponOffset(random(-4.0,8.0), random(32.0,48.0),WOF_INTERPOLATE);
-		}
+		ADMC B 1 Bright MAC10PewPew();
+		ADMC B 1 Bright A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
+		ADMC C 1 Bright MAC10PewPew();
+		ADMC C 1 Bright A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
 		ADMC A 0 A_ReFire;
 		Goto RealReady;
 	Flash:
