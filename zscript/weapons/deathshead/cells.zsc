@@ -42,21 +42,25 @@ class DeathsheadPlasmaRifle : BlueBastardWeapon
 			}
 			A_FireProjectile("PlasmaCannonBall",0,true);
 			A_GunFlash();
+			A_SetPitch(self.pitch - 4, SPF_INTERPOLATE);
 		}
-		ADPC C 2 Bright;
-		ADPC DAAAAA 2;
+		ADPC CC 1 Bright A_SetPitch(self.pitch + 0.5, SPF_INTERPOLATE);
+		ADPC DDAAAA 1 A_SetPitch(self.pitch + 0.5, SPF_INTERPOLATE);
+		ADPC A 6;
 		ADPC A 0 A_ReFire;
 		Goto RealReady;
 	AltFire:
 		ADPC B 2 Bright
 		{
 			A_StartSound("weapons/railgun", CHAN_WEAPON);
-			A_FireBullets(0,0,0,random(55,65),"BlueBastardBulletPuff",0);
-			A_RailAttack(random(35,45), color1:"00c8ff", color2:"c1d6db", pufftype:null);
+			A_FireBullets(0,0,0,random(50,60),"BlueBastardBulletPuff",0);
+			A_RailAttack(random(40,50), color1:"00c8ff", color2:"c1d6db", pufftype:null);
 			A_GunFlash();
+			A_SetPitch(self.pitch - 4, SPF_INTERPOLATE);
 		}
-		ADPC C 2 Bright;
-		ADPC DAAAAA 2;
+		ADPC CC 1 Bright A_SetPitch(self.pitch + 0.5, SPF_INTERPOLATE);
+		ADPC DDAAAA 1 A_SetPitch(self.pitch + 0.5, SPF_INTERPOLATE);
+		ADPC A 6;
 		ADPC A 0 A_ReFire;
 		Goto RealReady;
 	Flash:
