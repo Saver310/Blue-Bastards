@@ -1,27 +1,7 @@
-class GauntletsReplacement : ChainsawReplacement replaces Gauntlets
-{
-}
-
-class GoldWandReplacement : PistolReplacement replaces GoldWand
-{
-}
-
-class CrossbowReplacement : ShotgunReplacement replaces Crossbow
-{
-}
-
-class BlasterReplacement : ChaingunReplacement replaces Blaster
-{
-}
-
-class PhoenixRodReplacement : RocketLauncherReplacement replaces PhoenixRod
-{
-}
-
-class SkullRodReplacement : PlasmaRifleReplacement replaces SkullRod
-{
-}
-
-class MaceReplacement : BFG9000Replacement replaces Mace
-{
-}
+class GauntletsReplacement : ChainsawReplacement replaces Gauntlets {}
+class GoldWandReplacement : PistolReplacement replaces GoldWand {}
+class CrossbowReplacement : ShotgunReplacement replaces Crossbow {}
+class BlasterReplacement : ChaingunReplacement replaces Blaster {}
+class PhoenixRodReplacement : RocketLauncherReplacement replaces PhoenixRod {}
+class SkullRodReplacement : PlasmaRifleReplacement replaces SkullRod {}
+class MaceReplacement : BFG9000Replacement replaces Mace {}
