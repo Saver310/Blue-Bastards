@@ -1,1 +1,4 @@
+STARTUPTITLE = "Blue Bastards"
 STARTUPTYPE = "Hexen"
+STARTUPCOLORS = "#012e75", "#4287f5"
+STARTUPSONG = "music/83255_newgrounds_tt3_lv.ogg"
