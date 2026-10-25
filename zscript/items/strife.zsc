@@ -1,6 +1,4 @@
-class AmmoSatchelReplacement : BlueBastardBackpack replaces AmmoSatchel
-{
-}
+class AmmoSatchelReplacement : BlueBastardBackpack replaces AmmoSatchel {}
 
 class BoxOfBulletsReplacement : BBClipbox replaces BoxOfBullets
 {
