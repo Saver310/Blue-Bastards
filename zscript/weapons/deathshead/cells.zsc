@@ -97,6 +97,7 @@ class DeathsheadBFG : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.SelectionOrder 650;
 		Weapon.AmmoType "BBDeathsheadBFGCell";
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 1;
