@@ -3,6 +3,7 @@ class SpotPlasmaRifle : BlueBastardWeapon
 	mixin BBSpotWeapon;
 	Default
 	{
+		Weapon.SelectionOrder 200;
 		Weapon.AmmoType "Cell";
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 40;
@@ -58,7 +59,7 @@ class SpotBFG : BlueBastardWeapon
 		Default
 	{
 		Height 20;
-		Weapon.SelectionOrder 2800;
+		Weapon.SelectionOrder 750;
 		Weapon.AmmoUse 1;
 		Weapon.AmmoUse2 1;
 		Weapon.AmmoGive 1;

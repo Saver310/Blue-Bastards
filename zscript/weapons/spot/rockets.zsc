@@ -3,6 +3,7 @@ class SpotRocketLauncher : BlueBastardWeapon
 	mixin BBSpotWeapon;
 	
 		Default{
+		Weapon.SelectionOrder 800;
 		Weapon.AmmoType "RocketAmmo";
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 4;
