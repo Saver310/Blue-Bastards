@@ -3,6 +3,7 @@ class DeathsheadPistol : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.SelectionOrder 900;
 		Weapon.AmmoType "BBDeathshead9mm";
 		Weapon.AmmoGive 20;
 		Weapon.AmmoUse 1;
@@ -63,6 +64,7 @@ class DeathsheadMAC10 : BlueBastardWeapon
 	}
 	Default
 	{
+		Weapon.SelectionOrder 300;
 		Weapon.AmmoType "BBDeathshead9mm";
 		Weapon.AmmoGive 20;
 		Weapon.AmmoUse 1;
@@ -134,6 +136,7 @@ class DeathsheadSG550 : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.SelectionOrder 600;
 		Weapon.AmmoType "BBDeathshead556";
 		Weapon.AmmoGive 10;
 		Weapon.AmmoUse 2;
@@ -242,6 +245,7 @@ class DeathsheadM4 : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.SelectionOrder 100;
 		Weapon.AmmoType1 "BBDeathshead556";
 		Weapon.AmmoType2 "BBDeathsheadGrenade";
 		Weapon.AmmoUse1 1;

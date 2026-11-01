@@ -3,6 +3,7 @@ class DeathsheadFist : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.SelectionOrder 1000;
 		Weapon.BobStyle "Smooth";
 		Weapon.BobRangeX 1.5;
 		
@@ -112,6 +113,7 @@ class DeathsheadChainsaw : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.SelectionOrder 800;
 		Tag "$ACE_CHAINSAW";
 		Obituary "$OB_ACE_CHAINSAW";
 		+INVENTORY.UNDROPPABLE

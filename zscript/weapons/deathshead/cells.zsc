@@ -3,6 +3,7 @@ class DeathsheadPlasmaRifle : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.SelectionOrder 200;
 		Weapon.BobRangeX 1.25;
 		Weapon.BobRangeY 0.75;
 		Weapon.WeaponScaleX 0.9;

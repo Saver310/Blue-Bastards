@@ -3,6 +3,7 @@ class DeathsheadRocketLauncher : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.SelectionOrder 700;
 		Weapon.AmmoType "Rocketammo";
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 2;
