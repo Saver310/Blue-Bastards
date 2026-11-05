@@ -114,9 +114,9 @@ class NapalmFlame : Actor
 			NFRL A 0;
 		Death:
 			NFRL ABCDEFGHIJKL 2 bright{
-				RadiusAttack(target,15,32);
+				RadiusAttack(target,15,32,flags: 0);
 			}
-			NFRD ABCDEFGHIJKLMNO 2 bright RadiusAttack(target,15,32);
+			NFRD ABCDEFGHIJKLMNO 2 bright RadiusAttack(target,15,32,flags: 0);
 			Stop;
 	}
 }
