@@ -57,8 +57,6 @@ class BlueBastardsStatusBar : BaseStatusBar
 				if(pPawn.Player.ReadyWeapon.GetClassName() == "SpotChaingun")
 				{
 					[amt1, maxamt] = GetAmount("BBSpotNavalBullets");
-					DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 173), DI_TEXT_ALIGN_RIGHT);
-					DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 173), DI_TEXT_ALIGN_RIGHT);
 				}
 				else if(pPawn.Player.ReadyWeapon.GetClassName() ==  "SpotExpress600")
 				{
