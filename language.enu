@@ -23,6 +23,8 @@ MNU_THRUST = "Kick Thrust Power";
 MNU_THRUST_DESC = "The larger the number, the further you'll go when kicking."; 
 MNU_KICK_DAMAGE = "Kick Damage";
 MNU_KICK_DAMAGE_DESC = "The larger the number, the more damage kicks will deal."; 
+MNU_DISPLAY_ALTFIRE = "Alt Fire Visibility";
+MNU_DISPLAY_ALTFIRE_DESC = "Displays on the HUD if your weapon has an alt fire available."; 
 
 PLAYER_SPOT = "Spot";
 PLAYER_DEATHSHEAD = "Deathshead";

@@ -24,6 +24,8 @@ MNU_THRUST = "Moc Podrzutu Kopnięcia";
 MNU_THRUST_DESC = "Tym wyższa liczba, tym dalej będziesz leciał podczas kopania."; 
 MNU_KICK_DAMAGE = "Obrażenia Kopnięcia";
 MNU_KICK_DAMAGE_DESC = "Tym wyższa liczba, tym więcej obrażeń będą zadawać twoje kopnięcia."; 
+MNU_DISPLAY_ALTFIRE = "Widoczność Alternatywnego Ognia";
+MNU_DISPLAY_ALTFIRE_DESC = "Pokazuje na HUDzie czy twoja broń ma dostępny alternatywny ogień."; 
 
 // PLAYER_SPOT = "Spot"; może jesli znajde coś bo brzmi pobodnie uroczo po polsku
 PLAYER_DEATHSHEAD = "Trupiogłowy";

@@ -249,12 +249,12 @@ class BlueBastardsStatusBar : BaseStatusBar
 
 		if (ammotype2 != null && ammotype2 != ammotype1){
 			DrawImage("graphics/hud_ammo.png", (-84,-35), DI_SCREEN_RIGHT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
-			if (ammotype2 != null) {
+			if (ammotype2 != null && CVar.GetCVar("bb_display_altfire", CPlayer)) {
 				DrawImage("graphics/hud_altfire.png", (-91,-29), DI_SCREEN_RIGHT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
 			}
 		} else if (ammotype1 != null) {
 			DrawImage("graphics/hud_ammo_half.png", (-84,-35), DI_SCREEN_RIGHT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
-			if (ammotype2 != null) {
+			if (ammotype2 != null && CVar.GetCVar("bb_display_altfire", CPlayer)) {
 				DrawImage("graphics/hud_altfire_half.png", (-84,-35), DI_SCREEN_RIGHT_BOTTOM|DI_ITEM_OFFSETS|DI_TRANSLATABLE);
 			}
 		}
