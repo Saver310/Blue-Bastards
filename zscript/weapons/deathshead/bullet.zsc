@@ -137,9 +137,12 @@ class DeathsheadSG550 : BlueBastardWeapon
 	Default
 	{
 		Weapon.SelectionOrder 600;
-		Weapon.AmmoType "BBDeathshead556";
-		Weapon.AmmoGive 10;
-		Weapon.AmmoUse 2;
+		Weapon.AmmoType1 "BBDeathshead556";
+		Weapon.AmmoGive2 10;
+		Weapon.AmmoUse2 2;
+		Weapon.AmmoType2 "BBDeathshead556";
+		Weapon.AmmoGive2 0;
+		Weapon.AmmoUse2 0;
 		
 		Weapon.BobRangeX 1.25;
 		
