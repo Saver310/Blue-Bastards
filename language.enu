@@ -42,6 +42,7 @@ DARK_BLUE_SURE = "You're going to regret picking this color\n"
 CREDIT_HEADER = "Credit Where It's Due";
 CREDITS_ALMOST_EVERYTHING = "Nearly Everything";
 CREDITS_REDEAD = "Contributor, Initial Feedback";
+CREDITS_ICARUS = "Mod Roundup";
 CREDITS_WEAPON_MODELS = "Weapon Models";
 CREDITS_WEAPON_SPRITES = "Weapon Sprites";
 CREDITS_WEAPON_SOUNDS = "Weapon Sounds";
