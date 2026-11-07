@@ -4,9 +4,12 @@ class DeathsheadRocketLauncher : BlueBastardWeapon
 	Default
 	{
 		Weapon.SelectionOrder 700;
-		Weapon.AmmoType "Rocketammo";
-		Weapon.AmmoUse 1;
-		Weapon.AmmoGive 2;
+		Weapon.AmmoType1 "Rocketammo";
+		Weapon.AmmoUse1 1;
+		Weapon.AmmoGive1 2;
+		Weapon.AmmoType2 "Rocketammo";
+		Weapon.AmmoUse2 1;
+		Weapon.AmmoGive2 0;
 		Weapon.BobRangeX 1.5;
 		Weapon.BobRangeY 0.5;
 		
@@ -54,6 +57,49 @@ class DeathsheadRocketLauncher : BlueBastardWeapon
 			A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
 		}
 		ADRK AA 2 Bright A_WeaponOffset(-8.0, -8.0, WOF_ADD|WOF_INTERPOLATE);
+		ADRK A 2 A_ReFire;
+		Goto RealReady;
+	AltFire:
+		ADRK B 0
+		{
+			A_StartSound("weapons/rocketshotty", CHAN_AUTO);
+			A_FireProjectile("DeathsheadRocket",0);
+			A_FireProjectile("DeathsheadRocket",-5);
+			A_FireProjectile("DeathsheadRocket",5);
+			A_Recoil(2);
+			A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
+		}
+		ADRK BC 2 Bright
+		{
+			A_WeaponOffset(8.0, 8.0, WOF_ADD|WOF_INTERPOLATE);
+			A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
+		}
+		ADRK DE 2 Bright
+		{
+			A_WeaponOffset(2.0, 2.0, WOF_ADD|WOF_INTERPOLATE);
+			A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
+		}
+		ADRK A 0 A_StartSound("weapons/rocket/load", CHAN_AUTO, CHANF_DEFAULT, 0.5);
+		ADRK AA 2 Bright 
+		{
+			A_WeaponOffset(-2.0, -2.0, WOF_ADD|WOF_INTERPOLATE);
+			A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
+		}
+		ADRK AA 2 Bright A_WeaponOffset(-8.0, -8.0, WOF_ADD|WOF_INTERPOLATE);
+		ADRK A 1
+		{
+			A_StartSound("weapons/rocketshotty/cock", CHAN_AUTO);
+			A_WeaponOffset(2.0, 4.0, WOF_ADD|WOF_INTERPOLATE);
+			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		}
+		ADRK A 1 A_WeaponOffset(6.0, 12.0, WOF_ADD|WOF_INTERPOLATE);
+		ADRK A 1 A_WeaponOffset(2.0, 4.0, WOF_ADD|WOF_INTERPOLATE);
+		ADRK AAAA 1 
+		{
+			A_WeaponOffset(-2.0, -4.0, WOF_ADD|WOF_INTERPOLATE);
+			A_SetPitch(self.pitch - 0.5, SPF_INTERPOLATE);
+		}
+		ADRK A 4 A_WeaponOffset(0.0, 32.0, WOF_INTERPOLATE);
 		ADRK A 2 A_ReFire;
 		Goto RealReady;
 	}
