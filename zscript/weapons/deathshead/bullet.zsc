@@ -46,7 +46,7 @@ class DeathsheadPistol : BlueBastardWeapon
 		ADPS NOPQRST 2;
 		Goto RealReady;
 	RealReady:
-		ADPS A 1 A_WeaponReady;
+		ADPS A 1 A_WeaponReady(WRF_ALLOWRELOAD);
 		Wait;
 	Fire:
 		ADPS B 1 Bright
@@ -63,6 +63,10 @@ class DeathsheadPistol : BlueBastardWeapon
 		ADPS U 2 Bright A_Light2;
 		ADPS V 2 Bright A_Light1;
 		Goto LightDone;
+	Reload:
+		ADPS YXW 2;
+		ADPS N 0 A_StartSound("weapons/deagle/deploy", CHAN_AUTO);
+		Goto Ready2+1;
  	Spawn:
 		ADPS A -1;
 		Stop;
