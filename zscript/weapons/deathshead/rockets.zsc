@@ -33,7 +33,7 @@ class DeathsheadRocketLauncher : BlueBastardWeapon
 		ADRK B 0
 		{
 			A_StartSound("weapons/rocket", CHAN_AUTO);
-			A_FireMissile();
+			A_FireProjectile("DeathsheadRocket");
 			A_Recoil(2);
 			A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
 		}
@@ -56,5 +56,30 @@ class DeathsheadRocketLauncher : BlueBastardWeapon
 		ADRK AA 2 Bright A_WeaponOffset(-8.0, -8.0, WOF_ADD|WOF_INTERPOLATE);
 		ADRK A 2 A_ReFire;
 		Goto RealReady;
+	}
+}
+
+class DeathsheadRocket : Rocket
+{
+	Default
+	{
+		Speed 35;
+		Damage 30;
+		SeeSound "weapons/rocket";
+	}
+	States
+	{
+	Spawn:
+		MISL A 1 Bright;
+		Loop;
+	Death:
+		MISL B 8 Bright A_Explode;
+		MISL C 6 Bright;
+		MISL D 4 Bright;
+		Stop;
+	BrainExplode:
+		MISL BC 10 Bright;
+		MISL D 10 A_BrainExplode;
+		Stop;
 	}
 }
