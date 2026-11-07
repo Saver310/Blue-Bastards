@@ -27,7 +27,8 @@ class DeathsheadPistol : BlueBastardWeapon
 		TNT1 A 1 A_Lower(24);
 		Wait;
 	Deselect2:
-		ADPS SRQPONM 2;
+		ADPS S 2 A_StartSound("weapons/deagle/deploy");
+		ADPS RQPONM 2;
 		TNT1 A 1 A_Lower(24);
 		Wait;
 	Ready:
@@ -37,7 +38,11 @@ class DeathsheadPistol : BlueBastardWeapon
 		ADPS KJIHGFE 2;
 		Goto RealReady;
 	Ready2:
-		ADPS M 2 A_StartSound("weapons/adpistol/deploy");
+		ADPS M 2 
+		{
+			A_StartSound("weapons/adpistol/deploy", CHAN_AUTO);
+			A_StartSound("weapons/deagle/deploy", CHAN_AUTO);
+		}
 		ADPS NOPQRST 2;
 		Goto RealReady;
 	RealReady:
