@@ -132,7 +132,11 @@ class DeathsheadChainsaw : BlueBastardWeapon
 		Wait;
 	Ready:
 		ADCS N 2 A_StartSound("weapons/generic/draw", CHAN_AUTO);
-		ADCS OPQRSTU 2;
+		ADCS OP 2;
+		ADCS Q 1;
+		ADCS RS 2;
+		ADCS T 1;
+		ADCS U 2;
 		ADCS V 2 A_StartSound("weapons/chainsaw/start", CHAN_AUTO);
 		ADCS W 2 A_StartSound("weapons/sawup", CHAN_AUTO);
 		ADCS XYZ[D 2;
