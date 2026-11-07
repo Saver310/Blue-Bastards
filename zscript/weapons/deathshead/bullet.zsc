@@ -3,7 +3,7 @@ class DeathsheadPistol : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
-		Weapon.SelectionOrder 900;
+		Weapon.SelectionOrder 800;
 		Weapon.AmmoType "BBDeathshead9mm";
 		Weapon.AmmoGive 20;
 		Weapon.AmmoUse 1;

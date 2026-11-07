@@ -113,7 +113,7 @@ class DeathsheadChainsaw : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
-		Weapon.SelectionOrder 800;
+		Weapon.SelectionOrder 900;
 		Tag "$ACE_CHAINSAW";
 		Obituary "$OB_ACE_CHAINSAW";
 		+INVENTORY.UNDROPPABLE
