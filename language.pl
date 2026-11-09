@@ -24,6 +24,8 @@ MNU_THRUST = "Moc Podrzutu Kopnięcia";
 MNU_THRUST_DESC = "Tym wyższa liczba, tym dalej będziesz leciał podczas kopania."; 
 MNU_KICK_DAMAGE = "Obrażenia Kopnięcia";
 MNU_KICK_DAMAGE_DESC = "Tym wyższa liczba, tym więcej obrażeń będą zadawać twoje kopnięcia."; 
+MNU_DISPLAY_ALTFIRE = "Widoczność Alternatywnego Ognia";
+MNU_DISPLAY_ALTFIRE_DESC = "Pokazuje na HUDzie czy twoja broń ma dostępny alternatywny ogień."; 
 
 // PLAYER_SPOT = "Spot"; może jesli znajde coś bo brzmi pobodnie uroczo po polsku
 PLAYER_DEATHSHEAD = "Trupiogłowy";
@@ -41,6 +43,7 @@ DARK_BLUE_SURE = "Pożałujesz wyboru tego koloru\n"
 CREDIT_HEADER = "Podziękowania, gdzie się należą";
 CREDITS_ALMOST_EVERYTHING = "Prawie Wszystko";
 CREDITS_REDEAD = "Kontrybutor i Pierwsze Opinie";
+CREDITS_ICARUS = "Recenzja Moda";
 CREDITS_WEAPON_MODELS = "Modele Broni";
 CREDITS_WEAPON_SPRITES = "Sprity Broni";
 CREDITS_WEAPON_SOUNDS = "Dźwięki Broni";
@@ -124,6 +127,7 @@ ACE_BFG = "BFG-Dziewięć-Ka Plus-Plus";
 
 ACE_TRANSFORM_TIP = "Wciśnij %s, aby się przekształcić w Mothmana.";
 ACE_TRANSFORM_INIT = "Czujesz wewnętrzną złość twych przodków...";
+ACE_TRANSFORM_WORN = "Moce Mothmana zanikają";
 
 SPOT_CHAINSAW = "Piła Łańcuchowa";
 SPOT_MALLET = "Komicznie Wielki Młot";
@@ -139,6 +143,7 @@ SPOT_M249 = "M249";
 
 SPOT_TRANSFORM_TIP = "Wciśnij %s, aby się przekształcić w smoka.";
 SPOT_TRANSFORM_INIT = "Czujesz, że Twoje serce zaraz ci wysadzi.\n Czujesz bardzo głęboką nienawiść do wszystkiego, co żyje.";
+SPOT_TRANSFORM_WORN = "Moce smoka zanikają";
 
 KICKYDICKY = "Kop";
 

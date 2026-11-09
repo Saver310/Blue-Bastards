@@ -23,6 +23,8 @@ MNU_THRUST = "Kick Thrust Power";
 MNU_THRUST_DESC = "The larger the number, the further you'll go when kicking."; 
 MNU_KICK_DAMAGE = "Kick Damage";
 MNU_KICK_DAMAGE_DESC = "The larger the number, the more damage kicks will deal."; 
+MNU_DISPLAY_ALTFIRE = "Alt Fire Visibility";
+MNU_DISPLAY_ALTFIRE_DESC = "Displays on the HUD if your weapon has an alt fire available."; 
 
 PLAYER_SPOT = "Spot";
 PLAYER_DEATHSHEAD = "Deathshead";
@@ -40,6 +42,7 @@ DARK_BLUE_SURE = "You're going to regret picking this color\n"
 CREDIT_HEADER = "Credit Where It's Due";
 CREDITS_ALMOST_EVERYTHING = "Nearly Everything";
 CREDITS_REDEAD = "Contributor, Initial Feedback";
+CREDITS_ICARUS = "Mod Roundup";
 CREDITS_WEAPON_MODELS = "Weapon Models";
 CREDITS_WEAPON_SPRITES = "Weapon Sprites";
 CREDITS_WEAPON_SOUNDS = "Weapon Sounds";

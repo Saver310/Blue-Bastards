@@ -3,6 +3,7 @@ class DeathsheadShotgun : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.SelectionOrder 400;
 		Weapon.AmmoType "Shell";
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 8;
@@ -50,6 +51,7 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.SelectionOrder 500;
 		Weapon.AmmoType "Shell";
 		Weapon.AmmoUse 4;
 		Weapon.AmmoGive 16;

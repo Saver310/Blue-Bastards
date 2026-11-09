@@ -3,6 +3,7 @@ class SpotExpress600 : BlueBastardWeapon
 	mixin BBSpotWeapon;
     Default
     {
+		Weapon.SelectionOrder 600;
         Weapon.AmmoUse 1;
 		Weapon.AmmoGive 5;
         Weapon.AmmoType "BBSpot600";
@@ -60,7 +61,7 @@ class SpotChaingun : BlueBastardWeapon
 	mixin BBSpotWeapon;
 	Default
 	{
-		Weapon.SelectionOrder 700;
+		Weapon.SelectionOrder 500;
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 10;
 		Weapon.AmmoType "BBSpotNavalBullets";
@@ -113,7 +114,7 @@ class SpotM249: BlueBastardWeapon
 	mixin BBSpotWeapon;
 	Default
 	{
-		Weapon.SelectionOrder 720;
+		Weapon.SelectionOrder 100;
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 40;
 		Weapon.AmmoType "Clip";

@@ -67,6 +67,8 @@ weapons/missle/deploy "sounds/weapons/bfg_raise.wav"
 
 weapons/rocket "sounds/weapons/rocket.wav"
 weapons/rocket/load "sounds/weapons/rocklr1b.wav"
+weapons/rocketshotty "sounds/weapons/rocketshotty.ogg"
+weapons/rocketshotty/cock "sounds/weapons/shotgun_cock_back.wav"
 
 weapons/nuke "sounds/weapons/rocketfire1.wav"
 weapons/nuke/explode "sounds/weapons/1956_exploz1.ogg"
