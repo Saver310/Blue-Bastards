@@ -80,6 +80,7 @@ class DeathsheadFist : BlueBastardWeapon
 		ADGB P 2 Thwack(true);
 		ADGB QRS 2;
 		ADGB T 2 A_ReFire;
+		TNT1 A 1 A_ReFire;
 		Goto RealReady;
 	Reload:
 		ADFK CD 2;
