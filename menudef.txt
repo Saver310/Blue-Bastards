@@ -6,7 +6,7 @@ DefaultListMenu
 
 ListMenu "MainMenuTextOnly"
 {
-	StaticPatch 96, 1, "M_DOOM"
+	StaticPatch 96, 2, "M_DOOM"
 	Position 97, 72
 	TextItem "$MNU_NEWGAME", "n", "PlayerclassMenu"
 	TextItem "$MNU_MODOPTIONS", "b", "ModOptionsMenu"
