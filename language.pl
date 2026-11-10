@@ -30,7 +30,7 @@ MNU_DISPLAY_ALTFIRE_DESC = "Pokazuje na HUDzie czy twoja broń ma dostępny alte
 // PLAYER_SPOT = "Spot"; może jesli znajde coś bo brzmi pobodnie uroczo po polsku
 PLAYER_DEATHSHEAD = "Trupiogłowy";
 
-SKILL_BLOODRED = "Krwioczerwony";
+SKILL_BLOODRED = "Krwistoczerwony";
 BLOODRED_SURE = "Każda broń jest o wiele bardziej mocniejsza\n"
 "i obrażenia od potworów są zredukowane o 50%.\n"
 "Wybierz ten poziom trudności tylko jeśli chcesz mieć zabawę.";
