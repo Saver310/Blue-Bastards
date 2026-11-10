@@ -199,6 +199,7 @@ class BlueBastardsStatusBar : BaseStatusBar
 		else
 		{
 			DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (143, 168), DI_ITEM_OFFSETS|DI_TRANSLATABLE);
+			Console.Printf(TexMan.GetName(GetMugShot(5,Mugshot.XDEATHFACE)));
 		}
 		if (isInventoryBarVisible())
 		{
