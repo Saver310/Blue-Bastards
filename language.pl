@@ -31,6 +31,10 @@ MNU_DISPLAY_ALTFIRE_DESC = "Pokazuje na HUDzie czy twoja broń ma dostępny alte
 PLAYER_DEATHSHEAD = "Trupiogłowy";
 
 SKILL_BLOODRED = "Krwioczerwony";
+BLOODRED_SURE = "Każda broń jest o wiele bardziej mocniejsza\n"
+"i obrażenia od potworów są zredukowane o 50%.\n"
+"Wybierz ten poziom trudności tylko jeśli chcesz mieć zabawę.";
+SKILL_RED = "Czerwony";
 SKILL_BEIGE = "Beżowy";
 SKILL_LIGHT_BLUE = "Jasny Niebieski";
 SKILL_BLUE = "Niebieski";

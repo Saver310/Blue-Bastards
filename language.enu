@@ -30,6 +30,10 @@ PLAYER_SPOT = "Spot";
 PLAYER_DEATHSHEAD = "Deathshead";
 
 SKILL_BLOODRED = "Bloodred";
+BLOODRED_SURE = "Every weapon is WAY more powerful\n"
+"and you take 50% less damage.\n"
+"Choose this difficulty if you just want to have fun!";
+SKILL_RED = "Red";
 SKILL_BEIGE = "Beige";
 SKILL_LIGHT_BLUE = "Light Blue";
 SKILL_BLUE = "Blue";

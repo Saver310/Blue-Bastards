@@ -36,6 +36,17 @@ map TITLEMAP lookup "BLUE_BASTARDS"
 {
 }
 
+clearskills
+skill bloodred
+{
+	SpawnFilter = Hard
+	Name = "$SKILL_BLOODRED"
+	MustConfirm = "$BLOODRED_SURE"
+	DamageFactor = 0.5
+	MonsterHealth = 0.5
+	Aggressiveness = 0.25
+}
+
 skill baby
 {
 	AutoUseHealth
@@ -43,8 +54,7 @@ skill baby
 	DamageFactor = 0.5
 	EasyBossBrain
 	SpawnFilter = Baby
-	Name = "$SKILL_BLOODRED"
-	Key = "i"
+	Name = "$SKILL_RED"
 }
 
 skill easy
@@ -52,13 +62,11 @@ skill easy
 	EasyBossBrain
 	SpawnFilter = Easy
 	Name = "$SKILL_BEIGE"
-	Key = "h"
 }
 
 skill normal
 {
 	SpawnFilter = Normal
-	Key = "h"
 	Name = "$SKILL_LIGHT_BLUE"
 	DefaultSkill
 }
@@ -67,7 +75,6 @@ skill hard
 {
 	SpawnFilter = Hard
 	Name = "$SKILL_BLUE"
-	Key = "u"
 }
 
 skill nightmare
@@ -80,5 +87,4 @@ skill nightmare
 	SpawnFilter = Nightmare
 	Name = "$SKILL_DARK_BLUE"
 	MustConfirm = "$DARK_BLUE_SURE"
-	Key = "n"
 }
