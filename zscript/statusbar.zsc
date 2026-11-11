@@ -198,8 +198,12 @@ class BlueBastardsStatusBar : BaseStatusBar
 		}
 		else
 		{
+			String mugshot_texture_name = TexMan.GetName(GetMugShot(5,Mugshot.XDEATHFACE));
+			Console.Printf(mugshot_texture_name);
+			if (mugshot_texture_name.IndexOf("ST")) {
+				DrawImage("graphics/mugshot/deathshead/mofbody"..mugshot_texture_name.Mid(5,2)..".png", (143, 168), DI_ITEM_OFFSETS);
+			}
 			DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (143, 168), DI_ITEM_OFFSETS|DI_TRANSLATABLE);
-			Console.Printf(TexMan.GetName(GetMugShot(5,Mugshot.XDEATHFACE)));
 		}
 		if (isInventoryBarVisible())
 		{
