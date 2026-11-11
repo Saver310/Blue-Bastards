@@ -223,6 +223,9 @@ class BlueBastardsStatusBar : BaseStatusBar
 					bullshit = "01";
 				}
 				DrawImage("graphics/mugshot/deathshead/mofbody"..bullshit..".png", (143, 168), DI_ITEM_OFFSETS);
+				if (GetArmorAmount()>25) {
+					DrawImage("graphics/mugshot/deathshead/mofarmoroverlay.png", (143, 168), DI_ITEM_OFFSETS);
+				}
 			}
 			DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (143, 168), DI_ITEM_OFFSETS|DI_TRANSLATABLE);
 		}
