@@ -129,7 +129,7 @@ class BlueBastardsStatusBar : BaseStatusBar
 			if (mugshot_texture_name.Mid(3,2)=="ST") {
 				bullshit = mugshot_texture_name.Mid(5,2);
 			}
-			else if (mugshot_texture_name.Mid(3,4)=="OUCH") {
+			else if (mugshot_texture_name.Mid(3,4)=="OUCH" || mugshot_texture_name.Mid(3,4)=="KILL") {
 				bullshit = mugshot_texture_name.Mid(7,1).."1";
 			}
 			else if (mugshot_texture_name.Mid(3,3)=="EVL") {
