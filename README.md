@@ -23,5 +23,11 @@ This project does not allow AI generated content, such as (but not limited to):
 - AI Generated Artwork, Sound, or any other assets.
 - Auto generated descriptions of pull request, issue and such.
 
-Use of such tools shows you aren't willing to put the effort in improving the mod.  
+Use of such tools shows you aren't willing to put the effort in improving the mod.
 Any vibecoded pull requests will be instantly rejected.
+
+# Translations
+We're open for translations! If your language is missing, feel free to throw a PR at us!
+This project is translated into two languages as of now:
+- English
+- Polish
