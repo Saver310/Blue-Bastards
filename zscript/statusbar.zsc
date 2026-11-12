@@ -147,6 +147,7 @@ class BlueBastardsStatusBar : BaseStatusBar
 			else {
 				bullshit = "01";
 			}
+			DrawImage("graphics/mugshot/deathshead/mofwings"..bullshit.Left(1)..".png", pos, flags);
 			DrawImage("graphics/mugshot/deathshead/mofbody"..bullshit..".png", pos, flags);
 			if (GetArmorAmount()>25) {
 				DrawImage("graphics/mugshot/deathshead/mofarmoroverlay.png", pos, flags);
