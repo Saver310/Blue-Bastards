@@ -64,7 +64,7 @@ class DeathsheadPistol : BlueBastardWeapon
 		ADPS V 2 Bright A_Light1;
 		Goto LightDone;
 	Reload:
-		ADPS YXW 2;
+		ADPS YXW 2 A_WeaponReady(WRF_NOSWITCH);
 		ADPS N 0 A_StartSound("weapons/deagle/deploy", CHAN_AUTO);
 		Goto Ready2+1;
  	Spawn:
