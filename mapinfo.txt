@@ -45,7 +45,7 @@ skill bloodred
 	DamageFactor = 0.5
 	MonsterHealth = 0.5
 	Aggressiveness = 0.25
-	TextColor = "DarkRed"
+	TextColor = "BB_Bloodred"
 }
 
 skill baby
@@ -55,16 +55,16 @@ skill baby
 	DamageFactor = 0.5
 	EasyBossBrain
 	SpawnFilter = Baby
-	Name = "$SKILL_RED"
-	TextColor = "Red"
+	Name = "$SKILL_BEIGE"
+	TextColor = "BB_Beige"
 }
 
 skill easy
 {
 	EasyBossBrain
 	SpawnFilter = Easy
-	Name = "$SKILL_BEIGE"
-	TextColor = "Cream"
+	Name = "$SKILL_PURPLE"
+	TextColor = "BB_Purple"
 }
 
 skill normal
@@ -72,14 +72,14 @@ skill normal
 	SpawnFilter = Normal
 	Name = "$SKILL_LIGHT_BLUE"
 	DefaultSkill
-	TextColor = "LightBlue"
+	TextColor = "BB_LightBlue"
 }
 
 skill hard
 {
 	SpawnFilter = Hard
 	Name = "$SKILL_BLUE"
-	TextColor = "Sapphire"
+	TextColor = "BB_Blue"
 }
 
 skill nightmare
@@ -92,5 +92,5 @@ skill nightmare
 	SpawnFilter = Nightmare
 	Name = "$SKILL_DARK_BLUE"
 	MustConfirm = "$DARK_BLUE_SURE"
-	TextColor = "Blue"
+	TextColor = "BB_DarkBlue"
 }

@@ -36,6 +36,7 @@ BLOODRED_SURE = "Każda broń jest o wiele bardziej mocniejsza\n"
 "Wybierz ten poziom trudności tylko jeśli chcesz mieć zabawę.";
 SKILL_RED = "Czerwony";
 SKILL_BEIGE = "Beżowy";
+SKILL_PURPLE = "Purpurowy";
 SKILL_LIGHT_BLUE = "Jasny Niebieski";
 SKILL_BLUE = "Niebieski";
 SKILL_DARK_BLUE = "Ciemny Niebieski";

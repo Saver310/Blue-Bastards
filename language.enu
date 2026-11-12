@@ -35,6 +35,7 @@ BLOODRED_SURE = "Every weapon is WAY more powerful\n"
 "Choose this difficulty if you just want to have fun!";
 SKILL_RED = "Red";
 SKILL_BEIGE = "Beige";
+SKILL_PURPLE = "Purple";
 SKILL_LIGHT_BLUE = "Light Blue";
 SKILL_BLUE = "Blue";
 SKILL_DARK_BLUE = "Dark Blue";
