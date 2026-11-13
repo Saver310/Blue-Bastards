@@ -1,6 +1,7 @@
 class DeathsheadPistol : BlueBastardWeapon
 {
 	mixin BBDeathsheadWeapon;
+	bool side;
 	Default
 	{
 		Weapon.SelectionOrder 800;
@@ -21,17 +22,16 @@ class DeathsheadPistol : BlueBastardWeapon
 		TNT1 A 1 A_Raise(24);
 		Wait;
 	Deselect:
-		TNT1 A 0 A_Jump(256,"Deselect1","Deselect2");
-	Deselect1:
-		ADPS FGHIJKL 2;
-		TNT1 A 1 A_Lower(24);
-		Wait;
-	Deselect2:
+		TNT1 A 0 {
+			A_Overlay(2,"LeftDeselect");
+			A_BBLefthand(2);
+		}
 		ADPS S 2 A_StartSound("weapons/deagle/deploy");
 		ADPS RQPONM 2;
 		TNT1 A 1 A_Lower(24);
 		Wait;
 	Ready:
+		TNT1 A 0 A_Overlay(2,"LeftSelect");
 		TNT1 A 0 A_Jump(256,"Ready1","Ready2");
 	Ready1:
 		ADPS L 2 A_StartSound("weapons/adpistol/deploy");
@@ -49,24 +49,80 @@ class DeathsheadPistol : BlueBastardWeapon
 		ADPS A 1 A_WeaponReady(WRF_ALLOWRELOAD);
 		Wait;
 	Fire:
+		ADPS A 0 {
+			if (Invoker.side) { Invoker.side = false; A_Overlay(2,"LeftFire"); return ResolveState("RealReady"); }
+			else { Invoker.side = true; return ResolveState("RightFire"); }
+		}
+	RightFire:
 		ADPS B 1 Bright
 		{
 			A_FireBullets (4, 2, -1, random(8,20), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			A_StartSound("weapons/adpistol", CHAN_AUTO);
 			A_GunFlash();
 		}
-		ADPS B 1 Bright A_WeaponReady(WRF_NOSWITCH);
-		ADPS CD 2 Bright A_WeaponReady(WRF_NOSWITCH);
-		ADPS EA 2 A_WeaponReady(WRF_NOSWITCH);
+		ADPS BCCDD 1 Bright
+		{
+			if (player.cmd.buttons & BT_ATTACK && !(player.oldbuttons & BT_ATTACK))
+			{
+				return ResolveState("Fire");
+			}
+			return ResolveState(null);
+		}
+		ADPS EEAA 1
+		{
+			if (player.cmd.buttons & BT_ATTACK && !(player.oldbuttons & BT_ATTACK))
+			{
+				return ResolveState("Fire");
+			}
+			return ResolveState(null);
+		}
 		Goto RealReady;
+	LeftFire:
+		TNT1 A 0 A_BBLefthand(OverlayId());
+		ADPS B 1 Bright
+		{
+			A_FireBullets (4, 2, -1, random(8,20), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			A_StartSound("weapons/adpistol", CHAN_AUTO);
+			A_Overlay(999,"LeftFlash");
+		}
+		ADPS BCCDD 1 Bright;
+		ADPS EA 2;
+		Goto LeftReady;
 	Flash:
 		ADPS U 2 Bright A_Light2;
 		ADPS V 2 Bright A_Light1;
 		Goto LightDone;
+	LeftFlash:
+		TNT1 A 0 A_BBLefthand(OverlayId());
+		ADPS U 2 Bright A_Light2;
+		ADPS V 2 Bright A_Light1;
+		Goto LightDone;
 	Reload:
-		ADPS YXW 2 A_WeaponReady(WRF_NOSWITCH);
+		ADPS A 0 A_Overlay(2,"LeftReload");
+		ADPS YXW 2;
 		ADPS N 0 A_StartSound("weapons/deagle/deploy", CHAN_AUTO);
 		Goto Ready2+1;
+	LeftReload:
+		TNT1 A 0 A_BBLefthand(OverlayId());
+		ADPS A 2;
+		ADPS YXW 2;
+		ADPS N 0 A_StartSound("weapons/deagle/deploy", CHAN_AUTO);
+		Goto LeftSelect+2;
+	LeftSelect:
+		TNT1 A 0 A_BBLefthand(OverlayId());
+		ADPS M 2 
+		{
+			A_StartSound("weapons/adpistol/deploy", CHAN_AUTO);
+			A_StartSound("weapons/deagle/deploy", CHAN_AUTO);
+		}
+		ADPS NOPQRST 2;
+		Goto LeftReady;
+	LeftReady:
+		ADPS A 1;
+		Wait;
+	LeftDeselect:
+		ADPS FGHIJKL 2;
+		Wait;
  	Spawn:
 		ADPS A -1;
 		Stop;
