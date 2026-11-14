@@ -62,7 +62,6 @@ weapons/swing1 "sounds/weapons/Swing1.wav"
 weapons/swing2 "sounds/weapons/Swing2.wav"
 $random weapons/swing {weapons/swing1 weapons/swing2}
 
-weapons/missle/fire "sounds/weapons/firemissle.ogg"
 weapons/missle/deploy "sounds/weapons/bfg_raise.wav"
 
 weapons/rocket "sounds/weapons/rocket.wav"
