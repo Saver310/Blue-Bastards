@@ -1,3 +1,6 @@
+// Weapons
+// Melee (Slot 1)
+
 weapons/mallet1 "sounds/weapons/MUMPUN5.ogg"
 weapons/mallet2 "sounds/weapons/AXE5.ogg"
 $random weapons/mallet {weapons/mallet1 weapons/mallet2}
@@ -18,10 +21,36 @@ weapons/claw/rip8 "sounds/weapons/SwordHit-8.wav"
 weapons/claw/rip9 "sounds/weapons/SwordHit-9.wav"
 $random weapons/claw/rip {weapons/claw/rip1 weapons/claw/rip2 weapons/claw/rip3 weapons/claw/rip4 weapons/claw/rip5 weapons/claw/rip6 weapons/claw/rip7 weapons/claw/rip8 weapons/claw/rip9}
 
-weapons/shotgun/pump "sounds/weapons/shotgunpump1.ogg"
-weapons/shotgun/fire "sounds/weapons/ssg_fire_04.wav"
+weapons/fists/deploy "sounds/weapons/KNUCKLED.ogg"
 
-weapons/ks23/fire "sounds/weapons/ks23.wav"
+weapons/kick/miss "sounds/weapons/KICK.ogg"
+weapons/kick1 "sounds/weapons/KICKHIT1.ogg"
+weapons/kick2 "sounds/weapons/KICKHIT2.ogg"
+weapons/kick3 "sounds/weapons/KICKHIT3.ogg"
+$random weapons/kick {weapons/kick1 weapons/kick2 weapons/kick3}
+
+weapons/punch/hitwall1 "sounds/weapons/BodyHit-1.wav"
+weapons/punch/hitwall2 "sounds/weapons/BodyHit-2.wav"
+weapons/punch/hitwall3 "sounds/weapons/BodyHit-3.wav"
+$random weapons/punch/hitwall {weapons/punch/hitwall1 weapons/punch/hitwall2 weapons/punch/hitwall3}
+
+weapons/chainsaw/pull "sounds/weapons/chainsaw_pull.ogg"
+weapons/chainsaw/idle "sounds/weapons/chainsaw_idle.ogg"
+weapons/chainsaw/attack "sounds/weapons/chainsaw_attack.ogg"
+
+weapons/chainsaw1 "sounds/weapons/Chainsaw-1.wav"
+weapons/chainsaw2 "sounds/weapons/Chainsaw-2.wav"
+weapons/chainsaw3 "sounds/weapons/Chainsaw-3.wav"
+weapons/chainsaw4 "sounds/weapons/Chainsaw-4.wav"
+$random weapons/chainsaw {weapons/chainsaw1 weapons/chainsaw2 weapons/chainsaw3 weapons/chainsaw4}
+$volume weapons/chainsaw 0.3
+weapons/chainsaw/start1 "sounds/weapons/chainsaw_start_01.ogg"
+weapons/chainsaw/start2 "sounds/weapons/chainsaw_start_02.ogg"
+$random weapons/chainsaw/start {weapons/chainsaw/start1 weapons/chainsaw/start2}
+$volume weapons/chainsaw/start 0.3
+
+
+// Pistols (Slot 2)
 
 weapons/blaster/shoot "sounds/weapons/plasma_2fire3.wav"
 weapons/blaster/reload "sounds/weapons/bfg_reload.wav"
@@ -41,6 +70,17 @@ $random weapons/mac10 {weapons/mac1 weapons/mac2 weapons/mac3}
 $limit weapons/mac10 2 
 weapons/mac10/deploy "sounds/weapons/mac10_boltpull.wav"
 
+weapons/express600/prefire "sounds/weapons/revolver_hammer.wav"
+weapons/express600/fire "sounds/weapons/bigfuckenmagnum.ogg"
+
+
+// Shotguns (Slot 3)
+
+weapons/shotgun/pump "sounds/weapons/shotgunpump1.ogg"
+weapons/shotgun/fire "sounds/weapons/ssg_fire_04.wav"
+
+weapons/ks23/fire "sounds/weapons/ks23.wav"
+
 weapons/autoshotgun1 "sounds/weapons/Scattergun5c-Shot01.ogg"
 weapons/autoshotgun2 "sounds/weapons/Scattergun5c-Shot02.ogg"
 weapons/autoshotgun3 "sounds/weapons/Scattergun5c-Shot03.ogg"
@@ -50,24 +90,48 @@ $random weapons/autoshotgun {weapons/autoshotgun1 weapons/autoshotgun2 weapons/a
 $limit weapons/autoshotgun 2 
 weapons/autoshotgun/deploy "sounds/weapons/shotgun_deploy_1.wav"
 
-weapons/fists/deploy "sounds/weapons/KNUCKLED.ogg"
-
-weapons/plasmacannon "sounds/weapons/65_wea_shotgun_alt.wav"
-weapons/plasmacannon/deploy "sounds/weapons/PLSDRAW.ogg"
-weapons/railgun "sounds/weapons/railgf1a.wav"
-
 weapons/doubleshotties "sounds/weapons/SSHFIRE.ogg"
 
-weapons/swing1 "sounds/weapons/Swing1.wav"
-weapons/swing2 "sounds/weapons/Swing2.wav"
-$random weapons/swing {weapons/swing1 weapons/swing2}
 
-weapons/missle/deploy "sounds/weapons/bfg_raise.wav"
+// Hevimachingas (Slot 4)
+
+weapons/chaingun1 "sounds/weapons/CHGNSHOT.ogg"
+weapons/chaingun2 "sounds/weapons/CHGNSHOT2.ogg"
+$random weapons/chaingun {weapons/chaingun1 weapons/chaingun2}
+weapons/chaingun/deploy "sounds/weapons/REVUP.ogg"
+
+weapons/m249/deploy "sounds/weapons/m249_deploy.ogg"
+weapons/m249/fire "sounds/weapons/m249-1.wav"
+
+weapons/m4 "sounds/weapons/m4a1_unsil-1.ogg"
+weapons/m4/grenade1 "sounds/weapons/glauncher.wav"
+weapons/m4/grenade2 "sounds/weapons/glauncher2.wav"
+$random weapons/m4/grenade {weapons/m4/grenade1 weapons/m4/grenade2}
+
+weapons/sg550 "sounds/weapons/sg550-1.wav"
+weapons/sg550/deploy "sounds/weapons/sg550-deploy.wav"
+weapons/sg550/zoom "sounds/weapons/zoom.wav"
+
+
+// Rawketlawnchairs (Slot 5)
 
 weapons/rocket "sounds/weapons/rocket.wav"
 weapons/rocket/load "sounds/weapons/rocklr1b.wav"
 weapons/rocketshotty "sounds/weapons/rocketshotty.ogg"
 weapons/rocketshotty/cock "sounds/weapons/shotgun_cock_back.wav"
+
+
+// Phased Plasma Rifle In The 40 Watt Range (Slot 6)
+
+weapons/plasmacannon "sounds/weapons/65_wea_shotgun_alt.wav"
+weapons/plasmacannon/deploy "sounds/weapons/PLSDRAW.ogg"
+weapons/railgun "sounds/weapons/railgf1a.wav"
+
+weapons/laser/start "sounds/weapons/laserwindup.ogg"
+weapons/laser/stop "sounds/weapons/laserstop.ogg"
+weapons/laser/fire "sounds/weapons/myears.ogg"
+
+// WMDs (Slot 7)
 
 weapons/nuke "sounds/weapons/rocketfire1.wav"
 weapons/nuke/explode "sounds/weapons/1956_exploz1.ogg"
@@ -75,68 +139,27 @@ $limit weapons/nuke/explode 0
 weapons/nuke/alarm "sounds/weapons/nukealarm.ogg"
 weapons/nuke/load "sounds/weapons/nuke_in.ogg"
 
-weapons/laser/start "sounds/weapons/laserwindup.ogg"
-weapons/laser/stop "sounds/weapons/laserstop.ogg"
-
-weapons/laser/fire "sounds/weapons/myears.ogg"
-
 weapons/bfgq2 "sounds/weapons/bfg__f1y.wav"
 weapons/bfgq2/deploy "sounds/weapons/bfg_deploy.wav"
 
-weapons/generic/draw "sounds/weapons/draw_generic.wav"
 
-weapons/chaingun1 "sounds/weapons/CHGNSHOT.ogg"
-weapons/chaingun2 "sounds/weapons/CHGNSHOT2.ogg"
-$random weapons/chaingun {weapons/chaingun1 weapons/chaingun2}
-weapons/chaingun/deploy "sounds/weapons/REVUP.ogg"
+// Misc Weapon Sounds
 
-weapons/express600/prefire "sounds/weapons/revolver_hammer.wav"
-weapons/express600/fire "sounds/weapons/bigfuckenmagnum.ogg"
-
-weapons/chainsaw/pull "sounds/weapons/chainsaw_pull.ogg"
-weapons/chainsaw/idle "sounds/weapons/chainsaw_idle.ogg"
-weapons/chainsaw/attack "sounds/weapons/chainsaw_attack.ogg"
-
-weapons/chainsaw1 "sounds/weapons/Chainsaw-1.wav"
-weapons/chainsaw2 "sounds/weapons/Chainsaw-2.wav"
-weapons/chainsaw3 "sounds/weapons/Chainsaw-3.wav"
-weapons/chainsaw4 "sounds/weapons/Chainsaw-4.wav"
-$random weapons/chainsaw {weapons/chainsaw1 weapons/chainsaw2 weapons/chainsaw3 weapons/chainsaw4}
-$volume weapons/chainsaw 0.3
-weapons/chainsaw/start1 "sounds/weapons/chainsaw_start_01.ogg"
-weapons/chainsaw/start2 "sounds/weapons/chainsaw_start_02.ogg"
-$random weapons/chainsaw/start {weapons/chainsaw/start1 weapons/chainsaw/start2}
-$volume weapons/chainsaw/start 0.3
-
-weapons/m249/deploy "sounds/weapons/m249_deploy.ogg"
-weapons/m249/fire "sounds/weapons/m249-1.wav"
-
-weapons/deagle/deploy "sounds/weapons/de_deploy.wav"
-
-weapons/sg550 "sounds/weapons/sg550-1.wav"
-weapons/sg550/deploy "sounds/weapons/sg550-deploy.wav"
-weapons/sg550/zoom "sounds/weapons/zoom.wav"
-
-weapons/m4 "sounds/weapons/m4a1_unsil-1.ogg"
-weapons/m4/grenade1 "sounds/weapons/glauncher.wav"
-weapons/m4/grenade2 "sounds/weapons/glauncher2.wav"
-$random weapons/m4/grenade {weapons/m4/grenade1 weapons/m4/grenade2}
+weapons/swing1 "sounds/weapons/Swing1.wav"
+weapons/swing2 "sounds/weapons/Swing2.wav"
+$random weapons/swing {weapons/swing1 weapons/swing2}
 
 weapons/dryfire "sounds/weapons/DRYFIRE.ogg"
 
-weapons/kick/miss "sounds/weapons/KICK.ogg"
-weapons/kick1 "sounds/weapons/KICKHIT1.ogg"
-weapons/kick2 "sounds/weapons/KICKHIT2.ogg"
-weapons/kick3 "sounds/weapons/KICKHIT3.ogg"
-$random weapons/kick {weapons/kick1 weapons/kick2 weapons/kick3}
-
-weapons/punch/hitwall1 "sounds/weapons/BodyHit-1.wav"
-weapons/punch/hitwall2 "sounds/weapons/BodyHit-2.wav"
-weapons/punch/hitwall3 "sounds/weapons/BodyHit-3.wav"
-$random weapons/punch/hitwall {weapons/punch/hitwall1 weapons/punch/hitwall2 weapons/punch/hitwall3}
-
 weapons/flame "sounds/weapons/FlamethrowerSelect.wav"
 
+weapons/generic/draw "sounds/weapons/draw_generic.wav"
+weapons/missle/deploy "sounds/weapons/bfg_raise.wav"
+weapons/deagle/deploy "sounds/weapons/de_deploy.wav"
+
+
+// Miscellaneous
+// Intro, Health Pickups and Foley
 misc/drink "sounds/misc/drink.ogg"
 misc/gulp "sounds/misc/gulp.wav"
 misc/drink_alt "sounds/misc/drink_hardtime.wav"
@@ -150,6 +173,21 @@ misc/can_open1 "sounds/misc/can_open1.ogg"
 misc/can_open2 "sounds/misc/can_open2.ogg"
 misc/can_open3 "sounds/misc/can_open3.ogg"
 $random misc/can_open {misc/can_open1 misc/can_open2 misc/can_open3}
+misc/zippo/open "sounds/misc/zippo_open.ogg"
+misc/zippo/close "sounds/misc/zippo_close.ogg"
+misc/phone/sorry "sounds/misc/weresorry.ogg"
+misc/phone/break "sounds/misc/phone_break.ogg"
+misc/eat1 "sounds/misc/eating_1.ogg"
+misc/eat2 "sounds/misc/eating_2.ogg"
+misc/eat3 "sounds/misc/eating_3.ogg"
+$random misc/eat {misc/eat1 misc/eat2 misc/eat3}
+misc/throw "sounds/weapons/iceaxe_swing1.wav"
+misc/drop1 "sounds/misc/weapon_impact_hard1.wav"
+misc/drop2 "sounds/misc/weapon_impact_hard2.wav"
+misc/drop3 "sounds/misc/weapon_impact_hard3.wav"
+$random misc/drop {misc/drop1 misc/drop2 misc/drop3}
+
+// Hit Valve Game
 misc/ricochet1 "sounds/misc/ric1.wav"
 misc/ricochet2 "sounds/misc/ric2.wav"
 misc/ricochet3 "sounds/misc/ric3.wav"
@@ -158,37 +196,12 @@ misc/ricochet5 "sounds/misc/ric5.wav"
 misc/ricochet6 "sounds/misc/RICOCHE2.ogg"
 misc/ricochet7 "sounds/misc/RICOCHE3.ogg"
 $random misc/ricochet {misc/ricochet1 misc/ricochet2 misc/ricochet3 misc/ricochet4 misc/ricochet5 misc/ricochet6 misc/ricochet7}
-misc/berserk "sounds/weapons/BERSPKUP.ogg"
-misc/zippo/open "sounds/misc/zippo_open.ogg"
-misc/zippo/close "sounds/misc/zippo_close.ogg"
 
-misc/phone/sorry "sounds/misc/weresorry.ogg"
-misc/phone/break "sounds/misc/phone_break.ogg"
-
-misc/eat1 "sounds/misc/eating_1.ogg"
-misc/eat2 "sounds/misc/eating_2.ogg"
-misc/eat3 "sounds/misc/eating_3.ogg"
-$random misc/eat {misc/eat1 misc/eat2 misc/eat3}
-
-misc/throw "sounds/weapons/iceaxe_swing1.wav"
-misc/drop1 "sounds/misc/weapon_impact_hard1.wav"
-misc/drop2 "sounds/misc/weapon_impact_hard2.wav"
-misc/drop3 "sounds/misc/weapon_impact_hard3.wav"
-$random misc/drop {misc/drop1 misc/drop2 misc/drop3}
-
-misc/protect "sounds/weapons/protect.wav"
-misc/protect/end "sounds/weapons/protect2.wav"
-
-misc/transformation1 "sounds/misc/r_tele1.wav"
-misc/transformation2 "sounds/misc/r_tele2.wav"
-misc/transformation3 "sounds/misc/r_tele3.wav"
-misc/transformation4 "sounds/misc/r_tele4.wav"
-misc/transformation5 "sounds/misc/r_tele5.wav"
-$random misc/transformation {misc/transformation1 misc/transformation2 misc/transformation3 misc/transformation4 misc/transformation5}
-
+// "I need a key..."
 misc/k_pkup	"sounds/misc/basekey.wav"
 misc/keytry "sounds/misc/basetry.wav"
 
+// Metal Slug Announcer
 misc/metalslug/generic  "sounds/weapons/metalslug_wpn.wav"
 misc/metalslug/okay  "sounds/weapons/metalslug_wpnok.wav"
 misc/metalslug/hmg  "sounds/weapons/metalslug_wpnhmg.wav"
@@ -213,6 +226,21 @@ $volume misc/laser_pkup 0.5
 $random misc/bfg_pkup {misc/metalslug misc/metalslug misc/metalslug/bfg}
 $volume misc/bfg_pkup 0.5
 
+// Pickups and Powerups
+misc/berserk "sounds/weapons/BERSPKUP.ogg"
+misc/protect "sounds/weapons/protect.wav"
+misc/protect/end "sounds/weapons/protect2.wav"
+
+// Transformations
+misc/transformation1 "sounds/misc/r_tele1.wav"
+misc/transformation2 "sounds/misc/r_tele2.wav"
+misc/transformation3 "sounds/misc/r_tele3.wav"
+misc/transformation4 "sounds/misc/r_tele4.wav"
+misc/transformation5 "sounds/misc/r_tele5.wav"
+$random misc/transformation {misc/transformation1 misc/transformation2 misc/transformation3 misc/transformation4 misc/transformation5}
+
+
+// Player
 // Spot
 $playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
 $playersound	spot	male	*gibbed		"sounds/spot/Gibbing.ogg"
@@ -262,6 +290,7 @@ weapons/punch3 "sounds/weapons/punch3.ogg"
 weapons/punch4 "sounds/weapons/punch4.ogg"
 $random weapons/punch {weapons/punch1 weapons/punch2 weapons/punch3 weapons/punch4}
 
+// Menu
 menu/slam "sounds/menu/LogoSlam.wav"
 menu/cancel "sounds/menu/MenuCancel.wav"
 menu/move "sounds/menu/MenuMove.wav"
