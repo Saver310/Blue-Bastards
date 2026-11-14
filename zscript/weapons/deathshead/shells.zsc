@@ -49,7 +49,7 @@ class DeathsheadShotgun : BlueBastardWeapon
 class DeathsheadSuperShotgun : BlueBastardWeapon
 {
 	mixin BBDeathsheadWeapon;
-	bool side, LeftLoad, RightLoad;
+	bool side;
 	const leftSidelayer = 2;
 	const rightSidelayer = 3;
 	
@@ -117,7 +117,7 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 		if(GetPlayerInput(INPUT_BUTTONS) & BT_ATTACK))
 		*/
 	TNT1 A 16;
-	GOTO ready+2;
+	Goto Ready+2;
 	GunFire:
 		ADDB M 1 Bright 
 		{
@@ -139,13 +139,13 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 			A_Recoil(5*cos(pitch));
 		}
 		ADDB M 1 Bright A_SetPitch(self.pitch - 12, SPF_INTERPOLATE);
-		ADDB N 2 Bright{
+		ADDB N 2 Bright {
 			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
-			A_overlayOffset(OverlayId(), Random(-2,2),Random(-2,2) + 36);
+			A_OverlayOffset(OverlayId(), Random(-2,2),Random(-2,2) + 36);
 		}
-		ADDB CCCCC 2{
+		ADDB CCCCC 2 {
 			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
-			A_overlayOffset(OverlayId(), Random(-2,2),Random(-2,2) + 36);
+			A_OverlayOffset(OverlayId(), Random(-2,2),Random(-2,2) + 36);
 		}
 		ADDB D 2;
 		ADDB A 0 A_CheckReload;
@@ -170,7 +170,7 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 		TNT1 A 2 A_overlayscale(rightSidelayer, 1.15);
 		TNT1 A 2 A_overlayscale(rightSidelayer, 1.05);
 		TNT1 A 1 A_overlayscale(rightSidelayer, 1);
-		stop;
+		Stop;
 	KnockbackLeft:
 		TNT1 A 2 A_overlayscale(leftSidelayer,1.6); //PSP_WEAPON is the equivalent of layer 1 in the overlays.
 		TNT1 A 2 A_overlayscale(leftSidelayer,1.5);
@@ -181,6 +181,6 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 		TNT1 A 2 A_overlayscale(leftSidelayer,1.15);
 		TNT1 A 2 A_overlayscale(leftSidelayer,1.05);
 		TNT1 A 1 A_overlayscale(leftSidelayer,1);
-		stop;
+		Stop;
 	}
 }
