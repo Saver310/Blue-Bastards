@@ -52,9 +52,6 @@ $volume weapons/chainsaw/start 0.3
 
 // Pistols (Slot 2)
 
-weapons/blaster/shoot "sounds/weapons/plasma_2fire3.wav"
-weapons/blaster/reload "sounds/weapons/bfg_reload.wav"
-
 weapons/adpistol1 "sounds/weapons/adpistol1.ogg"
 weapons/adpistol2 "sounds/weapons/adpistol2.ogg"
 weapons/adpistol3 "sounds/weapons/adpistol3.ogg"
