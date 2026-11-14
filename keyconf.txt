@@ -1,3 +1,4 @@
 addkeysection "" BlueBastardActions
 addmenukey "$KICKYDICKY" "+zoom"
 defaultbind Q "+zoom"
+addmenukey "$TAUNT" "pukename Taunt"

@@ -15,6 +15,7 @@ class Spot : DoomPlayer
 
 		//Player.StartItem "Dragon_Spot_Transform";
 		Player.StartItem "SpotLevelEnter";
+		Player.StartItem "BlueBastardsTaunt";
 		Player.StartItem "SpotMallet";
 		Player.StartItem "SpotExpress600";
 		Player.StartItem "SpotKicky";
@@ -240,6 +241,7 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		BloodColor "37732b";
 		
 		Player.StartItem "DeathsheadLevelEnter";
+		Player.StartItem "BlueBastardsTaunt";
 		Player.StartItem "DeathsheadFist";
 		Player.StartItem "DeathsheadKicky";
 		Player.StartItem "DeathsheadPistol";

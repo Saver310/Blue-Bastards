@@ -151,6 +151,7 @@ SPOT_TRANSFORM_INIT = "Czujesz, że Twoje serce zaraz ci wysadzi.\n Czujesz bard
 SPOT_TRANSFORM_WORN = "Moce smoka zanikają";
 
 KICKYDICKY = "Kop";
+TAUNT = "Drwina";
 
 //TODO: Make them a bit more catchier.
 //Obituaries - Spot

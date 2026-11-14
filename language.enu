@@ -150,6 +150,7 @@ SPOT_TRANSFORM_INIT = "You feel like your heart is about to blow. \n You feel a 
 SPOT_TRANSFORM_WORN = "Your dragon powers are wearing off";
 
 KICKYDICKY = "Kick";
+TAUNT = "Taunt";
 
 //Obituaries - Spot
 SPOT_KILL_CHAINSAW = "%k thought %o was a tree.";

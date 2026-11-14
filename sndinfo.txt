@@ -280,12 +280,18 @@ $playersound	deathshead	male	*grunt		"sounds/deathshead/DSMOFOOF.ogg"
 $playersounddup	deathshead	male	*land		*grunt
 $playersound	deathshead	male	*jump		"sounds/deathshead/DSMOFJMP.ogg"
 $playersound	deathshead	male	*usefail	"sounds/deathshead/DSMOFNWA.ogg"
-$playeralias	deathshead	male	*fist	weapons/punch
 weapons/punch1 "sounds/weapons/punch1.ogg"
 weapons/punch2 "sounds/weapons/punch2.ogg"
 weapons/punch3 "sounds/weapons/punch3.ogg"
 weapons/punch4 "sounds/weapons/punch4.ogg"
 $random weapons/punch {weapons/punch1 weapons/punch2 weapons/punch3 weapons/punch4}
+$playeralias	deathshead	male	*fist	weapons/punch
+moth/chitter "sounds/deathshead/moth_chitter.ogg"
+moth/flap "sounds/deathshead/moth_flap.ogg"
+moth/laugh "sounds/deathshead/moth_laugh.ogg"
+moth/squeak "sounds/deathshead/moth_squeak.ogg"
+$random moth/taunt {moth/chitter moth/flap moth/laugh moth/squeak}
+$playeralias	deathshead	male	*taunt	moth/taunt
 
 // Menu
 menu/slam "sounds/menu/LogoSlam.wav"
