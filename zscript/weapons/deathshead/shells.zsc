@@ -169,47 +169,15 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 		Goto LightDone;
 		
 	KnockbackFX:
-		TNT1 A 2
-		{
-			A_overlayscale(PSP_WEAPON,1.6); //PSP_WEAPON is the equivalent of layer 1 in the overlays.
-			A_overlayscale(2,1.6); //PSP_FLASH is the overlay that gunflash uses
-		}
-		TNT1 A 2
-		{
-			A_overlayscale(1,1.5);
-			A_overlayscale(2,1.5);
-		}
-		TNT1 A 2;
-		TNT1 A 1
-		{
-			A_overlayscale(1,1.45);
-			A_overlayscale(2,1.45);
-		}
-		TNT1 A 1
-		{
-			A_overlayscale(1,1.40);
-			A_overlayscale(2,1.40);
-		}
-		TNT1 A 2
-		{
-			A_overlayscale(1,1.35);
-			A_overlayscale(2,1.35);
-		}
-		TNT1 A 2
-		{
-			A_overlayscale(1,1.15);
-			A_overlayscale(2,1.15);
-		}
-		TNT1 A 2
-		{
-			A_overlayscale(1,1.05);
-			A_overlayscale(2,1.05);
-		}
-		TNT1 A 1
-		{
-			A_overlayscale(1,1);
-			A_overlayscale(2,1);
-		}
-		stop;
+        TNT1 A 2 A_overlayscale(OverlayID(),1.6); //PSP_WEAPON is the equivalent of layer 1 in the overlays.
+        TNT1 A 2 A_overlayscale(OverlayID(),1.5);
+        TNT1 A 2;
+        TNT1 A 1 A_overlayscale(OverlayID(),1.45);
+        TNT1 A 1 A_overlayscale(OverlayID(),1.40);
+        TNT1 A 2 A_overlayscale(OverlayID(),1.35);
+        TNT1 A 2 A_overlayscale(OverlayID(),1.15);
+        TNT1 A 2 A_overlayscale(OverlayID(),1.05);
+        TNT1 A 1 A_overlayscale(OverlayID(),1);
+        Stop;
 	}
 }
