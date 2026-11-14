@@ -5,7 +5,7 @@ class SpotExpress600 : BlueBastardWeapon
     {
 		Weapon.SelectionOrder 600;
         Weapon.AmmoUse 1;
-		Weapon.AmmoGive 5;
+		Weapon.AmmoGive 4;
         Weapon.AmmoType "BBSpot600";
 		Tag "$SPOT_REV";
 		Obituary "$SPOT_KILL_REV";
@@ -63,7 +63,7 @@ class SpotChaingun : BlueBastardWeapon
 	{
 		Weapon.SelectionOrder 500;
 		Weapon.AmmoUse 1;
-		Weapon.AmmoGive 10;
+		Weapon.AmmoGive 20;
 		Weapon.AmmoType "BBSpotNavalBullets";
 		Inventory.PickupMessage "$GOTCHAINGUN";
 		Obituary "$SPOT_KILL_NAVAL";
@@ -116,7 +116,7 @@ class SpotM249: BlueBastardWeapon
 	{
 		Weapon.SelectionOrder 100;
 		Weapon.AmmoUse 1;
-		Weapon.AmmoGive 40;
+		Weapon.AmmoGive 20;
 		Weapon.AmmoType "Clip";
 		Inventory.PickupMessage "$GOTCHAINGUN";
 		Obituary "$SPOT_KILL_M249";
