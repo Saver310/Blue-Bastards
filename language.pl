@@ -54,7 +54,7 @@ DARK_BLUE_SURE = "Pożałujesz wyboru tego koloru\n"
 
 CREDIT_HEADER = "Podziękowania, gdzie się należą";
 CREDITS_ALMOST_EVERYTHING = "Prawie Wszystko";
-CREDITS_REDEAD = "Kontrybutor i Pierwsze Opinie";
+CREDITS_REDEAD = "Kontrybutor, Poprawki Kodu i Pierwsze Opinie";
 CREDITS_ICARUS = "Recenzja Moda";
 CREDITS_WEAPON_MODELS = "Modele Broni";
 CREDITS_WEAPON_SPRITES = "Sprity Broni";
