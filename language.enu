@@ -1,7 +1,14 @@
 [enu default]
 
 BLUE_BASTARDS = "Blue Bastards";
-PRESSSTART = "Press ESC to Begin";
+PRESSSTART0 = "Press ESC to Begin";
+PRESSSTART1 = "Press ESC to Get Wasted";
+PRESSSTART2 = "Press ESC to Drink Up";
+PRESSSTART3 = "Press ESC to Bomb Bridge";
+PRESSSTART4 = "Press ESC to Get AHelped";
+PRESSSTART5 = "Deathshead Was Here";
+PRESSSTART6 = "Spot Was Here";
+PRESSSTART7 = "You've Seen My Whiskey Anywhere?";
 MNU_MODOPTIONS = "Mod Options";
 MNU_SKIPINTROS = "Skip Character Intros";
 MNU_SKIPINTROS_DESC = "Skips the introductory animations when you enter a level or respawn.";

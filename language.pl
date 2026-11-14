@@ -1,7 +1,14 @@
 [pl]
 
 BLUE_BASTARDS = "Niebiescy Gówniarze";
-PRESSSTART = "Wciśnij ESC aby Rozpocząć";
+PRESSSTART0 = "Wciśnij ESC aby Rozpocząć";
+PRESSSTART1 = "Wciśnij ESC aby się Najebać";
+PRESSSTART2 = "Wciśnij ESC aby się Zachlać";
+PRESSSTART3 = "Wciśnij ESC aby Wysadzić Mostek";
+PRESSSTART4 = "Wciśnij ESC aby Dostać AHelpa";
+PRESSSTART5 = "Trupiogłowy Był Tu";
+PRESSSTART6 = "Spot Był Tu";
+PRESSSTART7 = "Widziałeś Gdzieś Moje Whisky?";
 MNU_MODOPTIONS = "Ustawienia Moda";
 MNU_SKIPINTROS = "Pomiń Intro Postaci";
 MNU_SKIPINTROS_DESC = "Pomija animacje kiedy wchodzisz na poziom lub się respawnujesz.";
