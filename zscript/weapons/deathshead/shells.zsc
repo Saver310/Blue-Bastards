@@ -94,7 +94,7 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 	LeftDeselect:
 		ADDB EFGHI 2;
 		ADDB I 1;
-		stop;
+		Stop;
 	Ready:
 		TNT1 A 0 A_Overlay(leftSidelayer,"GunReady");
 		TNT1 A 0 A_Overlay(rightSidelayer,"GunReady");
@@ -107,7 +107,7 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 	AltFire:
 		ADPS A 0 { A_Overlay(leftSidelayer,"GunFire");  A_Overlay(rightSidelayer,"GunFire");  }
 		TNT1 A 32;
-		GOTO ready;
+		Goto Ready;
 	Fire:
 		ADPS A 0 {
 			if (Invoker.side) { Invoker.side = false; A_Overlay(leftSidelayer,"GunFire");}
