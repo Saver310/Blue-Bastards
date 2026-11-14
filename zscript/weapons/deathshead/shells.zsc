@@ -49,33 +49,38 @@ class DeathsheadShotgun : BlueBastardWeapon
 class DeathsheadSuperShotgun : BlueBastardWeapon
 {
 	mixin BBDeathsheadWeapon;
+	bool side;
 	Default
 	{
 		Weapon.SelectionOrder 500;
-		Weapon.AmmoType "Shell";
-		Weapon.AmmoUse 4;
-		Weapon.AmmoGive 16;
+		Weapon.AmmoType1 "Shell";
+		Weapon.AmmoUse1 2;
+		Weapon.AmmoGive1 16;
+		Weapon.AmmoType2 "Shell";
+		Weapon.AmmoUse2 2;
+		Weapon.AmmoGive2 0;
 		
 		Weapon.BobSpeed 1.75;
 		Weapon.BobRangeX 1;
 		
 		Tag "$ACE_SAWNOFFS";
 		Obituary "$OB_ACE_SAWNOFFS";
+		+WEAPON.NOAUTOFIRE
 		+INVENTORY.UNDROPPABLE;
 	}
 	
     States
 	{
-	Select: //While the A_Raise(24) seems to work perfectly, 
-		TNT1 A 0 offset(0,32) A_Overlay(2,"LeftSelect");
+	Select:
+		TNT1 A 0 Offset(0,32) A_Overlay(2,"LeftSelect");
 		ADDB I 2 A_StartSound("weapons/sshotc", CHAN_AUTO);
-		ADDB HGFE 2;//you can use Offset(0,32) prior to just force the movement forward and then make it go to ready, 
-		Goto Ready; //works just as the other, except you can add an action afterwards.
+		ADDB HGFE 2;
+		Goto Ready;
 	LeftSelect:
 		TNT1 A 0 A_BBLefthand(OverlayId());
 		ADDB I 2 A_StartSound("weapons/sshotc", CHAN_AUTO);
 		ADDB HGFE 2;
-		goto LeftReady;
+		Goto LeftReady;
 	Deselect:
 		ADDB A 0 {
 			A_Overlay(2,"LeftDeselect");
@@ -88,27 +93,29 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 		ADDB EFGHI 2;
 		ADDB I 1;
 		Wait;
-		
-		
 	Ready:
-		ADDB A 1 A_WeaponReady(); 
-		//ADDB A 0 A_JumpIf(GetPlayerInput(INPUT_BUTTONS) & BT_ATTACK, "Fire"); //I don't get the usage of Input checking here when weaponready can cover both sides, in my opinion.
-		loop;
+		ADDB A 1 A_WeaponReady();
+ 		Loop;
 	LeftReady:
-		ADDB A 1;// A_JumpIf(GetPlayerInput(INPUT_BUTTONS) & BT_ATTACK, "LeftFire");
-		wait;
-
+		ADDB A 1;
+		Wait;
+	AltFire:
+		ADPS A 0 { A_Overlay(2,"LeftFire"); return ResolveState("RightFire"); }
 	Fire:
-		TNT1 A 0 A_Overlay(2,"LeftFire");
-		ADDB M 2 Bright {
-			A_FireBullets(11.8, 6.2, 48, random(6,8), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+		ADPS A 0 {
+			if (Invoker.side) { Invoker.side = false; A_Overlay(2,"LeftFire"); return ResolveState("Ready"); }
+			else { Invoker.side = true; return ResolveState("RightFire"); }
+		}
+	RightFire:
+		ADDB M 1 Bright {
+			A_FireBullets(11.8, 6.8, 20, random(6,8), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			A_StartSound("weapons/doubleshotties", CHAN_AUTO);
 			A_GunFlash();
-			A_quake(3,2,0,16);
-			A_SetPitch(self.pitch - 12, SPF_INTERPOLATE);
+			A_Quake(3,2,0,16);
 			A_Recoil(5*cos(pitch));
 			a_overlay(4,"KnockbackFX");
 		}
+		ADDB M 1 Bright A_SetPitch(self.pitch - 12, SPF_INTERPOLATE);
 		ADDB N 2 Bright{
 			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
 			A_overlayOffset(2,Random(-2,2),Random(-2,2) + 36);
@@ -129,11 +136,33 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 		Goto Ready;
 	LeftFire:
 		TNT1 A 0 A_BBLefthand(OverlayId());
-		ADDB M 2 Bright;
-		ADDB N 2 Bright;
-		ADDB C 10;
-		ADDB DEFGHIJKLC 2;
-		Goto Ready;
+		ADDB M 1 Bright {
+			A_FireBullets(11.8, 6.8, 20, random(6,8), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			A_StartSound("weapons/doubleshotties", CHAN_AUTO);
+			A_Overlay(999,"LeftFlash");
+			A_Quake(3,2,0,16);
+			A_Recoil(5*cos(pitch));
+			a_overlay(4,"KnockbackFX");
+		}
+		ADDB M 1 Bright A_SetPitch(self.pitch - 12, SPF_INTERPOLATE);
+		ADDB N 2 Bright{
+			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+			A_overlayOffset(2,Random(-2,2),Random(-2,2) + 36);
+			A_overlayOffset(1,Random(-2,2),Random(-2,2) + 36);
+		}
+		ADDB CCCCC 2{
+			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+			A_overlayOffset(2,Random(-2,2),Random(-2,2) + 36);
+			A_overlayOffset(1,Random(-2,2),Random(-2,2) + 36);
+		}
+		ADDB D 2;
+		ADDB A 0 A_CheckReload;
+		ADDB EFG 2;
+		ADDB H 2 A_StartSound("weapons/sshoto", CHAN_AUTO);
+		ADDB I 2 A_StartSound("weapons/sshotl", CHAN_AUTO);
+		ADDB J 2 A_StartSound("weapons/sshotc", CHAN_AUTO);
+		ADDB KLC 2;
+		Goto LeftReady;
 	Flash:
 		TNT1 A 2 A_Light1;
 		TNT1 A 2 A_Light2;
