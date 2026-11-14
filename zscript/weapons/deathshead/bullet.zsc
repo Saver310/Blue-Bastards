@@ -68,7 +68,8 @@ class DeathsheadPistol : BlueBastardWeapon
 			}
 			return ResolveState(null);
 		}
-		ADPS EEAA 1
+		ADPS E 1 A_ReFire();
+		ADPS EAA 1
 		{
 			if (player.cmd.buttons & BT_ATTACK && !(player.oldbuttons & BT_ATTACK))
 			{
@@ -86,7 +87,8 @@ class DeathsheadPistol : BlueBastardWeapon
 			A_Overlay(999,"LeftFlash");
 		}
 		ADPS BCCDD 1 Bright;
-		ADPS EA 2;
+		ADPS E 1 A_ReFire();
+		ADPS EAA 1;
 		Goto LeftReady;
 	Flash:
 		ADPS U 2 Bright A_Light2;
