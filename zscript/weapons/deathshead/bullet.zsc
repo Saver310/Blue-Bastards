@@ -7,12 +7,14 @@ class DeathsheadPistol : BlueBastardWeapon
 	Default
 	{
 		Weapon.SelectionOrder 800;
-		Weapon.AmmoType "BBDeathshead9mm";
-		Weapon.AmmoGive 20;
-		Weapon.AmmoUse 1;
-		
+		Weapon.AmmoType1 "BBDeathshead9mm";
+		Weapon.AmmoGive1 20;
+		Weapon.AmmoUse1 1;
+		Weapon.AmmoType2 "BBDeathshead9mm";
+		Weapon.AmmoGive2 0;
+		Weapon.AmmoUse2 1;
 		Weapon.BobSpeed 1.5;
-		
+		+WEAPON.NOALERT
 		+WEAPON.NOAUTOFIRE
 		+INVENTORY.UNDROPPABLE
 		Tag "$ACE_PISTOL";
@@ -73,11 +75,15 @@ class DeathsheadPistol : BlueBastardWeapon
 		Wait;
 	Fire:
 		ADPS A 0 {
-			if (Invoker.side) { Invoker.side = false; A_Overlay(leftSidelayer,"GunFire");}
-			else { Invoker.side = true; A_Overlay(rightSidelayer,"GunFire"); }
+			if (bb_pistols_akimbo_alt) A_Overlay(leftSidelayer,"GunFire");
+			else {
+				if (Invoker.side) { Invoker.side = false; A_Overlay(leftSidelayer,"GunFire");}
+				else { Invoker.side = true; A_Overlay(rightSidelayer,"GunFire"); }
+			}
 		}
 		TNT1 A 1;
 		TNT1 AAAAA 1 {
+			A_WeaponReady(WRF_NOPRIMARY);
 			if (player.cmd.buttons & BT_ATTACK && !(player.oldbuttons & BT_ATTACK))
 			{
 				return ResolveState("Fire");
@@ -86,9 +92,26 @@ class DeathsheadPistol : BlueBastardWeapon
 		}
 		TNT1 A 1 A_ReFire();
 		Goto RealReady+2;
+	AltFire:
+		ADPS A 0 {
+			if (bb_pistols_akimbo_alt) { A_Overlay(rightSidelayer,"GunFire"); return ResolveState(null); };
+			return ResolveState("RealReady");
+		}
+		TNT1 A 1;
+		TNT1 AAAAA 1 {
+			A_WeaponReady(WRF_NOSECONDARY);
+			if (player.cmd.buttons & BT_ALTATTACK && !(player.oldbuttons & BT_ALTATTACK))
+			{
+				return ResolveState("AltFire");
+			}
+			return ResolveState(null);
+		}
+		TNT1 A 1 A_ReFire();
+		Goto RealReady+2;
 	GunFire:
 		ADPS B 1 Bright
 		{
+			A_AlertMonsters();
 			A_FireBullets (4, 2, -1, random(8,20), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			A_StartSound("weapons/adpistol", CHAN_AUTO);
 			if (OverlayId() == leftSidelayer) {
