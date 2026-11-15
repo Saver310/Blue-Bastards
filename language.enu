@@ -162,6 +162,7 @@ SPOT_TRANSFORM_WORN = "Your dragon powers are wearing off";
 
 KICKYDICKY = "Kick";
 TAUNT = "Taunt";
+FLIPOFF = "Flip Off";
 
 //Obituaries - Spot
 SPOT_KILL_CHAINSAW = "%k thought %o was a tree.";

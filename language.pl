@@ -163,6 +163,7 @@ SPOT_TRANSFORM_WORN = "Moce smoka zanikają";
 
 KICKYDICKY = "Kop";
 TAUNT = "Drwina";
+FLIPOFF = "Pokazanie Faka";
 
 //TODO: Make them a bit more catchier.
 //Obituaries - Spot
