@@ -20,7 +20,7 @@ class SpotMallet : BlueBastardWeapon
 		MTCD E 1 A_Lower(24);
 		Wait;
 	Select:
-		MTCD E 1 A_Lower(24);
+		MTCD E 1 A_Raise(24);
 		Wait;
 	Ready:
 		MTCD EDC 3;
