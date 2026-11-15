@@ -21,7 +21,8 @@ MNU_RANDOM = "Losowy";
 MNU_SPOTALT_VOICE = "Użyj Alternatywnego Głosu Spota";
 MNU_SPOTALT_VOICE_DESC = "Użyj nieco bardziej surowego głosu zamiast domyślnego, jeśli uważasz ten drugi za zbyt uroczy.";
 MNU_ALLOW_TRANSFORM = "Zezwalaj na Transformacje";
-MNU_ALLOW_TRANSFORM_DESC = "Pozwala graczowi tymczasowo przemienić się w silniejszą wersję siebie po podniesieniu paczki szału.";
+MNU_ALLOW_TRANSFORM_DESC = "Pozwala graczowi tymczasowo przemienić się w silniejszą";
+MNU_ALLOW_TRANSFORM_DESC2 = "wersję siebie po podniesieniu paczki szału.";
 MNU_SSGS_D1 = "Super Strzelby w Strzelbach";
 MNU_SSGS_D1_DESC = "Zwiększa szansę zdobycia Super Strzelby w zwykłej Strzelbie."; 
 MNU_SSGS_D1_DESC2 = "Daj powyżej zera jeśli grasz tego moda z Doom 1.";
@@ -50,10 +51,10 @@ SKILL_PURPLE = "Purpurowy";
 SKILL_LIGHT_BLUE = "Jasny Niebieski";
 SKILL_BLUE = "Niebieski";
 SKILL_DARK_BLUE = "Ciemny Niebieski";
-DARK_BLUE_SURE = "Pożałujesz wyboru tego koloru\n"
-"Jesteś pewien?\n"
+DARK_BLUE_SURE = "Będziesz żałował wyboru tego koloru.\n"
+"Oszustwa są wyłączone i potwory są szybkie i się respawnują.\n"
 "\n"
-"Na twoim miejscu bym nie wybierał tego!";
+"Czy jesteś pewien?\n";
 
 CREDIT_HEADER = "Podziękowania, gdzie się należą";
 CREDITS_ALMOST_EVERYTHING = "Prawie Wszystko";

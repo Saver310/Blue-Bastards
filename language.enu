@@ -20,7 +20,8 @@ MNU_CHOOSESKILL = "HOW TOUGH?";
 MNU_SPOTALT_VOICE = "Use Spot's Alternative Voice";
 MNU_SPOTALT_VOICE_DESC = "Use a slightly tougher voice instead of the default one, if you think it's too cute.";
 MNU_ALLOW_TRANSFORM = "Allow Transformations";
-MNU_ALLOW_TRANSFORM_DESC = "Allow the player to morph into a stronger version of themselves temporarly after picking up the berserk pack.";
+MNU_ALLOW_TRANSFORM_DESC = "Allow the player to morph into a stronger version of themselves";
+MNU_ALLOW_TRANSFORM_DESC2 = "temporarily after picking up the berserk pack.";
 MNU_SSGS_D1 = "SSGs in Regular Shotguns";
 MNU_SSGS_D1_DESC = "Enables a chance of picking up a SSG when picking up the normal shotgun."; 
 MNU_SSGS_D1_DESC2 = "Slide option this above 0 if you're playing this mod with Doom 1.";
@@ -49,10 +50,10 @@ SKILL_PURPLE = "Purple";
 SKILL_LIGHT_BLUE = "Light Blue";
 SKILL_BLUE = "Blue";
 SKILL_DARK_BLUE = "Dark Blue";
-DARK_BLUE_SURE = "You're going to regret picking this color\n"
-"Are you sureeeee you want to do this?\n"
+DARK_BLUE_SURE = "You're going to regret picking this color.\n"
+"No cheats and monsters are fast and respawn.\n"
 "\n"
-"Because I wouldn't!";
+"Are you sureeeee you want to do this?\n";
 
 CREDIT_HEADER = "Credit Where It's Due";
 CREDITS_ALMOST_EVERYTHING = "Nearly Everything";
