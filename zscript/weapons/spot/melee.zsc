@@ -16,6 +16,7 @@ class SpotMallet : BlueBastardWeapon
 	States
 	{
 	Deselect:
+		MTCD A 0 { player.mo.speed = 0.9; }
 		MTCD ABCDE 3;
 		MTCD E 1 A_Lower(24);
 		Wait;
@@ -23,6 +24,7 @@ class SpotMallet : BlueBastardWeapon
 		MTCD E 1 A_Raise(24);
 		Wait;
 	Ready:
+		MTCD A 0 { player.mo.speed = 1.0; }
 		MTCD EDC 3;
 		MTCD A 0 A_PlaySound("weapons/generic/draw");
 		MTCD BA 3;
