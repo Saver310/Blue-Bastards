@@ -31,10 +31,12 @@ class DeathsheadFist : BlueBastardWeapon
 		ADFK A 1 A_Raise(24);
 		Wait;
 	Deselect:
+		ADFK A 0 { player.mo.speed = 1.0; }
 		ADFK KL 2;
 		ADFK L 1 A_Lower(24);
 		Wait;
 	Ready:
+		ADFK A 0 { player.mo.speed = 1.08; }
 		ADFK ABCD 2;
 		ADFK E 2 A_StartSound("weapons/fists/deploy");
 		ADFK FGHIJ 2;
