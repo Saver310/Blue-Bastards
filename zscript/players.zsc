@@ -225,7 +225,7 @@ class SpotDragon : Spot
 	}
 }
 
-class Deathshead : DoomPlayer replaces DoomPlayer
+class Deathshead : DoomPlayer
 {
 	Default
 	{

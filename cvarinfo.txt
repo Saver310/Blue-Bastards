@@ -7,3 +7,4 @@ server float bb_kick_damage = 1.0;
 server bool bb_pistols_akimbo_alt = false;
 user bool bb_spot_alt_voice = false;
 nosave bool bb_display_altfire = true;
+nosave bool bb_damage_red_tint = false;

@@ -36,6 +36,9 @@ MNU_DISPLAY_ALTFIRE_DESC = "Displays on the HUD if your weapon has an alt fire a
 MNU_PISTOLS_AKIMBO_ALT = "Alternative Akimbo Pistols Behavior";
 MNU_PISTOLS_AKIMBO_ALT_DESC = "Enables the use of primary fire to fire the left pistol";
 MNU_PISTOLS_AKIMBO_ALT_DESC2 = "and alt fire key to fire the right.";
+MNU_DAMAGE_RED_TINT = "Red Tint for Damage";
+MNU_DAMAGE_RED_TINT_DESC = "Tints the screen red instead of green when you get damaged as Ace.";
+MNU_DAMAGE_RED_TINT_DESC2 = ''"it's confusing and unreadable"'';
 
 PLAYER_SPOT = "Spot";
 PLAYER_DEATHSHEAD = "Deathshead";
