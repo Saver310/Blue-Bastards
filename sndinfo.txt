@@ -314,6 +314,7 @@ $alias menu/invalid			menu/cancel
 $alias menu/dismiss			menu/ok
 $alias menu/choose			menu/ok
 $alias menu/clear			menu/cancel
+$alias StartupTick          menu/tick
 
 $alias intermission/tick menu/tick
 $alias intermission/cooptotal menu/buy
