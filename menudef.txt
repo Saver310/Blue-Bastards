@@ -27,6 +27,14 @@ ListMenu "PlayerclassMenu"
 	MouseWindow 0, 220
 }
 
+ListMenu "EpisodeMenu"
+{
+	NetgameMessage "$NEWGAME"
+	Position 48, 63
+	StaticPatch 54, 38, "M_EPISOD", 0 , "$MNU_EPISODE"
+	LineSpacing 16
+}
+
 ListMenu "SkillMenu"
 {
 	StaticTextCentered 160, 15, "$MNU_CHOOSESKILL"

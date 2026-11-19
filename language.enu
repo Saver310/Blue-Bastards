@@ -16,6 +16,7 @@ MNU_EXTRAS = "Extras";
 MNU_CREDITS = "Credits";
 MNU_LORE = "Lore";
 MNU_CHOOSECLASS = "PICK YOUR BLUE BASTARD!";
+MNU_EPISODE = "WHICH CHAPTER?";
 MNU_CHOOSESKILL = "HOW TOUGH?";
 MNU_SPOTALT_VOICE = "Use Spot's Alternative Voice";
 MNU_SPOTALT_VOICE_DESC = "Use a slightly tougher voice instead of the default one, if you think it's too cute.";
