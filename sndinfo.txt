@@ -276,7 +276,12 @@ $playersound	deathshead	male	*pain100	"sounds/deathshead/DSMOFJMP.ogg"
 $playersounddup	deathshead	male	*pain75		*pain100
 $playersounddup	deathshead	male	*pain50		*pain100
 $playersounddup	deathshead	male	*pain25		*pain100
-$playersound	deathshead	male	*grunt		"sounds/deathshead/DSMOFOOF.ogg"
+moth/oof1 "sounds/deathshead/bodyfall1.ogg"
+moth/oof2 "sounds/deathshead/bodyfall2.ogg"
+moth/oof3 "sounds/deathshead/bodyfall3.ogg"
+moth/oof4 "sounds/deathshead/bodyfall4.ogg"
+$random moth/oof {moth/oof1 moth/oof2 moth/oof3 moth/oof4}
+$playeralias	deathshead	male	*grunt		moth/oof
 $playersounddup	deathshead	male	*land		*grunt
 $playersound	deathshead	male	*jump		"sounds/deathshead/DSMOFJMP.ogg"
 $playersound	deathshead	male	*usefail	"sounds/deathshead/DSMOFNWA.ogg"
