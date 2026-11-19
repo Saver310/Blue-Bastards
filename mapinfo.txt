@@ -26,12 +26,6 @@ GameInfo
 	statscreen_single = "BlueBastards_StatusScreen"
 }
 
-defaultmap
-{
-	exitpic = "$IN_INTER"
-	enterpic = "$IN_INTER"
-}
-
 map TITLEMAP lookup "BLUE_BASTARDS"
 {
 }
