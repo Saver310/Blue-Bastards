@@ -21,7 +21,7 @@ Flat:
 
 BB_LightBlue
 {
-	#006080 #00bfff
+	#004c66 #00bfff
 Flat:
 	#0099cc
 }
