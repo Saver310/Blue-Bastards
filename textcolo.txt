@@ -5,6 +5,13 @@ Flat:
 	#a11212
 }
 
+BB_Red
+{
+	#800000 #ff0000
+Flat:
+	#cc0000
+}
+
 BB_Beige
 {
 	#593222 #e6af97
