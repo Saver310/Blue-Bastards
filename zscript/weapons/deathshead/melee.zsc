@@ -181,21 +181,21 @@ class DeathsheadKicky : CustomInventory
         Fail;
     Kicky1:
         ADKK A 2 A_StartSound("weapons/kick/miss",CHAN_AUTO);
-		ADKK B 2 {if (momZ > 0) {A_Recoil(-6*bb_kick_thrust);} else {A_Recoil(-2*bb_kick_thrust);}}
+		ADKK B 2 {if (vel.Z > 0) {A_Recoil(-6*bb_kick_thrust);} else {A_Recoil(-2*bb_kick_thrust);}}
         ADKK C 2 KickyDicky();
         ADKK DEFA 2;
 		TNT1 A 2;
         Stop;
     Kicky2:
         ADKK G 2 A_StartSound("weapons/kick/miss",CHAN_AUTO);
-		ADKK H 2 {if (momZ > 0) {A_Recoil(-6*bb_kick_thrust);} else {A_Recoil(-2*bb_kick_thrust);}}
+		ADKK H 2 {if (vel.Z > 0) {A_Recoil(-6*bb_kick_thrust);} else {A_Recoil(-2*bb_kick_thrust);}}
         ADKK I 2 KickyDicky();
         ADKK JKLG 2;
 		TNT1 A 2;
         Stop;
     Kicky3:
         ADKK M 1 A_StartSound("weapons/kick/miss",CHAN_AUTO);
-		ADKK N 1 {if (momZ > 0) {A_Recoil(-6*bb_kick_thrust);} else {A_Recoil(-2*bb_kick_thrust);}}
+		ADKK N 1 {if (vel.Z > 0) {A_Recoil(-6*bb_kick_thrust);} else {A_Recoil(-2*bb_kick_thrust);}}
 		ADKK O 1;
         ADKK P 1 KickyDicky();
         ADKK QRSTUV 2;
