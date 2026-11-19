@@ -29,14 +29,13 @@ class DeathsheadShotgun : BlueBastardWeapon
 		ADSG A 1 A_WeaponReady;
 		Loop;
 	Fire:
-		ADSG B 1 Bright
-		{
+		ADSG B 1 Bright {
 			A_FireBullets (6, 6, 12, random(2,5), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			A_StartSound("weapons/autoshotgun", CHAN_AUTO);
 			A_GunFlash();
-			A_SetPitch(self.pitch - 2, SPF_INTERPOLATE);
+			self.pitch -= 2;
 		}
-		ADSG CCDD 1 Bright A_SetPitch(self.pitch + 0.5, SPF_INTERPOLATE);
+		ADSG CCDD 1 Bright { self.pitch += 0.5; }
 		ADSG EFA 2 A_ReFire;
 		Goto RealReady;
 	Flash:
