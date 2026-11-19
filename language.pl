@@ -1,5 +1,6 @@
 [pl]
 
+// Menu Główne
 BLUE_BASTARDS = "Niebiescy Gówniarze";
 PRESSSTART0 = "Wciśnij ESC aby Rozpocząć";
 PRESSSTART1 = "Wciśnij ESC aby się Najebać";
@@ -19,6 +20,8 @@ MNU_CHOOSECLASS = "WYBIERZ NIEBIESKIEGO GÓWNIARZA!";
 MNU_EPISODE = "KTÓRY ROZDZIAŁ?";
 MNU_CHOOSESKILL = "JAK NIEBIESKO?";
 MNU_RANDOM = "Losowy";
+
+// Opcje Moda
 MNU_SPOTALT_VOICE = "Użyj Alternatywnego Głosu Spota";
 MNU_SPOTALT_VOICE_DESC = "Użyj nieco bardziej surowego głosu zamiast domyślnego, jeśli uważasz ten drugi za zbyt uroczy.";
 MNU_ALLOW_TRANSFORM = "Zezwalaj na Transformacje";

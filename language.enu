@@ -1,5 +1,6 @@
 [enu default]
 
+// Main Menu
 BLUE_BASTARDS = "Blue Bastards";
 PRESSSTART0 = "Press ESC to Begin";
 PRESSSTART1 = "Press ESC to Get Wasted";
@@ -18,6 +19,8 @@ MNU_LORE = "Lore";
 MNU_CHOOSECLASS = "PICK YOUR BLUE BASTARD!";
 MNU_EPISODE = "WHICH CHAPTER?";
 MNU_CHOOSESKILL = "HOW TOUGH?";
+
+// Mod Options
 MNU_SPOTALT_VOICE = "Use Spot's Alternative Voice";
 MNU_SPOTALT_VOICE_DESC = "Use a slightly tougher voice instead of the default one, if you think it's too cute.";
 MNU_ALLOW_TRANSFORM = "Allow Transformations";
