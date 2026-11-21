@@ -428,7 +428,7 @@ class DeathsheadM40A1 : BlueBastardWeapon
 		ADSN B 2 Bright
 		{
 			A_AlertMonsters();
-			A_FireBullets (2, 3.5, -1, random(120,130), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			A_FireBullets (2, 3.5, -1, random(125,140), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			A_StartSound("weapons/sniper", CHAN_AUTO);
 			A_GunFlash();
 			A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
