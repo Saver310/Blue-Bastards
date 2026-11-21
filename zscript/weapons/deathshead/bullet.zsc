@@ -431,11 +431,11 @@ class DeathsheadM40A1 : BlueBastardWeapon
 			A_FireBullets (2, 3.5, -1, random(125,140), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			A_StartSound("weapons/sniper", CHAN_AUTO);
 			A_GunFlash();
-			A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
+			A_SetPitch(self.pitch - 12, SPF_INTERPOLATE);
 		}
 		ADSN CC 1 Bright A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
-		ADSN D 1 A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
-		ADSN EFGH 1;
+		ADSN DEFG 1 A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		ADSN H 1;
 		ADSN I 1 A_StartSound("weapons/sniper/bolt", CHAN_AUTO);
 		ADSN IJKLLMNOPQRRSTTUVW 1;
 		ADSN A 1 A_ReFire;
@@ -446,12 +446,12 @@ class DeathsheadM40A1 : BlueBastardWeapon
 			A_AlertMonsters();
 			A_FireBullets (0.5, 1, -1, random(180,200), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			A_StartSound("weapons/sniper", CHAN_AUTO);
-			A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
+			A_SetPitch(self.pitch - 12, SPF_INTERPOLATE);
 		}
 		TNT1 AAA 2 Bright A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
-		ADSN E 1 A_ZoomFactor(1.75);
-		ADSN F 2 A_ZoomFactor(1.5);
-		ADSN G 1 A_ZoomFactor(1.25);
+		ADSN E 1 { A_ZoomFactor(1.75); A_SetPitch(self.pitch + 2, SPF_INTERPOLATE); }
+		ADSN F 2 { A_ZoomFactor(1.5); A_SetPitch(self.pitch + 2, SPF_INTERPOLATE); }
+		ADSN G 1 { A_ZoomFactor(1.25); A_SetPitch(self.pitch + 2, SPF_INTERPOLATE); }
 		ADSN H 2 A_ZoomFactor(1.0);
 		ADSN I 1 A_StartSound("weapons/sniper/bolt", CHAN_AUTO);
 		ADSN IJKLLMNOPQRRSTUVW 1;
