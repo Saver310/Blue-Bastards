@@ -94,6 +94,11 @@ class BlueBastardsStatusBar : BaseStatusBar
 					[amt1, maxamt] = GetAmount("BBDeathshead9mm");
 					DrawImage("graphics/stbar_9mm.png", (249, 168), DI_ITEM_OFFSETS);
 				}
+				else if (pPawn.Player.ReadyWeapon.GetClassName() == "DeathsheadM40A1")
+				{
+					[amt1, maxamt] = GetAmount("BBDeathshead762");
+					DrawImage("graphics/stbar_762.png", (249, 168), DI_ITEM_OFFSETS);
+				}
 				DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 173), DI_TEXT_ALIGN_RIGHT);
 				DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 173), DI_TEXT_ALIGN_RIGHT);
 				
