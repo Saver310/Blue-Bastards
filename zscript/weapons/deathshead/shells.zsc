@@ -19,12 +19,12 @@ class DeathsheadShotgun : BlueBastardWeapon
 		TNT1 A 1 A_Raise(24);
 		Wait;
 	Deselect:
-		ADSG GHIJKLM 2;
+		ADSG GHHIJJKLLMNNO 1;
 		TNT1 A 1 A_Lower(24);
 		Wait;
 	Ready:
-		ADSG M 2 A_StartSound("weapons/autoshotgun/deploy");
-		ADSG LKJIHGA 2;
+		ADSG O 1 A_StartSound("weapons/autoshotgun/deploy");
+		ADSG NNMLLKJJIHHG 1;
 	RealReady:
 		ADSG A 1 A_WeaponReady;
 		Loop;
@@ -39,8 +39,8 @@ class DeathsheadShotgun : BlueBastardWeapon
 		ADSG EFA 2 A_ReFire;
 		Goto RealReady;
 	Flash:
-		ADSG N 1 Bright A_Light2;
-		ADSG O 2 Bright A_Light1;
+		ADSG P 1 Bright A_Light2;
+		ADSG Q 2 Bright A_Light1;
 		Goto LightDone;
 	}
 }
