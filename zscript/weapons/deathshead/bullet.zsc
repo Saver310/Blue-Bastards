@@ -253,7 +253,7 @@ class DeathsheadSG550 : BlueBastardWeapon
 		Weapon.SelectionOrder 600;
 		Weapon.AmmoType1 "BBDeathshead556";
 		Weapon.AmmoGive1 20;
-		Weapon.AmmoUse1 4;
+		Weapon.AmmoUse1 2;
 		Weapon.AmmoType2 "BBDeathshead556";
 		Weapon.AmmoGive2 0;
 		Weapon.AmmoUse2 0;
@@ -264,6 +264,128 @@ class DeathsheadSG550 : BlueBastardWeapon
 		+INVENTORY.UNDROPPABLE
 		Tag "$ACE_SG550";
 		Obituary "$OB_ACE_SG550";
+	}
+	States
+	{
+	Select:
+		TNT1 A 1 A_Raise(24);
+		Wait;
+	Deselect:
+		ADPS F 2 {
+			Invoker.zoom = false;
+			A_ZoomFactor(1.0);
+		}
+		ADAS G 1;
+		ADAS H 2;
+		ADAS I 1;
+		ADAS J 2;
+		ADAS K 1;
+		TNT1 A 1 A_Lower(24);
+		Wait;
+	Ready:
+		ADAS K 1 A_StartSound("weapons/sg550/deploy");
+		ADAS J 1;
+		ADAS I 2;
+		ADAS H 1;
+		ADAS G 2;
+		ADAS F 1;
+	RealReady:
+		ADAS A 1 A_WeaponReady;
+		Wait;
+	RealReadyZoomed:
+		TNT1 A 1 A_WeaponReady;
+		Wait;
+	Fire:
+		ADPS A 0 {
+			if (Invoker.zoom) { return ResolveState("FireZoomed"); }
+			return ResolveState(null);
+		}
+		ADAS B 2 Bright
+		{
+			A_AlertMonsters();
+			A_FireBullets (2, 3.5, -1, random(55,60), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			A_StartSound("weapons/sg550", CHAN_AUTO);
+			A_GunFlash();
+			A_WeaponOffset(random(4.0,16.0), random(48.0,56.0),WOF_INTERPOLATE);
+			A_SetPitch(self.pitch - 4, SPF_INTERPOLATE);
+		}
+		ADAS CC 1 Bright A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
+		ADAS DD 1 A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
+		ADAS E 2 A_WeaponOffset(0.0, 32.0,WOF_INTERPOLATE);
+		ADAS A 1;
+		ADAS A 1 A_ReFire;
+		Goto RealReady;
+	FireZoomed:
+		TNT1 A 0 Bright
+		{
+			A_AlertMonsters();
+			A_FireBullets (0.5, 1, -1, random(65,70), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			A_StartSound("weapons/sg550", CHAN_AUTO);
+			A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
+		}
+		TNT1 AAA 2 Bright A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		TNT1 AAA 1;
+		TNT1 A 1 A_ReFire;
+		Goto RealReadyZoomed;
+	AltFire:
+		ADAS N 0
+		{
+			A_StartSound("weapons/sg550/zoom", CHAN_AUTO);
+			if (Invoker.zoom) { return ResolveState("UnZoom"); }
+			return ResolveState(null);
+		}
+		ADAS N 1;
+		ADAS O 2;
+		ADAS P 1;
+		ADAS Q 2 A_ZoomFactor(1.25);
+		ADAS R 1 A_ZoomFactor(1.5);
+		ADAS S 2 A_ZoomFactor(1.75);
+		ADAS S 0 { Invoker.zoom = true; A_ZoomFactor(2.0); }
+		Goto AltHold;
+	UnZoom:
+		ADAS S 1 A_ZoomFactor(1.75);
+		ADAS R 2 A_ZoomFactor(1.5);
+		ADAS Q 1 A_ZoomFactor(1.25);
+		ADAS P 2 A_ZoomFactor(1.0);
+		ADAS O 1;
+		ADAS N 2;
+		ADAS A 1 { Invoker.zoom = false; }
+		Goto AltHold;
+	AltHold:
+		TNT1 A 0 A_JumpIf(Invoker.zoom,3);
+		ADAS A 1;
+		TNT1 A 0 A_ReFire("AltHold");
+		Goto RealReady;
+		TNT1 A 1;
+		TNT1 A 0 A_ReFire("AltHold");
+		Goto RealReadyZoomed;
+	Flash:
+		ADAS L 2 Bright A_Light2;
+		ADAS M 2 Bright A_Light1;
+		Goto LightDone;
+	}
+}
+
+class DeathsheadM40A1 : BlueBastardWeapon
+{
+	mixin BBDeathsheadWeapon;
+	bool zoom;
+	Default
+	{
+		Weapon.SelectionOrder 600;
+		Weapon.AmmoType1 "BBDeathshead556";
+		Weapon.AmmoGive1 20;
+		Weapon.AmmoUse1 4;
+		Weapon.AmmoType2 "BBDeathshead556";
+		Weapon.AmmoGive2 0;
+		Weapon.AmmoUse2 0;
+		
+		Weapon.BobRangeX 1.25;
+		
+		+WEAPON.NOALERT
+		+INVENTORY.UNDROPPABLE
+		Tag "$ACE_M40A1";
+		Obituary "$OB_ACE_M40A1";
 	}
 	States
 	{

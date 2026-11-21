@@ -194,7 +194,7 @@ class ChaingunReplacement : BB_RescaleWeaponsBecauseImLazy replaces Chaingun
 				  A_GiveInventory("DeathsheadM4", 1, false);
 				  break;
 				case 2:
-				  A_GiveInventory("DeathsheadSG550", 1, false);
+				  A_GiveInventory("DeathsheadM40A1", 1, false);
 				  break;
 				}
 			}
