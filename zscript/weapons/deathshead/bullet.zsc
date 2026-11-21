@@ -330,7 +330,7 @@ class DeathsheadSG550 : BlueBastardWeapon
 	AltFire:
 		ADAS N 0
 		{
-			A_StartSound("weapons/sg550/zoom", CHAN_AUTO);
+			A_StartSound("weapons/zoom", CHAN_AUTO);
 			if (Invoker.zoom) { return ResolveState("UnZoom"); }
 			return ResolveState(null);
 		}
