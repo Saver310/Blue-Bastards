@@ -373,10 +373,10 @@ class DeathsheadM40A1 : BlueBastardWeapon
 	Default
 	{
 		Weapon.SelectionOrder 600;
-		Weapon.AmmoType1 "BBDeathshead556";
-		Weapon.AmmoGive1 20;
-		Weapon.AmmoUse1 4;
-		Weapon.AmmoType2 "BBDeathshead556";
+		Weapon.AmmoType1 "BBDeathshead762";
+		Weapon.AmmoGive1 5;
+		Weapon.AmmoUse1 1;
+		Weapon.AmmoType2 "BBDeathshead762";
 		Weapon.AmmoGive2 0;
 		Weapon.AmmoUse2 0;
 		
