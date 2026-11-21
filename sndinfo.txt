@@ -110,7 +110,7 @@ weapons/sg550/deploy "sounds/weapons/sg550-deploy.wav"
 
 weapons/sniper/deploy "sounds/weapons/sg550-deploy.wav"
 weapons/sniper "sounds/weapons/M40A1.ogg"
-weapons/sniper/bolt "sounds/weapons/scout_bolt.wav"
+weapons/sniper/bolt "sounds/weapons/M40A1Bolt.ogg"
 
 weapons/zoom "sounds/weapons/zoom.wav"
 
