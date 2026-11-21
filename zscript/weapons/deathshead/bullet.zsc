@@ -493,8 +493,8 @@ class DeathsheadM40A1 : BlueBastardWeapon
 		TNT1 A 0 A_ReFire("AltHold");
 		Goto RealReadyZoomed;
 	Flash:
-		ADAS L 2 Bright A_Light2;
-		ADAS M 2 Bright A_Light1;
+		ADSN X 2 Bright A_Light2;
+		ADSN Y 2 Bright A_Light1;
 		Goto LightDone;
 	}
 }
