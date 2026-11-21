@@ -454,7 +454,7 @@ class DeathsheadM40A1 : BlueBastardWeapon
 		ADSN G 1 { A_ZoomFactor(1.25); A_SetPitch(self.pitch + 2, SPF_INTERPOLATE); }
 		ADSN H 2 A_ZoomFactor(1.0);
 		ADSN I 1 A_StartSound("weapons/sniper/bolt", CHAN_AUTO);
-		ADSN IJKLLMNOPQRRSTUVW 1;
+		ADSN IJKLLMNOPQRRSTTUVW 1;
 		ADSZ D 1 A_ZoomFactor(1.25);
 		ADSZ E 1 A_ZoomFactor(1.5);
 		ADSZ F 1 A_ZoomFactor(1.75);
