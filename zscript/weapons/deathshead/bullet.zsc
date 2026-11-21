@@ -473,7 +473,7 @@ class DeathsheadM40A1 : BlueBastardWeapon
 		ADSZ C 1;
 		ADSZ D 2 A_ZoomFactor(1.25);
 		ADSZ E 1 A_ZoomFactor(1.5);
-		ADSZ F 2 A_ZoomFactor(1.75);
+		ADSZ F 1 A_ZoomFactor(1.75);
 		ADSZ F 0 { Invoker.zoom = true; A_ZoomFactor(2.0); }
 		Goto AltHold;
 	UnZoom:
@@ -481,7 +481,7 @@ class DeathsheadM40A1 : BlueBastardWeapon
 		ADSZ E 2 A_ZoomFactor(1.5);
 		ADSZ D 1 A_ZoomFactor(1.25);
 		ADSZ C 2 A_ZoomFactor(1.0);
-		ADSZ BA 1;
+		ADSZ B 1;
 		ADSZ A 1 { Invoker.zoom = false; }
 		Goto AltHold;
 	AltHold:
