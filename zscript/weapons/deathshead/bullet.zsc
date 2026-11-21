@@ -330,7 +330,7 @@ class DeathsheadSG550 : BlueBastardWeapon
 	AltFire:
 		ADAS N 0
 		{
-			A_StartSound("weapons/sg550/zoom", CHAN_AUTO);
+			A_StartSound("weapons/zoom", CHAN_AUTO);
 			if (Invoker.zoom) { return ResolveState("UnZoom"); }
 			return ResolveState(null);
 		}
@@ -362,6 +362,139 @@ class DeathsheadSG550 : BlueBastardWeapon
 	Flash:
 		ADAS L 2 Bright A_Light2;
 		ADAS M 2 Bright A_Light1;
+		Goto LightDone;
+	}
+}
+
+class DeathsheadM40A1 : BlueBastardWeapon
+{
+	mixin BBDeathsheadWeapon;
+	bool zoom;
+	Default
+	{
+		Weapon.SelectionOrder 600;
+		Weapon.AmmoType1 "BBDeathshead556";
+		Weapon.AmmoGive1 20;
+		Weapon.AmmoUse1 4;
+		Weapon.AmmoType2 "BBDeathshead556";
+		Weapon.AmmoGive2 0;
+		Weapon.AmmoUse2 0;
+		
+		Weapon.BobRangeX 1.25;
+		
+		+WEAPON.NOALERT
+		+INVENTORY.UNDROPPABLE
+		Tag "$ACE_M40A1";
+		Obituary "$OB_ACE_M40A1";
+	}
+	States
+	{
+	Select:
+		TNT1 A 1 A_Raise(24);
+		Wait;
+	Deselect:
+		ADSS G 1 {
+			Invoker.zoom = false;
+			A_ZoomFactor(1.0);
+		}
+		ADSS F 1;
+		ADSS E 2;
+		ADSS D 1;
+		ADSS C 2;
+		ADSS B 1;
+		ADSS A 2;
+		ADSS A 1 A_Lower(24);
+		Wait;
+	Ready:
+		ADSS A 1 A_StartSound("weapons/sniper/deploy");
+		ADSS B 1;
+		ADSS C 2;
+		ADSS D 1;
+		ADSS E 2;
+		ADSS F 1;
+		ADSS G 2;
+		Goto RealReady;
+	RealReady:
+		ADSN A 1 A_WeaponReady;
+		Wait;
+	RealReadyZoomed:
+		TNT1 A 1 A_WeaponReady;
+		Wait;
+	Fire:
+		ADSN A 0 {
+			if (Invoker.zoom) { return ResolveState("FireZoomed"); }
+			return ResolveState(null);
+		}
+		ADSN B 2 Bright
+		{
+			A_AlertMonsters();
+			A_FireBullets (2, 3.5, -1, random(125,140), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			A_StartSound("weapons/sniper", CHAN_AUTO);
+			A_GunFlash();
+			A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
+		}
+		ADSN CC 1 Bright A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		ADSN D 1 A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		ADSN EFGH 1;
+		ADSN I 1 A_StartSound("weapons/sniper/bolt", CHAN_AUTO);
+		ADSN IJKLLMNOPQRRSTTUVW 1;
+		ADSN A 1 A_ReFire;
+		Goto RealReady;
+	FireZoomed:
+		TNT1 A 0 Bright
+		{
+			A_AlertMonsters();
+			A_FireBullets (0.5, 1, -1, random(180,200), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			A_StartSound("weapons/sniper", CHAN_AUTO);
+			A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
+		}
+		TNT1 AAA 2 Bright A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		ADSN E 1 A_ZoomFactor(1.75);
+		ADSN F 2 A_ZoomFactor(1.5);
+		ADSN G 1 A_ZoomFactor(1.25);
+		ADSN H 2 A_ZoomFactor(1.0);
+		ADSN I 1 A_StartSound("weapons/sniper/bolt", CHAN_AUTO);
+		ADSN IJKLLMNOPQRRSTUVW 1;
+		ADSZ D 1 A_ZoomFactor(1.25);
+		ADSZ E 1 A_ZoomFactor(1.5);
+		ADSZ F 1 A_ZoomFactor(1.75);
+		ADSZ F 1 A_ZoomFactor(2.0);
+		ADSN F 0 A_ReFire;
+		Goto RealReadyZoomed;
+	AltFire:
+		ADSZ A 0
+		{
+			A_StartSound("weapons/zoom", CHAN_AUTO);
+			if (Invoker.zoom) { return ResolveState("UnZoom"); }
+			return ResolveState(null);
+		}
+		ADSZ A 1;
+		ADSZ B 2;
+		ADSZ C 1;
+		ADSZ D 2 A_ZoomFactor(1.25);
+		ADSZ E 1 A_ZoomFactor(1.5);
+		ADSZ F 1 A_ZoomFactor(1.75);
+		ADSZ F 0 { Invoker.zoom = true; A_ZoomFactor(2.0); }
+		Goto AltHold;
+	UnZoom:
+		ADSZ F 1 A_ZoomFactor(1.75);
+		ADSZ E 2 A_ZoomFactor(1.5);
+		ADSZ D 1 A_ZoomFactor(1.25);
+		ADSZ C 2 A_ZoomFactor(1.0);
+		ADSZ B 1;
+		ADSZ A 1 { Invoker.zoom = false; }
+		Goto AltHold;
+	AltHold:
+		TNT1 A 0 A_JumpIf(Invoker.zoom,3);
+		ADSN A 1;
+		TNT1 A 0 A_ReFire("AltHold");
+		Goto RealReady;
+		TNT1 A 1;
+		TNT1 A 0 A_ReFire("AltHold");
+		Goto RealReadyZoomed;
+	Flash:
+		ADSN X 2 Bright A_Light2;
+		ADSN Y 2 Bright A_Light1;
 		Goto LightDone;
 	}
 }
