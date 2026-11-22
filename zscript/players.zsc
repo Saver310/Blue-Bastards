@@ -24,7 +24,7 @@ class Spot : DoomPlayer
 		Player.WeaponSlot 1, "SpotMallet", "SpotChainsaw";
 		Player.WeaponSlot 2, "SpotExpress600";
 		Player.WeaponSlot 3, "SpotShotgun", "SpotShotgunClassic", "SpotDevastator";
-		Player.WeaponSlot 4, "SpotChaingun", "SpotM249";
+		Player.WeaponSlot 4, "SpotChaingun", "SpotM249", "SpotAntiMateriel_Rilfe";
 		Player.WeaponSlot 5, "SpotRocketLauncher";
 		Player.WeaponSlot 6, "SpotPlasmaRifle";
 		Player.WeaponSlot 7, "SpotBFG";

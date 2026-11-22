@@ -70,6 +70,118 @@ class SpotExpress600 : BlueBastardWeapon
 }
 
 
+class SpotAntiMateriel_Rilfe : BlueBastardWeapon
+{
+	mixin BBSpotWeapon;
+	bool zoom;
+	Default
+	{
+		Weapon.SelectionOrder 500;
+		Weapon.AmmoUse 1;
+		Weapon.AmmoGive 20;
+		Weapon.AmmoType "BBSpotNavalBullets";
+		Inventory.PickupMessage "$GOTCHAINGUN";
+		Obituary "$SPOT_KILL_NAVAL";
+
+		Tag "$SPOT_NAVAL";
+
+		+INVENTORY.UNDROPPABLE
+	}
+	States
+	{
+	Deselect:
+		TNT1 A 1{
+			invoker.zoom = false;
+			A_ZoomFactor(1);
+		}
+		AMRR ABCDEFGHI 2;
+		TNT1 A 1 A_Lower(24);
+		Wait;
+	Select:
+		TNT1 A 1 A_Raise(24);
+		Wait;
+	Ready:
+		AMRR IHGF 2;
+		AMRR B 0 A_PlayWeaponSound("weapons/chaingun/deploy");
+		AMRR EDCBA 2;
+	RealReady:
+		AMRF A 1 A_WeaponReady;
+		Loop;
+	RealReadyZoom:
+		TNT1 A 1 A_WeaponReady;
+		Loop;
+	ZoomIn:
+		TNT1 A 1{
+			invoker.zoom = true;
+			A_ZoomFactor(2.5);
+		}
+		AMRS ABCDE 2;
+		goto RealReadyZoom;
+	ZoomOut:
+		TNT1 A 1{
+			invoker.zoom = false;
+			A_ZoomFactor(1);
+		}
+		AMRS EDCBA 2;
+		goto RealReady;
+	AltFire:
+		TNT1 A 1 {
+			if (invoker.zoom) {
+				return ResolveState("ZoomOut");
+			} else {
+				return ResolveState("ZoomIn");
+			}
+		}
+		goto RealReady;
+	Fire:
+		TNT1 A 1{
+			if (invoker.zoom) {
+				return ResolveState("FireZoom");
+			}
+			return ResolveState(null);
+		}
+		AMRF A 1{
+			A_FireBullets(0,0,1,random(30,60),"BlueBastardBulletPuff", FBF_NORANDOM|FBF_USEAMMO);
+			A_PlayWeaponSound("weapons/chaingun");
+			A_WeaponOffset(Random(-3,3),Random(-3,3) + 36);
+			A_SetPitch(self.pitch - 8, SPF_INTERPOLATE);
+			A_Recoil(4);
+			A_GunFlash("Flash");
+		}
+		AMRF DDCCCCCCCCCCCCCCCCCCC 1{
+			A_WeaponOffset(Random(-3,3),Random(-3,3) + 36);
+		}
+		AMRF CCDDEEFF 2{
+			A_SetPitch(self.pitch + 8.0/8, SPF_INTERPOLATE);
+			A_WeaponOffset(Random(-3,3),Random(-3,3) + 36);
+		}
+		AMRF B 0 A_ReFire();
+		Goto RealReady;
+	FireZoom:
+		TNT1 A 1{
+			A_FireBullets(0,0,1,random(30,60),"BlueBastardBulletPuff", FBF_NORANDOM|FBF_USEAMMO);
+			A_PlayWeaponSound("weapons/chaingun");
+			A_WeaponOffset(Random(-3,3),Random(-3,3) + 36);
+			A_SetPitch(self.pitch - 8, SPF_INTERPOLATE);
+			A_Recoil(4);
+			A_GunFlash("Flash");
+		}
+		TNT1 DDCCCCCCCCCCCCCCCCCCC 1{
+			A_WeaponOffset(Random(-3,3),Random(-3,3) + 36);
+		}
+		TNT1 CCDDEEFF 2{
+			A_SetPitch(self.pitch + 8.0/8, SPF_INTERPOLATE);
+			A_WeaponOffset(Random(-3,3),Random(-3,3) + 36);
+		}
+		TNT1 B 0 A_ReFire();
+		Goto RealReadyZoom;
+	Flash:
+		TNT1 B 2 Bright A_Light1;
+		Goto LightDone;
+	}
+}
+
+
 class SpotChaingun : BlueBastardWeapon
 {
 	mixin BBSpotWeapon;
