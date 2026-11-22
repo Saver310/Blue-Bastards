@@ -1,0 +1,48 @@
+BB_Bloodred
+{
+	#330606 #cc1717
+Flat:
+	#a11212
+}
+
+BB_Red
+{
+	#800000 #ff0000
+Flat:
+	#cc0000
+}
+
+BB_Beige
+{
+	#593222 #e6af97
+Flat:
+	#b36544
+}
+
+BB_Purple
+{
+	#5c2343 #cc89ae
+Flat:
+	#8e4c71
+}
+
+BB_LightBlue
+{
+	#004c66 #00bfff
+Flat:
+	#0099cc
+}
+
+BB_Blue
+{
+	#001a4d #0055ff
+Flat:
+	#0041cc
+}
+
+BB_DarkBlue
+{
+	#000033 #0000cc
+Flat:
+	#000099
+}

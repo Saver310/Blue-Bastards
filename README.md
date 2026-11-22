@@ -1,4 +1,4 @@
-# <img src="graphics/m_doom_aspect.png" title="" alt="freedoom bad*ss edition" data-align="center">
+# <img src="graphics/m_doom_aspect.png" title="" alt="Blue Bastards" data-align="center">
 A fast paced gameplay mod for UZDoom, inspired by the Metal Slug series, various boomer shooters and mods such as Russian Overkill, starring our awesome OCs Ace Deathshead and Spot blasting it out with shotguns, submachine guns, whiskey bottles, nukes and more! Both Spot and Ace have unique weapons to destroy the hellish demonic force who've done them wrong, so show them what REAL HELL looks like!
 
 <img width="176" height="123" alt="obraz" src="https://github.com/user-attachments/assets/a81b4812-db02-4590-b883-fd0615608d6b" />
@@ -23,5 +23,11 @@ This project does not allow AI generated content, such as (but not limited to):
 - AI Generated Artwork, Sound, or any other assets.
 - Auto generated descriptions of pull request, issue and such.
 
-Use of such tools shows you aren't willing to put the effort in improving the mod.  
+Use of such tools shows you aren't willing to put the effort in improving the mod.
 Any vibecoded pull requests will be instantly rejected.
+
+# Translations
+We're open for translations! If your language is missing, feel free to throw a PR at us!
+This project is translated into two languages as of now:
+- English
+- Polish

@@ -1,7 +1,15 @@
 [enu default]
 
+// Main Menu
 BLUE_BASTARDS = "Blue Bastards";
-PRESSSTART = "Press ESC to Begin";
+PRESSSTART0 = "Press ESC to Begin";
+PRESSSTART1 = "Press ESC to Get Wasted";
+PRESSSTART2 = "Press ESC to Drink Up";
+PRESSSTART3 = "Press ESC to Bomb Bridge";
+PRESSSTART4 = "Press ESC to Get AHelped";
+PRESSSTART5 = "Deathshead Was Here";
+PRESSSTART6 = "Spot Was Here";
+PRESSSTART7 = "You've Seen My Whiskey Anywhere?";
 MNU_MODOPTIONS = "Mod Options";
 MNU_SKIPINTROS = "Skip Character Intros";
 MNU_SKIPINTROS_DESC = "Skips the introductory animations when you enter a level or respawn.";
@@ -9,11 +17,15 @@ MNU_EXTRAS = "Extras";
 MNU_CREDITS = "Credits";
 MNU_LORE = "Lore";
 MNU_CHOOSECLASS = "PICK YOUR BLUE BASTARD!";
+MNU_EPISODE = "WHICH CHAPTER?";
 MNU_CHOOSESKILL = "HOW TOUGH?";
+
+// Mod Options
 MNU_SPOTALT_VOICE = "Use Spot's Alternative Voice";
 MNU_SPOTALT_VOICE_DESC = "Use a slightly tougher voice instead of the default one, if you think it's too cute.";
 MNU_ALLOW_TRANSFORM = "Allow Transformations";
-MNU_ALLOW_TRANSFORM_DESC = "Allow the player to morph into a stronger version of themselves temporarly after picking up the berserk pack.";
+MNU_ALLOW_TRANSFORM_DESC = "Allow the player to morph into a stronger version of themselves";
+MNU_ALLOW_TRANSFORM_DESC2 = "temporarily after picking up the berserk pack.";
 MNU_SSGS_D1 = "SSGs in Regular Shotguns";
 MNU_SSGS_D1_DESC = "Enables a chance of picking up a SSG when picking up the normal shotgun."; 
 MNU_SSGS_D1_DESC2 = "Slide option this above 0 if you're playing this mod with Doom 1.";
@@ -25,23 +37,34 @@ MNU_KICK_DAMAGE = "Kick Damage";
 MNU_KICK_DAMAGE_DESC = "The larger the number, the more damage kicks will deal."; 
 MNU_DISPLAY_ALTFIRE = "Alt Fire Visibility";
 MNU_DISPLAY_ALTFIRE_DESC = "Displays on the HUD if your weapon has an alt fire available."; 
+MNU_PISTOLS_AKIMBO_ALT = "Alternative Akimbo Pistols Behavior";
+MNU_PISTOLS_AKIMBO_ALT_DESC = "Enables the use of primary fire to fire the left pistol";
+MNU_PISTOLS_AKIMBO_ALT_DESC2 = "and alt fire key to fire the right.";
+MNU_DAMAGE_RED_TINT = "Red Tint for Damage";
+MNU_DAMAGE_RED_TINT_DESC = "Tints the screen red instead of green when you get damaged as Ace.";
+MNU_DAMAGE_RED_TINT_DESC2 = ''"it's confusing and unreadable"'';
 
 PLAYER_SPOT = "Spot";
 PLAYER_DEATHSHEAD = "Deathshead";
 
 SKILL_BLOODRED = "Bloodred";
+BLOODRED_SURE = "Every weapon is WAY more powerful\n"
+"and you take 50% less damage.\n"
+"Choose this difficulty if you just want to have fun!";
+SKILL_RED = "Red";
 SKILL_BEIGE = "Beige";
+SKILL_PURPLE = "Purple";
 SKILL_LIGHT_BLUE = "Light Blue";
 SKILL_BLUE = "Blue";
 SKILL_DARK_BLUE = "Dark Blue";
-DARK_BLUE_SURE = "You're going to regret picking this color\n"
-"Are you sureeeee you want to do this?\n"
+DARK_BLUE_SURE = "You're going to regret picking this color.\n"
+"No cheats and monsters are fast and respawn.\n"
 "\n"
-"Because I wouldn't!";
+"Are you sureeeee you want to do this?\n";
 
 CREDIT_HEADER = "Credit Where It's Due";
 CREDITS_ALMOST_EVERYTHING = "Nearly Everything";
-CREDITS_REDEAD = "Contributor, Initial Feedback";
+CREDITS_REDEAD = "Contributor, Code Cleanup, Initial Feedback";
 CREDITS_ICARUS = "Mod Roundup";
 CREDITS_WEAPON_MODELS = "Weapon Models";
 CREDITS_WEAPON_SPRITES = "Weapon Sprites";
@@ -120,6 +143,7 @@ ACE_SAWNOFFS = "Dual Sawn Offs";
 ACE_M4 = "M16A1 Carbine";
 ACE_MAC10 = "MAC-10";
 ACE_SG550 = "SIG SG 550 SR";
+ACE_M40A1 = "M40A1 Sniper";
 ACE_ROCKET = "Missile Launcher Mark W4N6";
 ACE_PLASMA = "Heavy Plasma Cannon";
 ACE_BFG = "BFG-Nine-Kay Plus-Plus";
@@ -145,6 +169,8 @@ SPOT_TRANSFORM_INIT = "You feel like your heart is about to blow. \n You feel a 
 SPOT_TRANSFORM_WORN = "Your dragon powers are wearing off";
 
 KICKYDICKY = "Kick";
+TAUNT = "Taunt";
+FLIPOFF = "Flip Off";
 
 //Obituaries - Spot
 SPOT_KILL_CHAINSAW = "%k thought %o was a tree.";
@@ -167,6 +193,7 @@ SPOT_KILL_NUKEFIRE = "%k completely vaporized %o out of existance.";
 OB_ACE_PISTOL = "%o was shot down by %k's SIG. Happy trails, %o.";
 OB_ACE_MAC10 = "%o was perforated by %k's MAC-10.";
 OB_ACE_SG550 = "%o was sniped by %k's SG 550.";
+OB_ACE_M40A1 = "%o was sniped by %k's M40A1.";
 OB_ACE_M4 = "%o was neutralized by %k's M16A1 carbine.";
 OB_ACE_M4_GRENADE = "%o was blown up by %k's M16A1 grenade.";
 OB_ACE_PLASMA = "%o was melted by %k's heavy plasma cannon.";

@@ -40,6 +40,28 @@ class BBDeathshead556 : Ammo
 		Stop;
 	}
 }
+
+// SNIPER RIFFLE!!!
+class BBDeathshead762 : Ammo
+{
+	Default
+	{
+		//Inventory.PickupMessage "$GOTCLIP";
+		Inventory.Amount 2;
+		Inventory.MaxAmount 10;
+		Ammo.BackpackAmount 2;
+		Ammo.BackpackMaxAmount 20;
+		Inventory.Icon "CLIPC0";
+		//Tag "$AMMO_CLIP";
+		Inventory.RestrictedTo "Deathshead";
+	}
+	States
+	{
+	Spawn:
+		TNT1 A -1;
+		Stop;
+	}
+}
 //m16's GL
 class BBDeathsheadGrenade : Ammo
 {

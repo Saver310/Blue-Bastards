@@ -104,10 +104,11 @@ class BBClip : BBAmmoDistributor replaces clip
 			}
 			if (CheckInventory("DeathsheadFist", 1))
 			{ 
-				if(A_AllowedToGrab("BBDeathshead9mm") || A_AllowedToGrab("BBDeathshead556"))
+				if(A_AllowedToGrab("BBDeathshead9mm") || A_AllowedToGrab("BBDeathshead556") || A_AllowedToGrab("BBDeathshead762"))
 				{
 					A_GiveInventory("BBDeathshead9mm", A_ammomultiplier(10), false);
 					A_GiveInventory("BBDeathshead556", A_ammomultiplier(10), false);
+					A_GiveInventory("BBDeathshead762", A_ammomultiplier(1), false);
 					return resolvestate(Null);
 				} else return resolvestate("cantpickup");
 			}
@@ -152,10 +153,11 @@ class BBClipBox : BBAmmoDistributor replaces clipbox
 			}
 			if (CheckInventory("DeathsheadFist", 1))
 			{ 
-				if(A_AllowedToGrab("BBDeathshead9mm") || A_AllowedToGrab("BBDeathshead556"))
+				if(A_AllowedToGrab("BBDeathshead9mm") || A_AllowedToGrab("BBDeathshead556") || A_AllowedToGrab("BBDeathshead762"))
 				{
 					A_GiveInventory("BBDeathshead9mm", A_ammomultiplier(50), false);
 					A_GiveInventory("BBDeathshead556", A_ammomultiplier(50), false);
+					A_GiveInventory("BBDeathshead762", A_ammomultiplier(5), false);
 					return resolvestate(Null);
 				} else return resolvestate("cantpickup");
 			}

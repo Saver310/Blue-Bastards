@@ -1,7 +1,15 @@
 [pl]
 
+// Menu Główne
 BLUE_BASTARDS = "Niebiescy Gówniarze";
-PRESSSTART = "Wciśnij ESC aby Rozpocząć";
+PRESSSTART0 = "Wciśnij ESC aby Rozpocząć";
+PRESSSTART1 = "Wciśnij ESC aby się Najebać";
+PRESSSTART2 = "Wciśnij ESC aby się Zachlać";
+PRESSSTART3 = "Wciśnij ESC aby Wysadzić Mostek";
+PRESSSTART4 = "Wciśnij ESC aby Dostać AHelpa";
+PRESSSTART5 = "Trupiogłowy Był Tu";
+PRESSSTART6 = "Spot Był Tu";
+PRESSSTART7 = "Widziałeś Gdzieś Moje Whisky?";
 MNU_MODOPTIONS = "Ustawienia Moda";
 MNU_SKIPINTROS = "Pomiń Intro Postaci";
 MNU_SKIPINTROS_DESC = "Pomija animacje kiedy wchodzisz na poziom lub się respawnujesz.";
@@ -9,12 +17,16 @@ MNU_EXTRAS = "Dodatki";
 MNU_CREDITS = "Podziękowania";
 MNU_LORE = "Fabuła";
 MNU_CHOOSECLASS = "WYBIERZ NIEBIESKIEGO GÓWNIARZA!";
+MNU_EPISODE = "KTÓRY ROZDZIAŁ?";
 MNU_CHOOSESKILL = "JAK NIEBIESKO?";
 MNU_RANDOM = "Losowy";
+
+// Opcje Moda
 MNU_SPOTALT_VOICE = "Użyj Alternatywnego Głosu Spota";
 MNU_SPOTALT_VOICE_DESC = "Użyj nieco bardziej surowego głosu zamiast domyślnego, jeśli uważasz ten drugi za zbyt uroczy.";
 MNU_ALLOW_TRANSFORM = "Zezwalaj na Transformacje";
-MNU_ALLOW_TRANSFORM_DESC = "Pozwala graczowi tymczasowo przemienić się w silniejszą wersję siebie po podniesieniu paczki szału.";
+MNU_ALLOW_TRANSFORM_DESC = "Pozwala graczowi tymczasowo przemienić się w silniejszą";
+MNU_ALLOW_TRANSFORM_DESC2 = "wersję siebie po podniesieniu paczki szału.";
 MNU_SSGS_D1 = "Super Strzelby w Strzelbach";
 MNU_SSGS_D1_DESC = "Zwiększa szansę zdobycia Super Strzelby w zwykłej Strzelbie."; 
 MNU_SSGS_D1_DESC2 = "Daj powyżej zera jeśli grasz tego moda z Doom 1.";
@@ -26,23 +38,31 @@ MNU_KICK_DAMAGE = "Obrażenia Kopnięcia";
 MNU_KICK_DAMAGE_DESC = "Tym wyższa liczba, tym więcej obrażeń będą zadawać twoje kopnięcia."; 
 MNU_DISPLAY_ALTFIRE = "Widoczność Alternatywnego Ognia";
 MNU_DISPLAY_ALTFIRE_DESC = "Pokazuje na HUDzie czy twoja broń ma dostępny alternatywny ogień."; 
+MNU_PISTOLS_AKIMBO_ALT = "Alternatywne Zachowanie Podwójnych Pistoletów";
+MNU_PISTOLS_AKIMBO_ALT_DESC = "Pozwala na korzystanie z klawisza strzału aby strzelać z lewego";
+MNU_PISTOLS_AKIMBO_ALT_DESC2 = "pistoletu i alternatywnego strzału aby strzelać z prawego.";
 
 // PLAYER_SPOT = "Spot"; może jesli znajde coś bo brzmi pobodnie uroczo po polsku
 PLAYER_DEATHSHEAD = "Trupiogłowy";
 
-SKILL_BLOODRED = "Krwioczerwony";
+SKILL_BLOODRED = "Krwistoczerwony";
+BLOODRED_SURE = "Każda broń jest o wiele bardziej mocniejsza\n"
+"i obrażenia od potworów są zredukowane o 50%.\n"
+"Wybierz ten poziom trudności tylko jeśli chcesz mieć zabawę.";
+SKILL_RED = "Czerwony";
 SKILL_BEIGE = "Beżowy";
+SKILL_PURPLE = "Purpurowy";
 SKILL_LIGHT_BLUE = "Jasny Niebieski";
 SKILL_BLUE = "Niebieski";
 SKILL_DARK_BLUE = "Ciemny Niebieski";
-DARK_BLUE_SURE = "Pożałujesz wyboru tego koloru\n"
-"Jesteś pewien?\n"
+DARK_BLUE_SURE = "Będziesz żałował wyboru tego koloru.\n"
+"Oszustwa są wyłączone i potwory są szybkie i się respawnują.\n"
 "\n"
-"Na twoim miejscu bym nie wybierał tego!";
+"Czy jesteś pewien?\n";
 
 CREDIT_HEADER = "Podziękowania, gdzie się należą";
 CREDITS_ALMOST_EVERYTHING = "Prawie Wszystko";
-CREDITS_REDEAD = "Kontrybutor i Pierwsze Opinie";
+CREDITS_REDEAD = "Kontrybutor, Poprawki Kodu i Pierwsze Opinie";
 CREDITS_ICARUS = "Recenzja Moda";
 CREDITS_WEAPON_MODELS = "Modele Broni";
 CREDITS_WEAPON_SPRITES = "Sprity Broni";
@@ -121,6 +141,7 @@ ACE_SAWNOFFS = "Podwójne Dubeltówki";
 ACE_M4 = "Karabin M16A1";
 ACE_MAC10 = "MAC-10";
 ACE_SG550 = "SIG SG 550 SR";
+ACE_M40A1 = "Snajperka M40A1";
 ACE_ROCKET = "Wyrzutnia Rakiet Mark. W4N6";
 ACE_PLASMA = "Ciężkie Działo Plazmowe";
 ACE_BFG = "BFG-Dziewięć-Ka Plus-Plus";
@@ -146,6 +167,8 @@ SPOT_TRANSFORM_INIT = "Czujesz, że Twoje serce zaraz ci wysadzi.\n Czujesz bard
 SPOT_TRANSFORM_WORN = "Moce smoka zanikają";
 
 KICKYDICKY = "Kop";
+TAUNT = "Drwina";
+FLIPOFF = "Pokazanie Faka";
 
 //TODO: Make them a bit more catchier.
 //Obituaries - Spot
@@ -169,6 +192,7 @@ SPOT_KILL_NUKEFIRE = "%k całkowicie wyparował@[ao_pl] %o i przestał@[ao_pl] i
 OB_ACE_PISTOL = "%o został@[ao_pl] postrzelon@[adj_pl] przez SIG %k.";
 OB_ACE_MAC10 = "%o został@[ao_pl] podziurawion@[adj_pl] przez MAC-10 %k.";
 OB_ACE_SG550 = "%o miał@[ao_pl] swój łeb rozsadzony przez SG 550 %k.";
+OB_ACE_M40A1 = "%o miał@[ao_pl] swój łeb rozsadzony przez M40A1 %k.";
 OB_ACE_M4 = "%o został@[ao_pl] zneutralizowany@[adj_pl] przez M16A1 %k.";
 OB_ACE_M4_GRENADE = "%o został@[ao_pl] wysadzon@[adj_pl] przez granatnik M16A1 %k.";
 OB_ACE_PLASMA = "%o został@[ao_pl] roztopion@[adj_pl] przez ciężki karabin plazmowy %k.";

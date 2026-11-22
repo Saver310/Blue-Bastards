@@ -1,0 +1,8 @@
+#library "Taunt"
+#include "zcommon.acs"
+
+Script "Taunt" (void)
+{
+	UseInventory("BlueBastardsTaunt");
+	Delay(35);
+}

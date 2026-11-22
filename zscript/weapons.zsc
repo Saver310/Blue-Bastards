@@ -42,7 +42,7 @@ class BlueBastardBulletPuff : BulletPuff
 	Crash:
 		TNT1 A 0 
 		{
-			scale = default.scale*random(1.0,1.5);
+			scale = default.scale*frandom(1.0,1.5);
 			A_StartSound("misc/ricochet",CHAN_AUTO,CHANF_DEFAULT,random(0,1)*frandom(0.5,1.0));
 		}
 		TNT1 A 0 A_Jump(192,"Puff1","Puff2");
@@ -59,7 +59,7 @@ class BlueBastardBulletPuffStab : BlueBastardBulletPuff {
 	States {
 	Crash:
 		TNT1 A 0 {
-			scale = default.scale*random(1.0,1.5);
+			scale = default.scale*frandom(1.0,1.5);
 			A_StartSound("weapons/claw/hitwall",CHAN_AUTO,CHANF_DEFAULT,0.8);
 		}
 		TNT1 A 0 A_Jump(256,"Puff1","Puff2");

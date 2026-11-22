@@ -26,14 +26,20 @@ GameInfo
 	statscreen_single = "BlueBastards_StatusScreen"
 }
 
-defaultmap
-{
-	exitpic = "$IN_INTER"
-	enterpic = "$IN_INTER"
-}
-
 map TITLEMAP lookup "BLUE_BASTARDS"
 {
+}
+
+clearskills
+skill bloodred
+{
+	SpawnFilter = Hard
+	Name = "$SKILL_BLOODRED"
+	MustConfirm = "$BLOODRED_SURE"
+	DamageFactor = 0.5
+	MonsterHealth = 0.5
+	Aggressiveness = 0.25
+	TextColor = "BB_Bloodred"
 }
 
 skill baby
@@ -43,31 +49,31 @@ skill baby
 	DamageFactor = 0.5
 	EasyBossBrain
 	SpawnFilter = Baby
-	Name = "$SKILL_BLOODRED"
-	Key = "i"
+	Name = "$SKILL_BEIGE"
+	TextColor = "BB_Beige"
 }
 
 skill easy
 {
 	EasyBossBrain
 	SpawnFilter = Easy
-	Name = "$SKILL_BEIGE"
-	Key = "h"
+	Name = "$SKILL_PURPLE"
+	TextColor = "BB_Purple"
 }
 
 skill normal
 {
 	SpawnFilter = Normal
-	Key = "h"
 	Name = "$SKILL_LIGHT_BLUE"
 	DefaultSkill
+	TextColor = "BB_LightBlue"
 }
 
 skill hard
 {
 	SpawnFilter = Hard
 	Name = "$SKILL_BLUE"
-	Key = "u"
+	TextColor = "BB_Blue"
 }
 
 skill nightmare
@@ -80,5 +86,5 @@ skill nightmare
 	SpawnFilter = Nightmare
 	Name = "$SKILL_DARK_BLUE"
 	MustConfirm = "$DARK_BLUE_SURE"
-	Key = "n"
+	TextColor = "BB_DarkBlue"
 }
