@@ -214,18 +214,12 @@ misc/metalslug/bfg  "sounds/weapons/metalslug_bfg.ogg"
 $random misc/metalslug {misc/metalslug/generic misc/metalslug/generic misc/metalslug/okay}
 $volume misc/metalslug 0.5
 $alias misc/w_pkup misc/metalslug
-$random misc/hmg_pkup {misc/metalslug misc/metalslug misc/metalslug/hmg}
-$volume misc/hmg_pkup 0.5
-$random misc/rl_pkup {misc/metalslug misc/metalslug misc/metalslug/rl}
-$volume misc/rl_pkup 0.5
-$random misc/shotgun_pkup {misc/metalslug misc/metalslug misc/metalslug/shotgun}
-$volume misc/shotgun_pkup 0.5
-$random misc/supershotgun_pkup {misc/metalslug misc/metalslug misc/metalslug/supershotgun}
-$volume misc/supershotgun_pkup  0.5
-$random misc/laser_pkup {misc/metalslug misc/metalslug misc/metalslug/laser}
-$volume misc/laser_pkup 0.5
-$random misc/bfg_pkup {misc/metalslug misc/metalslug misc/metalslug/bfg}
-$volume misc/bfg_pkup 0.5
+$volume misc/metalslug/hmg 0.5
+$volume misc/metalslug/rl 0.5
+$volume misc/metalslug/shotgun 0.5
+$volume misc/metalslug/laser  0.5
+$volume misc/metalslug/supershotgun 0.5
+$volume misc/metalslug/bfg 0.5
 
 // Pickups and Powerups
 misc/berserk "sounds/weapons/BERSPKUP.ogg"
