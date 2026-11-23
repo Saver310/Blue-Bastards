@@ -271,7 +271,7 @@ class DeathsheadSG550 : BlueBastardWeapon
 		TNT1 A 1 A_Raise(24);
 		Wait;
 	Deselect:
-		ADPS F 2 {
+		ADAS F 2 {
 			Invoker.zoom = false;
 			A_ZoomFactor(1.0);
 		}
