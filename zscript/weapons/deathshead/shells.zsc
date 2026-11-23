@@ -19,12 +19,12 @@ class DeathsheadShotgun : BlueBastardWeapon
 		TNT1 A 1 A_Raise(24);
 		Wait;
 	Deselect:
-		ADSG GHHIJJKLLMNNO 1;
+		ADSG GHIJKLMNO 1;
 		TNT1 A 1 A_Lower(24);
 		Wait;
 	Ready:
 		ADSG O 1 A_StartSound("weapons/autoshotgun/deploy");
-		ADSG NNMLLKJJIHHG 1;
+		ADSG NMLKJIHG 1;
 	RealReady:
 		ADSG A 1 A_WeaponReady;
 		Loop;
