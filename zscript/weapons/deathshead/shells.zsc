@@ -51,13 +51,17 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 	bool side;
 	const leftSidelayer = 2;
 	const rightSidelayer = 3;
-	
+	bool akimbo_ready_left;
+	bool akimbo_ready_right;
 	Default
 	{
 		Weapon.SelectionOrder 500;
 		Weapon.AmmoType1 "Shell";
 		Weapon.AmmoUse1 2;
 		Weapon.AmmoGive1 16;
+		Weapon.AmmoType2 "Shell";
+		Weapon.AmmoUse2 2;
+		Weapon.AmmoGive2 0;
 		Weapon.KickBack 300;
 		Weapon.BobSpeed 1.75;
 		Weapon.BobRangeX 1;
@@ -90,6 +94,7 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 	Ready:
 		TNT1 A 0 A_Overlay(leftSidelayer,"GunReady");
 		TNT1 A 0 A_Overlay(rightSidelayer,"GunReady");
+		TNT1 A 0 { invoker.akimbo_ready_left = true; invoker.akimbo_ready_right = true; }
 		TNT1 A 1 A_WeaponReady();
  		Wait;
 	GunReady:
@@ -98,27 +103,45 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 		Wait;
 	Fire:
 		ADPS A 0 {
-			if (Invoker.side) { Invoker.side = false; A_Overlay(leftSidelayer,"GunFire");}
-			else { Invoker.side = true; A_Overlay(rightSidelayer,"GunFire"); }
+			if (bb_pistols_akimbo_alt) {
+				if (invoker.akimbo_ready_left) {
+					A_Overlay(leftSidelayer,"GunFire");
+				}
+				return ResolveState("Ready")+3;
+			}
+			else {
+				if (Invoker.side) { Invoker.side = false; A_Overlay(leftSidelayer,"GunFire");}
+				else { Invoker.side = true; A_Overlay(rightSidelayer,"GunFire"); }
+			}
+			return ResolveState(null);
 		}
-		/*
-		if(GetPlayerInput(INPUT_BUTTONS) & BT_ATTACK))
-		*/
-	TNT1 A 16;
-	Goto Ready+2;
+		TNT1 A 16;
+		Goto Ready+3;
+	AltFire:
+		ADPS A 0 {
+			if (bb_pistols_akimbo_alt) {
+				if (invoker.akimbo_ready_right) {
+					A_Overlay(rightSidelayer,"GunFire");
+				}
+				return ResolveState("Ready")+3;
+			}
+			return ResolveState(null);
+		}
+		TNT1 A 16;
+		Goto Ready+3;
 	GunFire:
 		ADDB B 1 Bright 
 		{
-			if (OverlayId() == leftSidelayer)
-			{ 
+			if (OverlayId() == leftSidelayer) { 
 				A_BBLefthand(leftSidelayer);
 				a_overlay(4,"KnockbackLeft");
+				invoker.akimbo_ready_left = false;
 			}
-			else
-			{ 
+			else { 
 				A_OverlayFlags(OverlayId(),PSPF_ADDWEAPON,0);
 				A_OverlayOffset(OverlayId(),0,32);
 				a_overlay(5,"KnockbackRight");
+				invoker.akimbo_ready_right = false;
 			}
 			A_FireBullets(11.8, 6.8, 20, random(6,8), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			A_StartSound("weapons/doubleshotties", CHAN_AUTO);
@@ -141,7 +164,11 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 		ADDB M 2 A_StartSound("weapons/sshotl", CHAN_AUTO);
 		ADDB O 1;
 		ADDB P 2 A_StartSound("weapons/sshotc", CHAN_AUTO);
-		ADDB QQRSSTUUV 1;
+		ADDB QQRSSTUU 1;
+		ADDB V 1 {
+			if (OverlayId() == leftSidelayer) { invoker.akimbo_ready_left = true; }
+			else { invoker.akimbo_ready_right = true; }
+		}
 		Goto GunReady;
 	Flash:
 		TNT1 A 2 A_Light1;

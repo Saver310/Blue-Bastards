@@ -38,9 +38,9 @@ MNU_KICK_DAMAGE = "Obrażenia Kopnięcia";
 MNU_KICK_DAMAGE_DESC = "Tym wyższa liczba, tym więcej obrażeń będą zadawać twoje kopnięcia."; 
 MNU_DISPLAY_ALTFIRE = "Widoczność Alternatywnego Ognia";
 MNU_DISPLAY_ALTFIRE_DESC = "Pokazuje na HUDzie czy twoja broń ma dostępny alternatywny ogień."; 
-MNU_PISTOLS_AKIMBO_ALT = "Alternatywne Zachowanie Podwójnych Pistoletów";
-MNU_PISTOLS_AKIMBO_ALT_DESC = "Pozwala na korzystanie z klawisza strzału aby strzelać z lewego";
-MNU_PISTOLS_AKIMBO_ALT_DESC2 = "pistoletu i alternatywnego strzału aby strzelać z prawego.";
+MNU_PISTOLS_AKIMBO_ALT = "Alternatywne Zachowanie Podwójnych Broni";
+MNU_PISTOLS_AKIMBO_ALT_DESC = "Pozwala na korzystanie z klawisza strzału aby strzelać z lewej";
+MNU_PISTOLS_AKIMBO_ALT_DESC2 = "broni i alternatywnego strzału aby strzelać z prawej.";
 
 // PLAYER_SPOT = "Spot"; może jesli znajde coś bo brzmi pobodnie uroczo po polsku
 PLAYER_DEATHSHEAD = "Trupiogłowy";
