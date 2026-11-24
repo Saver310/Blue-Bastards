@@ -58,9 +58,6 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 		Weapon.AmmoType1 "Shell";
 		Weapon.AmmoUse1 2;
 		Weapon.AmmoGive1 16;
-		Weapon.AmmoType2 "Shell";
-		Weapon.AmmoUse2 2;
-		Weapon.AmmoGive2 0;
 		Weapon.KickBack 300;
 		Weapon.BobSpeed 1.75;
 		Weapon.BobRangeX 1;
@@ -74,13 +71,13 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 	{
 	Select:
 		TNT1 A 0 Offset(0,32) A_Overlay(leftSidelayer,"GunSelect");
-		ADDB I 2 A_StartSound("weapons/sshotc", CHAN_AUTO);
-		ADDB HGFE 2;
+		ADDS A 2 A_StartSound("weapons/sshotc", CHAN_AUTO);
+		ADDS BCCDEEF 1;
 		Goto Ready;
 	GunSelect:
 		TNT1 A 0 A_BBLefthand(leftSidelayer);
-		ADDB I 2 A_StartSound("weapons/sshotc", CHAN_AUTO);
-		ADDB HGFE 2;
+		ADDS A 2 A_StartSound("weapons/sshotc", CHAN_AUTO);
+		ADDS BCCDEEF 1;
 		Goto GunReady;
 	Deselect:
 		TNT1 A 10 { A_Overlay(leftSidelayer,"GunDeselect");  A_Overlay(rightSidelayer,"GunDeselect");  }
@@ -88,7 +85,7 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 		Wait;
 	GunDeselect:
 		TNT1 A 0 { if (OverlayId() == leftSidelayer) A_BBLefthand(leftSidelayer);}
-		ADDB EFGHI 2;
+		ADDS FEDCBA 2;
 		Stop;
 	Ready:
 		TNT1 A 0 A_Overlay(leftSidelayer,"GunReady");
@@ -99,10 +96,6 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 		TNT1 A 0 { if (OverlayId() == leftSidelayer) A_BBLefthand(leftSidelayer);}
 		ADDB A 1;
 		Wait;
-	AltFire:
-		ADPS A 0 { A_Overlay(leftSidelayer,"GunFire");  A_Overlay(rightSidelayer,"GunFire");  }
-		TNT1 A 32;
-		Goto Ready;
 	Fire:
 		ADPS A 0 {
 			if (Invoker.side) { Invoker.side = false; A_Overlay(leftSidelayer,"GunFire");}
@@ -114,7 +107,7 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 	TNT1 A 16;
 	Goto Ready+2;
 	GunFire:
-		ADDB M 1 Bright 
+		ADDB B 1 Bright 
 		{
 			if (OverlayId() == leftSidelayer)
 			{ 
@@ -133,22 +126,22 @@ class DeathsheadSuperShotgun : BlueBastardWeapon
 			A_Quake(2,2,0,16);
 			A_Recoil(5*cos(pitch));
 		}
-		ADDB M 1 Bright A_SetPitch(self.pitch - 12, SPF_INTERPOLATE);
-		ADDB N 2 Bright {
+		ADDB B 1 Bright A_SetPitch(self.pitch - 12, SPF_INTERPOLATE);
+		ADDB C 2 Bright {
 			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
 			A_OverlayOffset(OverlayId(), Random(-2,2),Random(-2,2) + 36);
 		}
-		ADDB CCCCC 2 {
+		ADDB DEEEE 2 {
 			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
 			A_OverlayOffset(OverlayId(), Random(-2,2),Random(-2,2) + 36);
 		}
-		ADDB D 2;
 		ADDB A 0 A_CheckReload;
-		ADDB EFG 2;
-		ADDB H 2 A_StartSound("weapons/sshoto", CHAN_AUTO);
-		ADDB I 2 A_StartSound("weapons/sshotl", CHAN_AUTO);
-		ADDB J 2 A_StartSound("weapons/sshotc", CHAN_AUTO);
-		ADDB KLC 2;
+		ADDB FGGHIIJKK 1;
+		ADDB L 2 A_StartSound("weapons/sshoto", CHAN_AUTO);
+		ADDB M 2 A_StartSound("weapons/sshotl", CHAN_AUTO);
+		ADDB O 1;
+		ADDB P 2 A_StartSound("weapons/sshotc", CHAN_AUTO);
+		ADDB QQRSSTUUV 1;
 		Goto GunReady;
 	Flash:
 		TNT1 A 2 A_Light1;
