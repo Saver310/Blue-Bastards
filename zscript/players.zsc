@@ -261,7 +261,7 @@ class Deathshead : DoomPlayer
 		MOFF A -1;
 		Loop;
 	See:
-		MOFF ABCD 4;
+		MOFW ABCDEFGH 2;
 		Loop;
 	Missile:
 		MOFF E 12;
