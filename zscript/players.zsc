@@ -258,7 +258,7 @@ class Deathshead : DoomPlayer
 	States
 	{
 	Spawn:
-		MOFF A -1;
+		MOFI ABCDEF 4;
 		Loop;
 	See:
 		MOFW ABCDEFGH 2;
